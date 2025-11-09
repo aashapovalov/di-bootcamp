@@ -2,11 +2,11 @@ print("Hello World\n"*4)
 
 print(99 ** 3 * 8)
 
->>> 5 < 3 #False
->>> 3 == 3 #True
->>> 3 == "3" #False
->>> "3" > 3 #False
->>> "Hello" == "hello" #False
+#>>> 5 < 3 #False
+#>>> 3 == 3 #True
+#>>> 3 == "3" #False
+#>>> "3" > 3 #False
+#>>> "Hello" == "hello" #False
 
 computer_brand = 'Mac'
 print(f"I have a {computer_brand} computer.")
