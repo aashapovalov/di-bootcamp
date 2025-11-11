@@ -1,3 +1,5 @@
+#Mini-Project - Tic Tac Toe
+
 board_state = [[' ' for _ in range(3)] for _ in range(3)]
 player_turn = ['playerO', 'playerX']
 player_symbol = {'playerX': 'X', 'playerO': 'O'}
