@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day1/ExerciseXP/exercise.py
+suggestions for improvement:
+- In Exercise 3, it would be better to include the code snippet as a comment before your guess, for better readability.
+- In Exercise 7, the modulo operator (%) cannot be directly applied to a string, since the input will return a string you need to cast to int first.
+- In Exercise 9, the input from the user is a string, so it needs to be converted to an integer before comparing it with 145.
+Brief justification:
+- correctness: The code successfully addresses most of the exercises. Exercise 1, 2, 3, 4, 5, 6, 8 and 9 are correct. In exercise 7 the code will crash without casting to an integer.
+- readability: The code is generally well-formatted and easy to understand. Variable names are descriptive, and comments are used appropriately.
+- performance: The code is efficient for the given tasks. There are no unnecessary loops or complex operations.
+- security: The code is generally secure, but it's important to validate user input to prevent potential vulnerabilities such as ValueError.
+
