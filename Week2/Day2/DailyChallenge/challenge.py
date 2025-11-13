@@ -17,13 +17,13 @@ class Pagination:
         return self.items[elem_begin: elem_end + 1]
 
     def go_to_page(self, page_num):
-        try:
-            if page_num in range(self.pages_num +1):
-                self.current_idx = page_num
-            else:
-                raise Exception(f"Page number should be between 1 and {self.pages_num}")
-        except ValueError as e:
-            print(e)
+        if not isinstance(page_num, int):
+            raise ValueError("Page number must be an integer")
+        if 1 <= page_num <= self.pages_num:
+            self.current_idx = page_num
+        else:
+            raise ValueError(f"Page number should be between 1 and {self.pages_num}")
+        return self
 
     def first_page(self):
         self.current_idx = 1
@@ -48,16 +48,8 @@ class Pagination:
                 raise Exception(f"Page number should be between 1 and {self.pages_num}")
         except ValueError as e:
             print(e)
+        return self
 
 new_list = [let for let in ascii_lowercase]
-print(new_list)
 pag1 = Pagination(new_list, 5)
-print(pag1.get_visible_items())
-pag1.next_page()
-print(pag1.get_visible_items())
-print(pag1.current_idx)
-pag1.go_to_page(3)
-print(pag1.get_visible_items())
-pag1.last_page()
-print(pag1.current_idx)
-print(pag1.get_visible_items())
+print(pag1.go_to_page(1).get_visible_items())
