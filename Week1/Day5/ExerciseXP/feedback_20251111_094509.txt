@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day5/ExerciseXP/exercise.py
+suggestions for improvement:
+- Consider refactoring `check_tie` to remove the redundant check for a winner. The `check_win` function is already called within the main loop.
+- The `display_board` function could be simplified by using a loop to generate the rows, rather than manually printing each line. This would improve readability and maintainability.
+- The player symbols 'X' and 'O' should be declared as constants instead of using a dictionary. This way, the player symbols are explicitly defined. 
+Brief justification:
+- correctness: The code accurately implements a Tic Tac Toe game, fulfilling all requirements outlined in the chapter content. It includes functions for displaying the board, getting player input, checking for a win, checking for a tie, and managing the main game loop. The game functions as expected and handles user input validation.
+- readability: The code is generally well-readable, with meaningful variable names and function names. The `display_board` function is somewhat lengthy and repetitive, which could be improved. The use of comments could further enhance readability.
+- performance: The code's performance is adequate for a Tic Tac Toe game. No significant performance bottlenecks are apparent. Minor optimizations, such as pre-calculating winning combinations, are possible but not crucial.
+- security: The code includes input validation to ensure the player enters valid row and column numbers. This helps to prevent potential errors or exploits. However, there are no significant security concerns in this particular application.
+
