@@ -1,0 +1,12 @@
+Player #0
+            Player Name: Alex
+            Player Age: 40
+
+
+            Skills
+Strength: 16
+Dexterity: 6
+Constitution: 14
+Intelligence: 16
+Wisdom: 8
+Charisma: 12
