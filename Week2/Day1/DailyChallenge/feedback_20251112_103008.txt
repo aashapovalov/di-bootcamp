@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day1/DailyChallenge/challenge.py
+suggestions for improvement:
+- In `get_info`, consider using string formatting for consistent spacing, as suggested in the instructions.
+- In `get_short_info`, remove the trailing comma and space from the `animal_str` using `animal_str = animal_str[:-2]` before printing. Handle the last animal differently to avoid this.
+- Consider returning a string in the `get_info` method instead of printing directly for better reusability. The instructions state that this method should return the string.
+Brief justification:
+- correctness: The code accurately implements all the required methods: `__init__`, `add_animal`, `get_info`, `get_animal_types`, and `get_short_info`, as described in the problem statement. It also handles the bonus task of using `**kwargs` in the add_animal method.
+- readability: The code is well-structured and easy to understand, with meaningful variable names and clear method definitions. The use of list comprehension in `get_animal_types` improves readability. However, the long line in `get_short_info` slightly reduces readability. The spacing in the printed output of the `get_info` method could also be improved.
+- performance: The code demonstrates good performance, particularly in the `get_animal_types` method by using `sorted()` directly with the list comprehension. It efficiently iterates through dictionaries and lists.
+- security: There are no apparent security concerns in this code. The code does not take any external input that could be exploited.
+
