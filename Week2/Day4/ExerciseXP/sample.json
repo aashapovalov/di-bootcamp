@@ -1,0 +1,12 @@
+{
+  "company": {
+    "employee": {
+      "birth_date": "1980/11/11",
+      "name": "emma",
+      "payable": {
+        "bonus": 800,
+        "salary": 5000
+      }
+    }
+  }
+}
