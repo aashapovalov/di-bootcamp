@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day3/DailyChallenge/challenge.py
+suggestions for improvement:
+- For Challenge 2, sort the aff_items list alphabetically before printing. The instructions explicitly ask for a sorted list.
+- The code could be slightly more readable by adding comments to explain the purpose of each section, especially in Challenge 2 where data cleaning and item selection are performed.
+- In Challenge 2, using `int(wallet_num)` within the loop is correct for this challenge and does not need to be changed; however, in more complex scenarios where the number of items being purchased would need to be considered, using a more proper approach to account for edge cases would be beneficial.
+- Challenge 2 does not use sorted() function as indicated in the prompt.
+Brief justification:
+- correctness: The code correctly implements both challenges as described in the chapter content. Challenge 1 accurately creates the letter index dictionary. Challenge 2 successfully identifies affordable items based on the provided dictionary and wallet amount. All expected outputs are produced correctly. However, Challenge 2 does not alphabetically sort the output as requested, and was not sorted according to importance, but this might be too advanced and it was not mentioned in the text.
+- readability: The code is generally well-readable, with clear variable names and straightforward logic. However, adding comments would further enhance readability, especially for Challenge 2 where multiple operations are performed.
+- performance: The code has good performance for the given problem sizes. The dictionary creation and item selection are efficient. List comprehensions could be used to make the code slightly faster, but it is sufficient as is.
+- security: The code is reasonably secure. Using `int()` provides some protection against invalid inputs for numerical values. However, more robust input validation could be added to handle unexpected input formats, which is beyond the scope of this exercise.
+
