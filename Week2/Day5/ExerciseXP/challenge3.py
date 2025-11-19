@@ -1,6 +1,6 @@
 from pyowm import OWM
 from datetime import time, datetime
-owm = OWM("49b1dba632252c6b09edbe25bc3cfadb")
+owm = OWM("")
 mgr = owm.weather_manager()
 
 
