@@ -1,24 +1,21 @@
 //🌟 Exercise 1 : List of people
-const peopleCopy1 = ["Greg", "Mary", "Devon", "James"];
-peopleCopy1.splice(0, 1)
-peopleCopy1[peopleCopy1.indexOf("James")] = "Jason"
-peopleCopy1.push("Alex")
-console.log(peopleCopy1.indexOf("Mary"))
-let peopleCopy = people.slice(1, 3)
-console.log(peopleCopy.indexOf("Foo"))
-console.log(people);
-console.log(peopleCopy)
-let last = peopleCopy1[peopleCopy1.length - 1]
-console.log(last)
+const people = ["Greg", "Mary", "Devon", "James"];
+people.splice(0, 1);
+people[people.indexOf("James")] = "Jason";
+people.push("Alex");
+console.log(people.indexOf("Mary"));
+const peopleCopy = people.slice(1, 3);
+console.log(peopleCopy.indexOf("Foo"));
+const last = people[people.length - 1];
+console.log(last);
 
 for(let i = 0; i < peopleCopy1.length; i++) {
   console.log(peopleCopy1[i])
 }
 
-for(let i = 0; i < peopleCopy1.length; i++) {
-  if(peopleCopy1[i] !== "Devon") {
-    console.log(peopleCopy1[i])
-  } else {
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i]);
+  if (people[i] === "Devon") {
     break;
   }
 }
