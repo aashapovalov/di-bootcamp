@@ -1,0 +1,25 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/ExerciseXP/anagram.py
+suggestions for improvement:
+- Consider moving the `is_valid` function into the `AnagramChecker` class to encapsulate related functionalities.
+- Add some error handling for file I/O in the `AnagramChecker` class. The current implementation assumes the file exists and is readable.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/ExerciseXP/anagram_checker.py
+suggestions for improvement:
+- Consider using a set for storing the word list in the `__init__` method for faster lookups in `is_valid_word`.
+- You could optimize `get_anagrams` by excluding the input word itself from the anagram list during the anagram checking, instead of after the loop.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/ExerciseXP/sowpods.txt
+suggestions for improvement:
+- This is a text file containing a word list, but the instructions clearly state that there should be two python scripts written, `anagram_checker.py` and `anagrams.py`.  Therefore, the content is completely unrelated to the instructions, it's a data source, not code.
+- The file needs to be extracted from the `sowpods.zip` file.
+- The submission needs to be two python files that implement the required functionality.
+- This appears to be a portion of a wordlist text file. It is not Python code, and therefore does not address any of the instructions or create the required program.
+- The file needs to be unzipped before use.
+- The provided text is a word list intended to be used as a dataset for the Anagram Checker program.
+- Since this is data, it doesn't require specific improvements in terms of readability, performance, or security.
+- The file needs to be unzipped before being read by the program.
+- This submission is not code and contains no instructions to follow. There's nothing to assess.
+Correctness: 0.0%
+-----
