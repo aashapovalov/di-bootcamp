@@ -1,10 +1,10 @@
 //🌟 Exercise 1 : List of people
 const people = ["Greg", "Mary", "Devon", "James"];
-
-people.splice(0, 1)
-people[people.indexOf("James")] = "Jason"
-people.push("Alex")
-console.log(people.indexOf("Mary"))
+let peopleCopy1 = people
+peopleCopy1.splice(0, 1)
+peopleCopy1[peopleCopy1.indexOf("James")] = "Jason"
+peopleCopy1.push("Alex")
+console.log(peopleCopy1.indexOf("Mary"))
 let peopleCopy = people.slice(1, 3)
 console.log(peopleCopy.indexOf("Foo"))
 console.log(people);
@@ -41,10 +41,8 @@ if (typeof(user_number) === "number") {
 } else {
   console.log(user_number + " is not a valid number");
 }
-
-let user_number1 = parseInt(prompt("Enter a number: ", '0'))
-while (user_number1 < 10) {
-  user_number1 = parseInt(prompt("Enter a number: "))
+while (user_number < 10) {
+  user_number = parseInt(prompt("Enter a number: "))
 }
 
 //🌟 Exercise 4 : Building Management
