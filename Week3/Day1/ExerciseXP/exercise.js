@@ -35,7 +35,7 @@ for(let i = 0; i < colors.length; i++){
 }
 
 //🌟 Exercise 3 : Repeat the question
-/* let user_number = parseInt(prompt("Enter a number: ", '0'))
+let user_number = parseInt(prompt("Enter a number: ", '0'))
 if (typeof(user_number) === "number") {
   console.log(user_number + " is a valid number");
 } else {
@@ -46,7 +46,7 @@ let user_number1 = parseInt(prompt("Enter a number: ", '0'))
 while (user_number1 < 10) {
   user_number1 = parseInt(prompt("Enter a number: "))
 }
-*/
+
 //🌟 Exercise 4 : Building Management
 const building = {
   numberOfFloors: 4,
