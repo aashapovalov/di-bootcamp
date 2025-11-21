@@ -1,0 +1,15 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day4/DailyChallenge/challenge.py
+suggestions for improvement:
+- In `word_frequency`, consider handling the case where the word is not found by returning None or a specific message, as suggested in the instructions.
+- In `most_common_word`, the approach of iterating through the set of words and calling `word_frequency` is inefficient. Directly counting word frequencies in one pass would be better.
+- In `remove_stop_words`, reading stop words from a file is acceptable, but ensure the file exists and is properly formatted. The current implementation might have issues with newline characters in the stop words file. Also, removing elements from a list while iterating over it can lead to skipped elements; consider using list comprehension.
+- In `remove_special_characters`, the list of special characters is incomplete. Consider expanding it or clarifying the scope of characters to be removed.
+- The return type of `unique_words` is a set, but the prompt asks for a list. Convert the set to a list before returning.
+- Consider adding error handling (e.g., `try-except` blocks) in `from_file` and other file-handling methods to gracefully handle file not found or permission errors.
+- The docstrings are missing, including them will enhance readability.
+Brief justification:
+- correctness: The code correctly implements most of the required methods, including `word_frequency`, `most_common_word`, `unique_words`, `from_file`, `remove_punctuation`, `remove_stop_words`, and `remove_special_characters`. However, `most_common_word` is implemented inefficiently, and `unique_words` returns a set instead of a list, as requested. `remove_stop_words` can lead to issues when removing elements during iteration, and `remove_special_characters` has an incomplete list of characters. There is no exception handling for file handling. The `word_frequency` method could be more robust with error handling when a word is not found. Overall, it addresses most requirements.
+- readability: The code is generally readable, with clear class and method names. However, the logic in `most_common_word` and `remove_stop_words` could be simplified for better readability. Adding comments and docstrings would significantly improve understanding.
+- performance: The performance of `word_frequency` is adequate, but `most_common_word` has poor performance due to repeated calls to `word_frequency`. `remove_stop_words` also suffers from performance issues due to removing elements from a list during iteration.
+- security: The code doesn't seem to have any major security vulnerabilities. However, when reading from a file, it's essential to be cautious about the file's origin and content to prevent potential injection attacks. Ensure input sanitization where necessary.
+
