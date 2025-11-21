@@ -1,6 +1,5 @@
 //🌟 Exercise 1 : List of people
-const people = ["Greg", "Mary", "Devon", "James"];
-let peopleCopy1 = people
+const peopleCopy1 = ["Greg", "Mary", "Devon", "James"];
 peopleCopy1.splice(0, 1)
 peopleCopy1[peopleCopy1.indexOf("James")] = "Jason"
 peopleCopy1.push("Alex")
@@ -9,16 +8,16 @@ let peopleCopy = people.slice(1, 3)
 console.log(peopleCopy.indexOf("Foo"))
 console.log(people);
 console.log(peopleCopy)
-let last = people[people.length - 1]
+let last = peopleCopy1[peopleCopy1.length - 1]
 console.log(last)
 
-for(let i = 0; i < people.length; i++) {
-  console.log(people[i])
+for(let i = 0; i < peopleCopy1.length; i++) {
+  console.log(peopleCopy1[i])
 }
 
-for(let i = 0; i < people.length; i++) {
-  if(people[i] !== "Devon") {
-    console.log(people[i])
+for(let i = 0; i < peopleCopy1.length; i++) {
+  if(peopleCopy1[i] !== "Devon") {
+    console.log(peopleCopy1[i])
   } else {
     break;
   }
