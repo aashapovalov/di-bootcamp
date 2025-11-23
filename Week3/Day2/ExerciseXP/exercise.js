@@ -1,15 +1,19 @@
 //🌟 Exercise 1 : Find the numbers divisible by 23
 function displayNumbersDivisible(divisor) {
-  let sum = 0;
-  let divisorStr = ""
-  for (let i = 0; i < 500; i++) {
-    if (i % divisor === 0) {
-      divisorStr += i.toString() + " "
-      sum += i;
+  if (divisor) {
+    let sum = 0;
+    let divisorStr = ""
+    for (let i = 0; i < 500; i++) {
+      if (i % divisor === 0) {
+        divisorStr += i.toString() + " "
+        sum += i;
+      }
     }
+    console.log(`Outcome: ${divisorStr}`)
+    console.log(`Sum: ${sum}`);
+  } else {
+    console.log("Divisor should be a positive integer");
   }
-  console.log(`Outcome: ${divisorStr}`)
-  console.log(`Sum: ${sum}`);
 }
 displayNumbersDivisible()
 
@@ -35,7 +39,7 @@ let shoppingList = ["banana", "orange", "apple"]
 function myBill() {
   let billSum = 0;
   for (let element of shoppingList) {
-    if (stock[element]) {
+    if (element in stock && stock[element] !== 0) {
       stock[element] --
       billSum += prices[element];
     }
@@ -66,7 +70,7 @@ console.log(changeEnough(4.25, [5, 20, 5, 0]))
 function hotelCost(){
   const costPerNight = 140;
   let i;
-  while (i !== 1) {
+  while (true) {
     nigthsNumber = prompt("How many nights are you going to stay in out hotel?");
     if (typeof parseFloat(nigthsNumber) === "number") {
       return parseFloat(nigthsNumber)*costPerNight;
