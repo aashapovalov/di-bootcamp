@@ -1,9 +1,9 @@
-let divEl = document.querySelector("div")
+let divEl = document.getElementById("container")
 console.log(divEl)
 
-const ulFirst = document.getElementsByTagName("ul")[0]
-ulFirst.lastElementChild.textContent = "Richard"
-const ulSec = document.getElementsByTagName("ul")[1]
+const ulFirst = document.getElementsByClassName("list")[0]
+const ulSec = document.getElementsByClassName("list")[1]
+Array.from(ulFirst.children).find(el => el.textContent === "Pete").textContent = "Richard"
 ulSec.children[1].remove()
 
 const ulEl = document.getElementsByTagName("ul")
@@ -21,6 +21,6 @@ ulFirst.lastElementChild.style.border = "1px solid blue"
 
 document.body.style.fontSize = "20px"
 
-if (divEl.style.backgroundColor = "lightblue") {
-  alert("Hello x and y")
+if (divEl.style.backgroundColor === "lightblue") {
+  alert(`Hello ${ulFirst.firstElementChild.textContent} and ${ulSec.firstElementChild.textContent}`)
 }
