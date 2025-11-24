@@ -11,7 +11,7 @@ function displayNumbersDivisible() {
     console.log(`Outcome: ${divisorArr.join(", ")}`)
     console.log(`Sum: ${sum}`);
 }
-function displayNumbersDivisible1(divisor) {
+function displayNumbersDivisible(divisor) {
   if (divisor) {
     let sum = 0;
     let divisorArr = []
@@ -68,11 +68,7 @@ function changeEnough(itemPrice, amountOfChange){
   for (let i = 0; i < amountOfChange.length; i++) {
     changeSum += amountOfChange[i]*changeNominal[i]
   }
-  if (changeSum >= itemPrice) {
-    return true
-  } else {
-    return false
-  }
+  return changeSum >= itemPrice
 }
 
 console.log(changeEnough(4.25, [5, 20, 5, 0]))
@@ -110,11 +106,12 @@ function planeRideCost() {
       const costPerDay = 40;
       const discount = 0.05
       while (true) {
-        let daysNumber = prompt("How many days you want to a car for?");
-        if (typeof parseFloat(daysNumber) === "number") {
+        let daysNumber = parseFloat(prompt("How many days you want to a car for?"));
+        if (typeof daysNumber === "number") {
           if (daysNumber <= 10) {
-            return parseFloat(daysNumber)*costPerDay;
-          } else { return daysNumber*costPerDay*(1-discount).toFixed(2); }
+            return daysNumber*costPerDay;
+          } else {
+            return daysNumber*costPerDay*(1-discount).toFixed(2); }
         } else {
           console.log("Incorrect, you should enter a number!")
         }
