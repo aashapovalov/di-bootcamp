@@ -1,38 +1,25 @@
-const planets = [
-  "Mercury",
-  "Venus",
-  "Earth",
-  "Mars",
-  "Jupiter",
-  "Saturn",
-  "Uranus",
-  "Neptune"
-];
-
-const planetColors = [
-  "red",
-  "orange",
-  "yellow",
-  "green",
-  "blue",
-  "indigo",
-  "violet",
-  "pink"
+const planetData = [
+  { name: "Mercury", color: "red",    moons: 1 },
+  { name: "Venus",   color: "orange", moons: 2 },
+  { name: "Earth",   color: "yellow", moons: 3 },
+  { name: "Mars",    color: "green",  moons: 4 },
+  { name: "Jupiter", color: "blue",   moons: 5 },
+  { name: "Saturn",  color: "indigo", moons: 6 },
+  { name: "Uranus",  color: "violet", moons: 7 },
+  { name: "Neptune", color: "pink",   moons: 8 }
 ];
 
 const section = document.querySelector(".listPlanets");
-for (let i = 0; i < planets.length; i++) {
+for (let i = 0; i < planetData.length; i++) {
   let planet = document.createElement("div")
   planet.classList.add("planet");
-  planet.style.backgroundColor = planetColors[i];
+  planet.style.backgroundColor = planetData[i]["color"];
   section.appendChild(planet)
-}
-
-planetElements = document.querySelectorAll(".planets");
-console.log(planetElements)
-for (let element of planetElements) {
-  let moon = document.createElement("div")
-  moon.classList.add("moon");
-  moon.style.backgroundColor = "white";
-  element.appendChild(moon)
+  for (let j = 1; j <= planetData[i]["moons"];j++) {
+    console.log(planetData[i]["moons"])
+    let moon = document.createElement("div");
+    moon.classList.add("moon");
+    moon.style.backgroundColor = "white";
+    planet.appendChild(moon)
+  }
 }
