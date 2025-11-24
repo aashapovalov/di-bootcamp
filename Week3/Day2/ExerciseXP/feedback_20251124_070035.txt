@@ -1,0 +1,71 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/calendar.html
+suggestions for improvement:
+- The provided HTML file only loads an external JavaScript file. It does not contain any JavaScript code to solve the exercises.
+- To complete the exercises, actual JavaScript code implementing the required functionalities (variables, conditionals, loops, functions, DOM manipulation) must be included in the ninja-exercise.js file.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The code addresses string and array manipulation problems, which are general programming concepts, but it completely misses the specific exercises outlined in the chapter content (Variables, Conditionals, Loops, Functions, DOM selectors).
+- Consider aligning the functions with the exercises on divisibility, shopping list calculations, change calculation, vacation costs, and DOM manipulation. These are the topics explicitly covered in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- In `Exercise 1`, the bonus implementation is named `displayNumbersDivisible1` instead of `displayNumbersDivisible`. Change the name to match the requirements.
+- In `Exercise 4`, daysNumber*costPerDay*(1-discount).toFixed(2) returns string instead of number. Cast it to Number()
+Correctness: 95%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code is only an HTML structure to host a javascript file. It does not address any of the exercises of the chapter.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.html
+suggestions for improvement:
+- The provided HTML file lacks the JavaScript code required to address the core task of displaying a book list based on data and instructions given in 'Exercise 7 : My Book List'. The HTML only sets up the basic structure with a section element and links to an external JavaScript file which is not provided.
+- The JavaScript file, which is meant to contain the logic for creating and rendering the book list, is missing. The correctness of the whole program cannot be assessed without the JavaScript content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.js
+suggestions for improvement:
+- Consider using template literals for more readable string concatenation, especially within the description.textContent assignment.
+- Avoid using bracket notation (element['title']) when dot notation (element.title) is possible and more readable.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.html
+suggestions for improvement:
+- The provided HTML file, while containing the structure for Exercise 6, lacks the JavaScript code necessary to fulfill the exercise's instructions.
+- A separate JavaScript file (navbar.js) is referenced, but its content is missing, making it impossible to assess the completion of tasks like changing the ID, adding a new list item, or retrieving and displaying text from the list items.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.js
+suggestions for improvement:
+- Consider adding comments to explain complex logic for better readability.
+- Using `querySelector` is slightly less performant compared to `getElementById` when you already have the `navBarDiv` element.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/ninja-exercise.js
+suggestions for improvement:
+- The submitted code is unrelated to the chapter content which covers variables, conditionals, loops, functions and DOM selectors.
+- The code provides solutions to different algorithmic challenges.
+- The code is somewhat readable, but would benefit from more descriptive variable names and comments.
+- The code's performance could be improved with minor optimizations in some functions, such as avoiding unnecessary array creations.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/table.html
+suggestions for improvement:
+- The provided HTML and JavaScript code are unrelated to the chapter's content, which focuses on variables, conditionals, loops, functions, and DOM selectors as applied to the specific exercises involving finding divisible numbers, shopping lists, change calculation, vacation costs, and user manipulation.
+- The code creates a table and colors some of its cells red. While this demonstrates basic DOM manipulation, it doesn't address any of the specific problems outlined in the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.html
+suggestions for improvement:
+- The provided code is just an HTML structure. It doesn't address any of the exercises in the chapter. There are several exercises that require javascript code to manipulate the DOM and implement specific logic, but this code does not attempt to solve any of them.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.js
+suggestions for improvement:
+- This code addresses exercise 5 but is provided without the surrounding HTML. To properly assess, it needs to be executable with the associated HTML. The assessment assumes the HTML is provided as instructed.
+Correctness: 0%
+-----
