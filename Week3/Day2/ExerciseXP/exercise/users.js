@@ -1,26 +1,52 @@
-let divEl = document.getElementById("container")
-console.log(divEl)
 
-const ulFirst = document.getElementsByClassName("list")[0]
-const ulSec = document.getElementsByClassName("list")[1]
-Array.from(ulFirst.children).find(el => el.textContent === "Pete").textContent = "Richard"
-ulSec.children[1].remove()
+const containerDiv = document.getElementById("container");
+console.log(containerDiv);
 
-const ulEl = document.getElementsByTagName("ul")
-for (let element of ulEl) {
-  element.firstElementChild.textContent = "Alex"
-  element.classList.add("student_list")
-}
+const lists = document.querySelectorAll("ul.list");
+const firstList = lists[0];
+const secondList = lists[1];
 
-ulFirst.classList.add("university", "attendance")
+const firstListItems = firstList.querySelectorAll("li");
+firstListItems[1].textContent = "Richard";
 
-divEl.style.backgroundColor = "lightblue"
-ulSec.lastElementChild.style.display="none"
+const secondListItems = secondList.querySelectorAll("li");
+secondList.removeChild(secondListItems[1]); // удаляем "Sarah"
 
-ulFirst.lastElementChild.style.border = "1px solid blue"
+lists.forEach(ul => {
+  const firstLi = ul.firstElementChild;
+  firstLi.textContent = "Aleksei"; // или то имя, которое хочешь
+});
 
-document.body.style.fontSize = "20px"
+lists.forEach(ul => {
+  ul.classList.add("student_list");
+});
 
-if (divEl.style.backgroundColor === "lightblue") {
-  alert(`Hello ${ulFirst.firstElementChild.textContent} and ${ulSec.firstElementChild.textContent}`)
+firstList.classList.add("university", "attendance");
+
+containerDiv.style.backgroundColor = "lightblue";
+containerDiv.style.padding = "10px";
+
+
+const updatedSecondListItems = secondList.querySelectorAll("li");
+updatedSecondListItems.forEach(li => {
+  if (li.textContent === "Dan") {
+    li.style.display = "none";
+  }
+});
+
+const allLis = document.querySelectorAll("li");
+allLis.forEach(li => {
+  if (li.textContent === "Richard") {
+    li.style.border = "1px solid black";
+  }
+});
+
+document.body.style.fontSize = "18px";
+
+
+if (containerDiv.style.backgroundColor === "lightblue") {
+  const usersNames = Array.from(firstList.querySelectorAll("li")).map(li => li.textContent);
+  if (usersNames.length >= 2) {
+    alert(`Hello ${usersNames[0]} and ${usersNames[1]}`);
+  }
 }
