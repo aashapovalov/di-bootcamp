@@ -1,14 +1,18 @@
 const navBarDiv = document.getElementById("navBar");
-navBarDiv.id = "socialNetworkNavigation";
+navBarDiv.setAttribute("id", "socialNetworkNavigation");
 
 const ulEl = navBarDiv.querySelector("ul");
 
 const newLi = document.createElement("li");
-newLi.textContent = "Logout";
+const newLink = document.createElement("a");
+newLink.setAttribute("href", "#");
+newLink.textContent = "Logout";
+newLi.appendChild(newLink);
+
 ulEl.appendChild(newLi);
 
-const listItems = ulEl.querySelectorAll("li");
+const firstLi = ulEl.firstElementChild;
+const lastLi = ulEl.lastElementChild;
 
-listItems.forEach(li => {
-  console.log(li.textContent);
-});
+console.log(firstLi.querySelector("a").textContent);
+console.log(lastLi.querySelector("a").textContent);
