@@ -1,0 +1,10 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day2/ExerciseXP/exercise.py
+suggestions for improvement:
+- In Exercise 2, the `run_speed()` method does not correctly implement the formula `weight / age * 10`. It currently just returns a string.
+- In Exercise 2, the `fight()` method does not correctly implement the fight using the `run_speed()` as a factor.
+- In Exercise 3, the Dog class is duplicated. The PetDog class should inherit from the original Dog class.
+- In Exercise 3, the play method in `PetDog` class does not work with dog objects, it receives strings instead.
+- In Exercise 4, the `born` method stores a dictionary in the members list, which is not strictly necessary. The `Person` object could be stored directly.
+- In Exercise 4, in the `check_majority` function, you're printing that John and Jane are the parents regardless of who the parents actually are.
+Correctness: 75%
+-----
