@@ -1,16 +1,17 @@
 let box = document.getElementById("animate");
 let container = document.getElementById("container");
+let btn = document.querySelector("button");
+
+btn.addEventListener("click", myMove);
 
 function myMove() {
-  const start = performance.now();
-  const speed = 200;
-  const maxLeft = container.offsetWidth - box.offsetWidth;
-
-  function animate(now) {
-    const left = Math.min(((now - start) / 1000) * speed, maxLeft);
-    box.style.left = left + "px";
-    if (left < maxLeft) requestAnimationFrame(animate);
-  }
-
-  requestAnimationFrame(animate);
+  let pos = 0;
+  box.style.left = "0px";
+  let timer = setInterval(() => {
+    pos += 1;
+    box.style.left = pos + "px";
+    if (pos >= container.offsetWidth - box.offsetWidth) {
+      clearInterval(timer);
+    }
+  }, 1);
 }
