@@ -1,13 +1,14 @@
-let divEl = document.getElementsByTagName('div')[0];
-divEl.setAttribute("id", "socialNetworkNavigation")
+const navBarDiv = document.getElementById("navBar");
+navBarDiv.id = "socialNetworkNavigation";
 
-let ulEl = document.getElementsByTagName('ul')[0];
-const newLi = document.createElement("li")
-const logout = document.createTextNode("Logout")
-newLi.appendChild(logout)
-ulEl.appendChild(newLi)
+const ulEl = navBarDiv.querySelector("ul");
 
-const firstLi = ulEl.firstElementChild
-const lastLi = ulEl.lastElementChild
-console.log(lastLi.textContent)
-console.log(firstLi.textContent)
+const newLi = document.createElement("li");
+newLi.textContent = "Logout";
+ulEl.appendChild(newLi);
+
+const listItems = ulEl.querySelectorAll("li");
+
+listItems.forEach(li => {
+  console.log(li.textContent);
+});

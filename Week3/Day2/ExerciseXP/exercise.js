@@ -1,21 +1,32 @@
 //🌟 Exercise 1 : Find the numbers divisible by 23
-function displayNumbersDivisible(divisor) {
+function displayNumbersDivisible() {
+  let sum = 0;
+  let divisorArr = []
+  for (let i = 0; i < 500; i++) {
+    if (i % 23 === 0) {
+      divisorArr.push(i)
+      sum += i;
+      }
+    }
+    console.log(`Outcome: ${divisorArr.join(", ")}`)
+    console.log(`Sum: ${sum}`);
+}
+function displayNumbersDivisible1(divisor) {
   if (divisor) {
     let sum = 0;
-    let divisorStr = ""
+    let divisorArr = []
     for (let i = 0; i < 500; i++) {
       if (i % divisor === 0) {
-        divisorStr += i.toString() + " "
+        divisorArr.push(i)
         sum += i;
       }
     }
-    console.log(`Outcome: ${divisorStr}`)
+    console.log(`Outcome: ${divisorArr.join(", ")}`)
     console.log(`Sum: ${sum}`);
   } else {
     console.log("Divisor should be a positive integer");
   }
 }
-displayNumbersDivisible()
 
 //🌟 Exercise 2 : Shopping List
 const stock = {
@@ -69,13 +80,13 @@ console.log(changeEnough(4.25, [5, 20, 5, 0]))
 //🌟 Exercise 4 : Vacations Costs
 function hotelCost(){
   const costPerNight = 140;
-  let i;
   while (true) {
-    nigthsNumber = prompt("How many nights are you going to stay in out hotel?");
+    let nigthsNumber = prompt("How many nights are you going to stay in out hotel?");
     if (typeof parseFloat(nigthsNumber) === "number") {
       return parseFloat(nigthsNumber)*costPerNight;
+    } else {
+      console.log("Incorrect, you should enter a number!")
     }
-    console.log("Incorrect, you should enter a number!")
   }
 }
 
