@@ -1,0 +1,111 @@
+/* Global layout */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #f05a5a, #f77794);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #fff;
+}
+
+/* Optional title styling (if you add an <h1>) */
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+/* Form (input + ADD button) */
+form {
+  margin-top: 40px;
+  width: 480px;
+  display: flex;
+  background: #ffffff;
+}
+
+form input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 18px 20px;
+  font-size: 1.6rem;
+  outline: none;
+  color: #555;
+}
+
+form input[type="text"]::placeholder {
+  color: #bbb;
+}
+
+#submit-btn {
+  border: none;
+  background: transparent;
+  padding: 0 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  color: #ff3b3b;
+}
+
+/* Tasks container (white card) */
+.listTasks {
+  width: 480px;
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 30px 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #e74c3c;
+}
+
+/* Single task row */
+.task {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #d9e1e8;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+/* Delete X icon */
+.icon {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Checkbox */
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Task label text */
+.task label {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Strike-through when checkbox is checked */
+.task input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
