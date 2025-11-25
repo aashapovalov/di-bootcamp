@@ -1,0 +1,75 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/calendar.html
+suggestions for improvement:
+- The HTML file only sets up a basic structure to run JavaScript but doesn't contain any actual code to address the exercises provided. Therefore, it does not implement any of the required functionality.
+- There is no JavaScript code included to evaluate, only the HTML setup.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The submitted code does not address any of the exercises described in the provided Chapter Content/Questions. The exercises cover variables, conditionals, loops, functions, DOM selectors, and manipulating HTML elements using JavaScript. The code provided focuses on string manipulation and array checking, which are not the focus of the excercises.
+- The code contains a duplicate declaration for Exercise 4.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, the function `displayNumbersDivisible` doesn't work correctly for the initial, non-bonus part of the exercise because it requires a divisor argument, but the instructions say it should take no parameters for the initial part. The code should handle the case where no divisor is provided and default to 23.
+- In Exercise 1, the code uses string concatenation to build the `divisorStr`. For a large number of divisible numbers, this could be less efficient than using an array and then joining the elements.
+- In Exercise 4, the code inside the conditional block `if (daysNumber <= 10)` and `else` block calculates the cost, but returns a number from the `else` block. The function does not explicitly return value when the condition `if (typeof parseFloat(nigthsNumber) === "number")` returns false. This can lead to unexpected behavior.
+Correctness: 75%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code is incomplete. It only sets up the basic HTML structure but does not include any JavaScript code to address the exercises outlined in the chapter content.
+- The exercise.js file is linked but not provided, so it is impossible to assess the solution's correctness.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.html
+suggestions for improvement:
+- The provided code consists of HTML only, and it does not contain the JavaScript code required to solve any of the exercises described in the prompt. The HTML part simply creates an empty section. Therefore it cannot be evaluated on aspects related to correctness, performance and security.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.html
+suggestions for improvement:
+- The provided HTML file is incomplete as it only sets up the basic structure for Exercise 6. The corresponding JavaScript file (navbar.js) containing the solution logic is missing, making it impossible to assess the code's correctness and completeness in solving the exercise.
+- To adequately evaluate the submission, the `navbar.js` file needs to be included, allowing for examination of the implemented logic and determination of whether it accurately fulfills the exercise requirements. 
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.js
+suggestions for improvement:
+- The id of the div should be changed to 'socialNetworkNavigation' not 'id'.
+- The task asks to change the id of the first div, but the code retrieves the first div element with getElementsByTagName('div')[0] and sets an id on it, regardless of its initial id or if it's the intended 'navBar' div.  It does not check if the current id is 'navBar' and does not retrieve element by ID initially as specified in the instruction.
+- The code only retrieves and works with the first ul element.  It should find the ul within the socialNetworkNavigation div to ensure it's operating on the correct element.
+- The instructions ask to display the text of each link, but the code only displays the text content of the first and last list items.
+Correctness: 50%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/ninja-exercise.js
+suggestions for improvement:
+- The provided code does not address any of the exercises described in the chapter content. The exercises cover variables, conditionals, loops, functions, DOM selectors, etc. The provided code covers random numbers, string manipulation, palindrome checks, array manipulation, and calendar creation, which are not directly related to the stated learning objectives.
+- The code contains some comments but could benefit from more descriptive variable names and function comments to explain the purpose and functionality of each code block.
+- The code appears to have reasonable performance for the tasks it performs, but there is room for optimization, especially in the calendar creation function.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/table.html
+suggestions for improvement:
+- The provided code creates a table and highlights cells diagonally. This is unrelated to the chapter exercises which cover variables, conditionals, loops, functions, and DOM selectors applied to specific tasks like number divisibility, shopping list calculations, change calculation, vacation cost calculation, and manipulating user lists and navigation bars.
+- Focus on addressing the specific exercises provided in the chapter content, rather than creating unrelated examples.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.html
+suggestions for improvement:
+- The provided code only includes the HTML structure for Exercise 5, but it's missing the JavaScript file (users.js) that is essential for implementing the instructions.
+- Without the JavaScript code, it's impossible to assess the correctness, readability, performance, or security of the solution.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.js
+suggestions for improvement:
+- Use querySelectorAll instead of getElementsByClassName and getElementsByTagName for more modern and flexible DOM selection.
+- Use more descriptive variable names (e.g., instead of ulFirst, use firstUserList).
+- Consider using template literals for the alert message to improve readability.
+Correctness: 85%
+-----
