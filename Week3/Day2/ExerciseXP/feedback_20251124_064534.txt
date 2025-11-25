@@ -1,0 +1,70 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/calendar.html
+suggestions for improvement:
+- The provided HTML only sets up the environment for running JavaScript but does not contain any JavaScript code that attempts to solve the exercises outlined in the chapter content.  Therefore, it is not possible to evaluate its correctness against the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The provided code does not address any of the exercises outlined in the chapter content.
+- The code appears to consist of unrelated string and array manipulation functions, none of which implement the functionality requested in exercises 1 through 7.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- Consider adding input validation for the divisor in `displayNumbersDivisible1` to ensure it's a positive integer.
+- In the `rentalCarCost` function, the result of the discount calculation could be formatted to have a fixed number of decimal places for better presentation.
+- You can use `Number.isInteger()` instead of `typeof parseFloat(nigthsNumber) === "number"` for checking if the input is an integer.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code consists only of an HTML structure that links to an external JavaScript file. It doesn't contain any JavaScript code to address the specific instructions and exercises outlined in the chapter content.
+- The Javascript code for each exercise is missing. Please provide the Javascript code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.html
+suggestions for improvement:
+- The provided HTML code only sets up the basic structure for Exercise 7 but doesn't include the JavaScript code to fulfill the exercise's requirements.
+- The JavaScript file (my-books-list.js) which is meant to contain the solution, has not been provided.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.js
+suggestions for improvement:
+- Consider using template literals for building the description string for improved readability.
+- The code could be slightly more efficient by caching the `allBooks.length` in the loop condition, although the performance impact is negligible here.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.html
+suggestions for improvement:
+- The HTML code provides the basic structure required for Exercise 6, but it doesn't include the JavaScript code needed to manipulate the DOM and fulfill the exercise's instructions. The prompt requires JavaScript code for manipulating the navbar, which is completely missing.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.js
+suggestions for improvement:
+- The task asks to use firstElementChild and lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). The code is not using this method, and is using querySelectorAll
+- The task asks to display the text of each link, but the code is displaying the text of each li element. The task mentions to display the link (<a> tag) text. You need to target the <a> tag.
+Correctness: 30%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/ninja-exercise.js
+suggestions for improvement:
+- The code addresses general Javascript exercises but does not address the specific exercises and instructions provided in the chapter content, making it irrelevant.
+- The code contains several exercises implemented as functions which is good for reusability, but the problem it tries to solve is not aligned with the provided exercises.
+- Consider separating different functionalities into different files for better organization if you intend to have many different code segments.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/table.html
+suggestions for improvement:
+- The code addresses DOM manipulation, but not in a way that is aligned with the exercises provided. It does not address variables, conditionals, loops, functions, or any of the specific problems outlined in the exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.html
+suggestions for improvement:
+- The provided HTML code only sets up the structure for Exercise 5 but doesn't include the JavaScript code to actually manipulate the DOM as required by the exercise instructions. Therefore, it doesn't address any of the instructions' points.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.js
+suggestions for improvement:
+- This code seems to be intended for Exercise 5, but it was not submitted alongside an HTML file, making it impossible to execute and verify its correctness.
+- Without the HTML context, I cannot evaluate if the DOM manipulation correctly targets the intended elements or if the styling is applied as expected.
+Correctness: 0%
+-----
