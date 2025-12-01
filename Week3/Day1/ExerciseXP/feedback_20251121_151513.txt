@@ -1,0 +1,17 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The submitted code does not address any of the exercises outlined in the chapter content. It presents solutions to different problems entirely unrelated to the provided instructions.
+- The code covers array iteration, conditional statements and user prompts, but does not relate to array manipulations, loops, object property access, or for...in loops as instructed in the chapter exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, Part I, the code modifies `peopleCopy1` which is initialized to `people`. This directly modifies the original `people` array, which is not the intended behavior. It should create a new array instead.
+- In Exercise 1, Part II, the first loop does not need an else statement.
+Correctness: 95%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code is an HTML file that includes an external JavaScript file named 'exercise-gold.js'. To properly assess and provide feedback, I need the content of the 'exercise-gold.js' file. Without the JavaScript code, I cannot evaluate the correctness, readability, performance, or security in the context of the exercises provided.
+Correctness: 0%
+-----
