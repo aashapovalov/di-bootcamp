@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+</head>
+<html>
+  <body>
+    <section id="quote-filter">
+      <p style="font-size: 1.5rem; font-weight: bold">Filter Quotes by Author</p>
+      <form id="filter-form">
+        <label for="author-name">Enter an author name</label>
+        <input id="author-name" type="text" name="author-name" placeholder="enter author name..." />
+        <button type="submit" id="filter-author-btn">Send</button>
+      </form>
+      <div id="next-prev-btns" style="margin-bottom: 2rem;">
+        <button type="button" id="prev-btn">Previous</button>
+        <button type="button" id="next-btn">Next</button>
+      </div>
+    </section>
+
+    <section id="quotes-section"></section>
+
+    <button type="button" id="generate-btn">Generate quote</button>
+
+    <div id="button-container">
+      <button type="button" id="char-spaces-btn">Character # (with spaces)</button>
+      <button type="button" id="char-btn">Character # (without spaces)</button>
+      <button type="button" id="words-number-btn">Words #</button>
+      <button type="button" id="like-btn">Like it</button>
+    </div>
+
+    <p style="font-size: 1.5rem; font-weight: bold">Add a new quote</p>
+
+    <form id="form" name ="form">
+      <label for="input-quote" style="display: block; margin-top: 1rem;">New quote</label>
+      <input id="input-quote" type="text" name="quote" placeholder="enter new quote..." style="display: block" />
+      <label for="input-author" style="display: block; margin-top: 1rem;">Author</label>
+      <input id="input-author" type="text" name="author" placeholder="enter quote's author..." style="display: block" />
+      <button type="submit" id="submit-btn" style="display: block; margin-top: 1rem;">Send</button>
+    </form>
+
+    <script src="mini-project.js"></script>
+  </body>
+</html>
