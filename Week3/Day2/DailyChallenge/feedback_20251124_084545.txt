@@ -1,0 +1,11 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.html
+suggestions for improvement:
+- The HTML file is provided, the JavaScript file (`challenge.js`) needs to be created and populated with the logic to create the solar system.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.js
+suggestions for improvement:
+- The code fulfills the main requirements: creating planet divs with different background colors and appending them to the section. However, the bonus part (creating moons) is not correctly implemented. The selector `.planets` is incorrect and it should be `.planet`. Also, the amount of moons is not considered.
+- The `planetElements` variable is not used correctly. It's created after the planets, it is querying a class that doesn't exist, and its contents are not considered when adding moons.
+Correctness: 70%
+-----
