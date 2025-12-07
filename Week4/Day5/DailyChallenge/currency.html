@@ -1,24 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
 </head>
-<html>
-<body style="background-color: gray">
+<body>
 <section id="exchange-section">
   <h1>Currency Converter</h1>
-  <form id="exchange-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+  <form id="exchange-form">
     <label for="from">From:</label>
     <select id="from" name="from"></select>
+
     <label for="to">To:</label>
     <select id="to" name="to"></select>
+
     <label for="amount">Amount:</label>
-    <input type="number" id="amount" name="amount">
+    <input type="number" id="amount" name="amount" placeholder="Enter amount">
+
     <button id="convert-btn" type="submit">Convert</button>
   </form>
+
   <button id="switch-btn" type="button">Switch</button>
+
   <div id="result">
-    <p id="result-text"></p>
+    <p id="result-text">Result will appear here</p>
   </div>
 </section>
+
 <script src="currency.js"></script>
 </body>
 </html>

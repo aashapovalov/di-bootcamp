@@ -199,8 +199,8 @@
 
   Object.entries(CURRENCIES).forEach(([code, name]) => {
     const optFrom = document.createElement("option");
-    optFrom.value = code;      // ← ISO код
-    optFrom.textContent = name; // ← Название для пользователя
+    optFrom.value = code;
+    optFrom.textContent = name;
     fromInput.appendChild(optFrom);
 
     const optTo = document.createElement("option");
@@ -217,6 +217,8 @@
       const response = await fetch(fetchURL);
       if (response.ok) {
         return await response.json();
+      } else {
+        throw Error(response.statusText);
       }
     } catch (error) {
       console.log(error);
@@ -234,9 +236,20 @@
   toInput.value = buffer;
   }
 
+  function validateAmount(amount) {
+    if (!amount || Number(amount) <= 0) {
+      outputElement.textContent = "Please enter a valid amount.";
+      return false;
+    }
+    return true;
+  }
+
   exchangeForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const [currFrom, currTo, amount] = currencyFromForm()
+    if (!validateAmount(amount)) {
+      return;
+    }
     const exchangeData = await fetchInfo([currFrom, currTo]);
     const exchangeRate = exchangeData["conversion_rate"];
     outputElement.textContent = (Number(exchangeRate) * Number(amount)).toString();
