@@ -1,0 +1,12 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/DailyChallenge/game.html
+suggestions for improvement:
+- The provided code is only the HTML structure. It lacks the JavaScript code (`game.js`) that handles form submission, value retrieval, story generation, and the bonus shuffle functionality, as described in the instructions. Therefore, it doesn't fulfill any of the requirements.
+- The JavaScript file needs to be created and contain the logic to get the values from the inputs, prevent default form submission, check for empty values, generate the story, and implement the shuffle button functionality.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/DailyChallenge/game.js
+suggestions for improvement:
+- Consider adding more story variations to fully address the bonus requirement, and implementing the shuffle button functionality.
+- Add more error handling to alert the user when fields are empty, rather than just not updating the story.
+Correctness: 100%
+-----
