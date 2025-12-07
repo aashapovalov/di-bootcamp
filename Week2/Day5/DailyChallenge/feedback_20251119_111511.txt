@@ -1,0 +1,16 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/DailyChallenge/challenge.py
+suggestions for improvement:
+- Consider using string formatting or f-strings for more readable card representation in the `deal` method.
+- While the current implementation meets the requirements, you could enhance the `Deck` class by adding error handling (e.g., checking if the deck is empty before dealing).
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/DailyChallenge/challenge2.py
+suggestions for improvement:
+- The provided code calculates the loading time of a website, which is completely unrelated to the chapter content focusing on OOP, data structures (lists), and random number generation.  Therefore, it does not address the exercises at all.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/DailyChallenge/quizz.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
