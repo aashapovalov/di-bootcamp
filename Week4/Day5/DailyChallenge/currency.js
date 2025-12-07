@@ -194,6 +194,7 @@
   const outputElement = document.getElementById("result-text")
   const base_url = "https://v6.exchangerate-api.com/v6/";
   const apiKey = '0e26e61f8d455b4e8f020224';
+  const switchButton = document.getElementById("switch-btn")
 
 
   Object.entries(CURRENCIES).forEach(([code, name]) => {
@@ -227,6 +228,11 @@
     return [fd.get("from"), fd.get("to"), fd.get("amount")];
   }
 
+  function switchInputs (){
+  const buffer = fromInput.value;
+  fromInput.value = toInput.value;
+  toInput.value = buffer;
+  }
 
   exchangeForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -235,3 +241,5 @@
     const exchangeRate = exchangeData["conversion_rate"];
     outputElement.textContent = (Number(exchangeRate) * Number(amount)).toString();
   })
+
+  switchButton.addEventListener("click", switchInputs)
