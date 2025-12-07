@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+</head>
+<html>
+<body style="background-color: gray">
+<section id="exchange-section">
+  <h1>Currency Converter</h1>
+  <form id="exchange-form" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <label for="from">From:</label>
+    <select id="from" name="from"></select>
+    <label for="to">To:</label>
+    <select id="to" name="to"></select>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount">
+    <button id="convert-btn" type="submit">Convert</button>
+  </form>
+  <div id="result">
+    <p id="result-text"></p>
+  </div>
+</section>
+<script src="currency.js"></script>
+</body>
+</html>
