@@ -1,0 +1,13 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/ExerciseXP/color-game.html
+suggestions for improvement:
+- The HTML is incomplete. It lacks the structure for the color palette and the grid of squares.
+- The Javascript file 'color-game.js' is not provided, so its functionality cannot be assessed.
+- The HTML does not include any elements that the JavaScript could manipulate (e.g., divs for the color palette and the grid).
+Correctness: 0.0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/ExerciseXP/color-game.js
+suggestions for improvement:
+- Consider extracting the creation and styling of DOM elements into separate functions to improve readability and maintainability.
+- While the code works, adding comments explaining the purpose of each major function or block of code will make it easier for others (and your future self) to understand.
+Correctness: 100%
+-----
