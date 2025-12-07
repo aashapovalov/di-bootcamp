@@ -210,18 +210,29 @@
   });
 
   async function fetchInfo([fromCurr, toCurr]) {
-    console.log("From", fromCurr, "To", toCurr);
     const fetchURL = `${base_url}${apiKey}/pair/${fromCurr}/${toCurr}`;
-    console.log(fetchURL);
+
     try {
       const response = await fetch(fetchURL);
-      if (response.ok) {
-        return await response.json();
-      } else {
-        throw Error(response.statusText);
+
+      if (!response.ok) {
+        outputElement.textContent = "API error. Try again.";
+        throw new Error(response.statusText);
       }
+
+      const data = await response.json();
+
+      if (data.result === "error") {
+        outputElement.textContent = "Invalid currency pair.";
+        return null;
+      }
+
+      return data;
+
     } catch (error) {
+      outputElement.textContent = "Network error. Please try later.";
       console.log(error);
+      return null;
     }
   }
 
@@ -246,13 +257,19 @@
 
   exchangeForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const [currFrom, currTo, amount] = currencyFromForm()
-    if (!validateAmount(amount)) {
-      return;
-    }
+
+    const [currFrom, currTo, amount] = currencyFromForm();
+
+    if (!validateAmount(amount)) return;
+
     const exchangeData = await fetchInfo([currFrom, currTo]);
-    const exchangeRate = exchangeData["conversion_rate"];
-    outputElement.textContent = (Number(exchangeRate) * Number(amount)).toString();
-  })
+
+    if (!exchangeData) return;
+
+    const rate = exchangeData['conversion_rate'];
+
+    outputElement.textContent = (rate * amount).toFixed(2);
+  });
+
 
   switchButton.addEventListener("click", switchInputs)
