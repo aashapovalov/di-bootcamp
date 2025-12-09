@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day3/ExerciseXP/exercise.py
+suggestions for improvement:
+- In Exercise 2, calculating the total cost requires looping through the dictionary to print each family member's ticket price and then summing for the total cost, which wasn't fully implemented.
+- In Exercise 3, a typo exists in `type_of_clothes`, fix the syntax error.
+- In Exercise 3, when appending 'Desigual', correct the spelling from 'Designal'.
+- In Exercise 3, when creating the `more_on_zara` dictionary, use 10000 as instructed instead of 7000.
+Brief justification:
+- correctness: The code correctly addresses the core tasks of each exercise, including dictionary creation, manipulation, looping, and conditional logic as described in the chapter content. Exercise 1, 3 and 4 are perfect. Exercise 2 partially satisfies the requirements. Overall, the code aligns well with the chapter's objectives, however, exercise 2 has some issues.
+- readability: The code is well-structured and uses meaningful variable names, making it relatively easy to understand. List comprehensions in exercise 2 could be broken down for beginner clarity. f-strings were used, but in exercise 3, it should be used more consistently.
+- performance: The code utilizes efficient methods like `zip` and dictionary comprehensions, resulting in good performance.  Using a list comprehension in Exercise #2 is efficient.
+- security: The code does not involve any user input or external data, so security considerations are minimal.
+
