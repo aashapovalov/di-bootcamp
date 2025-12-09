@@ -62,10 +62,12 @@ function numToStr(num: number): string {
 // // Expected output
 // console.log(details); // Output: ['Alice', 25, 'Hello, Alice! You are 25 years old.']
 //
-function getDetails(name: string, age: number): object {
-    let newTuple: [string, number, string];
-    newTuple = [name, age, `Hello, ${name}! You are ${age} years old.`]
-    return newTuple;
+function getDetails(name: string, age: number): [string, number, string] {
+    return [
+        name,
+        age,
+        `Hello, ${name}! You are ${age} years old.`
+    ];
 }
 // 🌟 Exercise 6: Object Type Annotations
 // What You Will Learn:
@@ -124,8 +126,11 @@ function createPerson(name: string, age: number) {
 //
 //     Type assertions are a powerful way to let TypeScript know more about the type of an element when you’re certain of it. However, you should use them cautiously, as incorrect assertions can lead to runtime errors if the type is not as expected.
 //
-let inputElement = <HTMLInputElement>document.getElementById("new-input");
-inputElement.value = 'Alex'
+const inputElement = document.getElementById("new-input") as HTMLInputElement | null;
+
+if (inputElement) {
+    inputElement.value = "Alex";
+}
 
 //
 // 🌟 Exercise 8: switch Statement with Complex Conditions
@@ -142,19 +147,24 @@ inputElement.value = 'Alex'
 //             console.log(getAction("viewer")); // Output: View content
 //             console.log(getAction("guest")); // Output: Limited access
 //             console.log(getAction("unknown")); // Output: Invalid role
-type Role = 'admin' | 'editor' | 'viewer' | 'guest'
-function getAction(role: Role) {
+type Role = 'admin' | 'editor' | 'viewer' | 'guest' | string;
+
+function getAction(role: Role): string {
     switch (role) {
         case 'admin':
-            return 'Manage user and settings'
+            return 'Manage users and settings';
+
         case 'editor':
-            return 'Edit content'
         case 'viewer':
-            return 'View content'
+            return role === 'editor'
+                ? 'Edit content'
+                : 'View content';
+
         case 'guest':
-            return 'Limited access'
+            return 'Limited access';
+
         default:
-            return 'Invalid role'
+            return 'Invalid role';
     }
 }
 //         🌟 Exercise 9: Function Overloading with Default Parameters
