@@ -1,0 +1,14 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.html
+suggestions for improvement:
+- The HTML structure is a good start, but it lacks the JavaScript code within `currency.js` to actually implement the currency conversion functionality using the Fetch API and async/await as described in the problem statement.
+- The HTML only provides the basic structure for a currency converter, including dropdowns for selecting currencies, an input field for the amount, and a button to trigger the conversion. However, it doesn't include any actual JavaScript code to fetch currency data from an API, populate the dropdowns with currency options, handle the conversion logic, or display the results.  Therefore, it doesn't address the core requirements of the challenge, which involve using asynchronous JavaScript (Fetch API and async/await) to interact with external APIs.
+- The instructions emphasize fetching currency data from an API, populating the currency options (FROM - TO), and performing the currency conversion using the retrieved data. None of these aspects are covered in the given HTML structure.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.js
+suggestions for improvement:
+- Implement error handling for invalid API responses or network issues, providing informative messages to the user.
+- Consider adding input validation to ensure that the amount entered by the user is a valid number.
+- The 'switch' button functionality described in the bonus part of the challenge is not implemented.
+Correctness: 75%
+-----

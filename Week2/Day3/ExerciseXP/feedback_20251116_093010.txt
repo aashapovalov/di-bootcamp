@@ -1,0 +1,18 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day3/ExerciseXP/exercise.py
+suggestions for improvement:
+- In the Currency class, the __repr__ method only returns '5 dollars' regardless of the amount.  It should return '5 dollars' for amounts other than 1 and '1 dollar' for amount == 1. You should implement  __str__ method and also fix the __repr__ implementation.
+- In the Currency class, the __iadd__ method does not handle the case where you are adding another Currency object. This will lead to incorrect results. The prompt does give an example of that functionality.
+- Exercise 2 is missing.  You need to create a func.py file and exercise_one.py, and show how to import and call the function from the module.
+- In Exercise 7, the prompt says to create a function that takes the number of users to generate as an argument, but your function `add_user` takes no arguments. Update this to adhere to the problem requirements.
+Correctness: 80%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day3/ExerciseXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day3/ExerciseXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
