@@ -140,7 +140,7 @@ interface PremiumUser extends User {
     membershipLevel: string;
 }
 
-function printUserDetails(user: premiumUser): void {
+function printUserDetails(user: PremiumUser): void {
     console.log(`User: ${user.name}, ${user.email} has membership level ${user.membershipLevel}`);
 }
 
