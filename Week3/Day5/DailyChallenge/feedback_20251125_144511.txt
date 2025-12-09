@@ -1,0 +1,20 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.css
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code is only the HTML structure for the to-do list. It needs the corresponding CSS and JavaScript files.
+- The JavaScript file should implement the `addTask()` function to add tasks to the `tasks` array and the DOM.
+- The JavaScript file should handle the bonus functionalities such as `doneTask()` and `deleteTask()`.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.js
+suggestions for improvement:
+- Check for empty input before adding to the tasks array and DOM.
+- Add the 'X' button functionality to remove the task. Consider using event delegation for dynamically added elements.
+- Implement the BONUS I and BONUS II to get the full score, this includes creating an array of objects, implementing the doneTask() function, and deleteTask() function.
+- Consider using unique IDs for each task for better identification and manipulation.
+Correctness: 70%
+-----

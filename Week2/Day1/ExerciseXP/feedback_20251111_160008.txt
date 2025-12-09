@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day1/ExerciseXP/exercise.py
+suggestions for improvement:
+- In Exercise 1, calling find_oldest_cat() twice in the print statement is redundant. Store the result in a variable and reuse it.
+- In Exercise 4, sort_animals() sorts and groups the animals, but doesn't sort the animals alphabetically before grouping.
+- In Exercise 4, the add_animal method uses *args, which is a good implementation of the bonus.
+- In Exercise 4, the method name get_groups was changed to print_groups, which is a good change considering the method is supposed to print and not return the groups.
+Brief justification:
+- correctness: The code correctly implements all four exercises, addressing the specified instructions for each. Exercise 1 covers classes, objects, instantiation, attributes, and functions. Exercise 2 covers classes, objects, instantiation, methods, attributes, and conditional statements. Exercise 3 covers classes, objects, instantiation, methods, and lists. Exercise 4 covers classes, objects, instantiation, methods, lists, dictionaries, and string manipulation.
+- readability: The code is generally well-readable with meaningful variable names and clear structure. Some minor improvements could be made like avoiding redundant function calls as noted in the feedback.
+- performance: The performance is generally good. The only potential area for improvement is in avoiding redundant function calls.
+- security: There are no apparent security concerns with this code.
+
