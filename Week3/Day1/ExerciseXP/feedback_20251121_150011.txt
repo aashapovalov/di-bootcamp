@@ -1,0 +1,12 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, the problem asks to create a copy of the people array using the slice method, excluding "Mary" and the user's name. It would be better to create a new array using slice without modifying the original people array.
+- In Exercise 3, the prompt is used twice. It would be more efficient to use only one prompt, placing it inside of the loop to ask the user a new number if the number is less than 10.
+Correctness: 95%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/index.html
+suggestions for improvement:
+- The code provided is an HTML structure that links to a JavaScript file named 'exercise.js'.
+- To properly assess and grade the code, I need to see the content inside the 'exercise.js' file, as the exercises require JavaScript code to implement various functionalities like array manipulation, loops, and object operations.
+Correctness: 0%
+-----
