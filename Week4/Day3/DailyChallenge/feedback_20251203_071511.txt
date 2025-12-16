@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day3/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code only includes an HTML structure with a link to a JavaScript file (challenge.js). It doesn't contain any of the JavaScript code required to solve the daily challenges outlined in the chapter content.
+- The missing JavaScript code should implement the `makeAllCaps`, `sortWords`, `toJs`, `toMorse`, and `joinWords` functions using Promises as specified.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day3/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider using `Promise.all` in `makeAllCaps` for slightly improved performance if dealing with a very large array.
+- While using `async/await` makes the code easier to read, the original instructions implied using explicit `Promise` construction. While not wrong, it's a slight deviation.
+Correctness: 100%
+-----
