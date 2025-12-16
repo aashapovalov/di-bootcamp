@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.html
+suggestions for improvement:
+- The HTML code provided only sets up the basic structure for a currency converter, but doesn't implement any of the functionality related to fetching data using the Fetch API, async/await, or interacting with the ExchangeRate API.  It's just the HTML skeleton.
+- The instructions specifically require the use of the Fetch API and async/await to retrieve data from the ExchangeRate API to populate the currency options and perform the conversion. This code does not do that.  It relies on an external `currency.js` which is not provided, but even if it were, the prompt is assessing based on the given content.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.js
+suggestions for improvement:
+- Consider implementing more robust error handling, especially for API failures, to provide a better user experience.
+- Input validation could be enhanced to prevent potential issues caused by malformed or malicious user input.
+Correctness: 90%
+-----
