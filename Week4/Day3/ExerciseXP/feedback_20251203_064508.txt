@@ -1,0 +1,6 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day3/ExerciseXP/exercise.js
+suggestions for improvement:
+- For exercise 1, you could create a Promise object explicitly instead of using async/await.
+- Consider adding comments to separate each exercise more clearly.
+Correctness: 100%
+-----

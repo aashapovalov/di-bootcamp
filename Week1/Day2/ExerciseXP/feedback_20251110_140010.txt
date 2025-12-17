@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day2/ExerciseXP/exercise.py
+suggestions for improvement:
+- Exercise 6: While Loop - In the prompt it says to keep asking the user for their name until it is correct. You can use the isdigit() method.
+- Exercise 8: Pizza Toppings - The stop should be quit instead.
+- Exercise 9: Cinemax Tickets - It will be better to check if the input is a digit before converting it to an integer to avoid errors.  If int(user_age) in range(3, 13):
+Brief justification:
+- correctness: The code generally does a very good job of addressing the core requirements. However, there are a couple of minor points. In exercise 6, there is a while loop asking the user for their name, it should be checking if the user gave a proper name (not digits and at least 3 letters long), The Pizza exercise should stop when the user types 'quit'. Finally, the last exercise is missing the bonus.
+- readability: The code has decent readability, with consistent indentation and spacing. Some more descriptive variable names could improve it slightly.
+- performance: The code exhibits good performance, especially for the scale of the exercises.
+- security: The code doesn't have major security vulnerabilities. Input validation (e.g., ensuring user input is of the expected type and within acceptable ranges) could be improved in some places.
+
