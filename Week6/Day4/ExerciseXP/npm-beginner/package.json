@@ -1,0 +1,23 @@
+{
+  "name": "npm-beginner",
+  "version": "1.0.0",
+  "description": "begin working with npm",
+  "homepage": "https://github.com/aashapovalov/di-bootcamp#readme",
+  "bugs": {
+    "url": "https://github.com/aashapovalov/di-bootcamp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aashapovalov/di-bootcamp.git"
+  },
+  "license": "ISC",
+  "author": "Alex Shapovalov",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}
