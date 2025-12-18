@@ -6,5 +6,12 @@ function searchProduct(prodName) {
       return item;
     }
   }
-  throw new Error(`Product "${prodName}" not found`);
+  return null;
+}
+const result = searchProduct("Notebook");
+
+if (result) {
+  console.log("Product found:", result);
+} else {
+  console.log("Product not found.");
 }
