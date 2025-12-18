@@ -1,19 +1,18 @@
-import fs from 'fs/promises';
+import fs from "fs/promises";
 
 export async function readFile(path) {
   try {
-    const data = await fs.readFile(path, 'utf8');
-    console.log('File contains:', data);
+    const data = await fs.readFile(path, "utf8");
+    return data;
   } catch (error) {
-    console.error('Error reading file:', error);
+    throw new Error(`Error reading file "${path}": ${error.message}`);
   }
 }
 
 export async function writeFile(path, data) {
   try {
-    await fs.writeFile(path, data, 'utf8');
-    console.log('File updated successfully.');
+    await fs.writeFile(path, data, "utf8");
   } catch (error) {
-    console.error('Error writing file:', error);
+    throw new Error(`Error writing file "${path}": ${error.message}`);
   }
 }

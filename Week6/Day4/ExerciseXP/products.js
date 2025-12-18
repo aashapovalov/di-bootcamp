@@ -1,4 +1,4 @@
-export const products = [
+const products = [
   {
     name: "Laptop",
     price: 1200,
@@ -20,3 +20,5 @@ export const products = [
     category: "Stationery",
   },
 ];
+
+module.exports = products;

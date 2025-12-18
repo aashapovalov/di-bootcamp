@@ -1,7 +1,18 @@
-export function addition(num1, num2) {
-  return num1 + num2;
+function addition(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new Error("Both arguments must be numbers");
+  }
+  return a + b;
 }
 
-export function multiply(num1, num2) {
-  return num1 * num2;
+function multiply(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    throw new Error("Both arguments must be numbers");
+  }
+  return a * b;
 }
+
+module.exports = {
+  addition,
+  multiply,
+};
