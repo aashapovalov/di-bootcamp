@@ -1,0 +1,23 @@
+{
+  "name": "math-app",
+  "version": "1.0.0",
+  "description": "math app",
+  "homepage": "https://github.com/aashapovalov/di-bootcamp#readme",
+  "bugs": {
+    "url": "https://github.com/aashapovalov/di-bootcamp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aashapovalov/di-bootcamp.git"
+  },
+  "license": "ISC",
+  "author": "Aleksey Shapovalov",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
