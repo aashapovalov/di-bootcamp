@@ -1,0 +1,20 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day2/ExerciseXP/exercise-two.html
+suggestions for improvement:
+- For Exercise 1, the form's method should be GET, not POST as it currently is.
+- For Exercise 2, ensure the textarea has a 'name' attribute so its value is submitted with the form data. Currently, only the name input will be sent.
+- Exercise 3 requires converting the JavaScript object to JSON and pretty printing it, but there is no javascript code for this.
+Correctness: 60%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day2/ExerciseXP/exercise.html
+suggestions for improvement:
+- In Exercise 1, the `textarea` element is missing the `name` attribute. Without it, the data from the textarea won't be sent to the server.
+- For Exercise 1, clarify in a comment within the code where the sent data appears (in the URL).
+- For Exercise 2, create a separate HTML form and change the `method` attribute to `POST` to differentiate between Exercise 1 and Exercise 2. Then, explain in a comment that the data will be visible in the 'Network' tab in DevTools, not in the URL.
+- Exercise 3 is missing, the code only covers the HTML Form exercises.
+Correctness: 70%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----

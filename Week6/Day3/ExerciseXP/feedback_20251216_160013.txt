@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day3/ExerciseXP/exercise-p1.sql
+suggestions for improvement:
+- Consider adding `NOT NULL` constraints to appropriate columns in the `customer_review` table (e.g., `language_id`, `title`, `score`, `review_text`).
+- Use CURRENT_TIMESTAMP as default value for the last_update column in customer_review table.
+- Add semicolon at the end of each SQL statement for consistency.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day3/ExerciseXP/exercise-p2.sql
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each query, especially for complex queries.
+- For the 'boat' query, using `ilike '%boat%' or title ilike '%boat%'` might be more efficient than just checking the description.
+Correctness: 100%
+-----
