@@ -1,0 +1,23 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The provided code does not address the exercises outlined in the chapter content. It performs different tasks unrelated to arrays, loops, conditionals, or objects as described in the chapter.
+- The code is written without any attempt to fulfill the requirements of the given exercises.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise-ninja.js
+suggestions for improvement:
+- The code addresses completely different problems than specified in the provided exercises. It calculates BMI and assesses grade averages, whereas the instructions cover array manipulation, loops, and object property access.
+- Consider adhering to the 'single responsibility principle' by separating the BMI calculation logic from the object definition.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, when making a copy of the `people` array using slice, you're using the original `people` array which wasn't modified yet, you should have used peopleCopy1
+- In Exercise 1 Part II question 2, the code continues to log elements before breaking out of the loop, make sure to switch their order.
+Correctness: 90%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/ExerciseXP/index.html
+suggestions for improvement:
+- The HTML file only sets up a basic structure to include a JavaScript file, but it doesn't contain any JavaScript code to address the exercises.  The actual JavaScript code should be included either directly within `<script>` tags or within the linked `exercise-gold.js` file. Ensure the javascript is inside the script tag.
+Correctness: 0%
+-----
