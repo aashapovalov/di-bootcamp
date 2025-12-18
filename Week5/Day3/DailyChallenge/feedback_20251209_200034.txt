@@ -1,0 +1,6 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day3/DailyChallenge/challenge.ts
+suggestions for improvement:
+- Consider adding explicit type guards (e.g., `isUser`, `isProduct`, `isOrder`) instead of relying solely on the `type` property within a switch statement. This can enhance type safety and readability, although the current solution is acceptable.
+- The function currently uses `console.log` for output. For more flexibility, consider returning an array of strings instead. This would allow the calling code to decide how to handle the processed data (e.g., display it in the console, render it in a UI, etc.).
+Correctness: 100%
+-----

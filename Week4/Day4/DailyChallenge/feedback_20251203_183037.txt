@@ -1,0 +1,14 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day4/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code only contains the HTML structure and lacks the JavaScript file (`challenge.js`) which is crucial for the functionality described in the prompt. Without the JavaScript code, it is impossible to evaluate the correctness of the implementation related to fetching GIFs from the Giphy API, handling async/await, error handling with try/catch, and adding/deleting GIFs.
+- The HTML structure is basic but sufficient for the user interface described. However, it needs to be linked with Javascript file to make it interactive and fulfill the prompt requirements
+- Need to create challenge.js file
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day4/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider adding error handling to `removeGif` in case the element to be deleted doesn't exist.
+- Instead of using `gifList.splice(elementID, 1);`, consider using `gifList = gifList.filter(gif => gif.gifID !== elementID);` to avoid issues if the IDs aren't sequential after deletions.
+- Consider using CSS classes instead of inline styles for better maintainability.
+Correctness: 100%
+-----
