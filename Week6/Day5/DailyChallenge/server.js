@@ -26,6 +26,11 @@ app.post("/login", (req, res) => {
   res.status(200).json(response)
 })
 
+app.post("/login/:username/game", (req, res) => {
+  const emojiOption = req.body.emojiOption;
+
+})
+
 app.listen(5050, () => {
   console.log("Express server listening on port 5050...");
 })

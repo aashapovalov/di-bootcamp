@@ -25,7 +25,44 @@ async function postUser(event) {
   }
 }
 
+async function postRound(event) {
+  event.preventDefault();
 
+  const gameShell = document.querySelector(".game-shell");
+  if (!gameShell) {
+    errorElement.textContent = "Game Shell is not initialized!";
+    return
+  }
+  const userID = gameShell.getAttribute("data-user-id");
+  const roundID = gameShell.getAttribute("data-round-id");
+  if (!userID || !roundID) {
+    errorElement.textContent = "User ID or round ID is not defined!";
+    return
+  }
+
+  const guessForm = document.getElementById("guess-form");
+  if (!guessForm) return;
+  const formData = new FormData(guessForm);
+  const userChoice = formData.get("emojiOption");
+  if (!userChoice) {
+    errorElement.textContent = "You should choose an option!"
+    return;
+  }
+  const emojiOption = Number(userChoice);
+  try {
+    const response = await axios.post("http://127.0.0.1:5050/guess", {userID, roundID, emojiOption});
+    return response.data;
+  } catch (error) {
+    const message =
+        error?.response?.data?.message ||
+        error?.response?.data ||
+        error?.message ||
+        "Request failed";
+
+    if (errorElement) errorElement.textContent = String(message);
+    return null;
+  }
+}
 
   function renderGame(data) {
     loginContainer.style.display = "none";
@@ -101,7 +138,7 @@ async function postUser(event) {
         : `<tr><td colspan="4" class="history-empty">No results yet.</td></tr>`;
 
     app.innerHTML = `
-    <div class="game-shell" data-user-id="${escapeHtml(userID)}" data-round-id="${escapeHtml(roundID)}">
+    <div class="game-shell" data-user-id="${userID}" data-round-id="${roundID}">
       <header class="game-header">
         <h1 class="game-title">Emoji Guess Game 🎯</h1>
         <div class="player">
@@ -161,4 +198,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = await postUser(event);
     renderGame(data);
   });
+
+  const guessForm = document.getElementById("guess-form");
+  if (!guessForm) return;
+
+  guessForm.addEventListener("submit", async (event) => {
+    const data = await postRound(event);
+    renderGame(data);
+  })
+
 });
