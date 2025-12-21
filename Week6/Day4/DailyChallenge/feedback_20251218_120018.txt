@@ -1,0 +1,52 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/challenge.js
+suggestions for improvement:
+- The provided code doesn't create the individual files as instructed in the task. Specifically, it doesn't create 'greeting.js', 'colorful-message.js', 'read-file.js', and 'file-data.txt' and implement the functions as described in each task. The code assumes that these files and functions are already created, which is not the case according to the instructions. Therefore, the code cannot run as is and doesn't address the problem laid out.
+- The code should adhere to the exact folder structure and file names mentioned in the task, otherwise, the exercise will not be fully completed.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex1_daily-challenge/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex1_daily-challenge/greeting.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex2/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex2/colorful-message.js
+suggestions for improvement:
+- This code defines a module that displays a colored message using the chalk package. However, it's impossible to assess it fully without knowing how it's integrated into the other files, especially app.js, greeting.js, read-file.js, and challenge.js as defined in the instructions.
+- The code itself is straightforward, but it lacks context. For instance, the instructions outline a multi-step process involving several files and modules. To accurately evaluate correctness, the integration of this code into the overall project is crucial.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex2/package-lock.json
+suggestions for improvement:
+- The provided code is a package-lock.json file, which describes the dependencies of a Node.js project. While it's a necessary part of a Node.js project, it doesn't directly address the tasks outlined in the chapter content, which involve creating modules, using NPM modules, and performing file operations.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex2/package.json
+suggestions for improvement:
+- The provided code is package.json, it doesn't fulfill any task mentioned in the prompt, the code should be in javascript files (greeting.js, app.js, colorful-message.js, read-file.js, challenge.js).
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex3_files/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex3_files/file-data.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex3_files/read-file.js
+suggestions for improvement:
+- The submitted code addresses only Task 3 (Advanced File Operations) and a part of it only. To provide a complete solution, it should cover Tasks 1, 2, and the Challenge Task, integrating all functionalities as described in the instructions.
+Correctness: 0%
+-----
