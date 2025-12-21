@@ -76,6 +76,7 @@ async function postRound(event) {
     const gameOptions = Array.isArray(gameInfo?.gameOptions) ? gameInfo.gameOptions : [];
     const userHistory = Array.isArray(data?.userHistory) ? data.userHistory : [];
     const lastAnswer = data?.lastAnswer ?? null;
+    console.log(gameOptions);
 
     if (gameOptions.length === 0) {
       app.innerHTML = `
@@ -116,23 +117,42 @@ async function postRound(event) {
         })
         .join("");
 
-    const historyRowsHtml = userHistory.length ? userHistory
+    const historyRowsHtml = userHistory.length
+        ? userHistory
             .map((row, idx) => {
-              const round = row.roundID ?? row.roundId ?? idx + 1;
-              const isCorrect = row.isCorrect;
-              const chosen = row.chosenEmoji ?? row.chosen ?? row.chosenOption ?? "";
-              const correct = row.correctEmoji ?? row.correct ?? row.winner ?? "";
+              const round = idx + 1;
 
-              const resultText =
-                  isCorrect === true ? "✅" : isCorrect === false ? "❌" : "";
+              const chosenIndex =
+                  row.userOptionIndex === null || typeof row.userOptionIndex === "undefined"
+                      ? null
+                      : Number(row.userOptionIndex);
+
+              const correctIndex =
+                  row.winnerOptionIndex === null || typeof row.winnerOptionIndex === "undefined"
+                      ? null
+                      : Number(row.winnerOptionIndex);
+
+              const chosenEmoji =
+                  chosenIndex === null ? "" : (row.gameOptions?.[chosenIndex]?.emoji ?? "");
+              const correctEmoji =
+                  chosenIndex === null
+                      ? ""
+                      : (row.gameOptions?.[correctIndex]?.emoji ?? "");
+
+
+              const isCorrect =
+                  chosenIndex === null || correctIndex === null ? null : chosenIndex === correctIndex;
+
+              const resultText = isCorrect === true ? "✅" : isCorrect === false ? "❌" : "";
+
               return `
-            <tr>
-              <td>${escapeHtml(String(round))}</td>
-              <td>${escapeHtml(String(chosen))}</td>
-              <td>${escapeHtml(String(correct))}</td>
-              <td>${resultText}</td>
-            </tr>
-          `;
+          <tr>
+            <td>${escapeHtml(String(round))}</td>
+            <td>${escapeHtml(String(chosenEmoji))}</td>
+            <td>${escapeHtml(String(correctEmoji))}</td>
+            <td>${resultText}</td>
+          </tr>
+        `;
             })
             .join("")
         : `<tr><td colspan="4" class="history-empty">No results yet.</td></tr>`;
@@ -198,13 +218,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = await postUser(event);
     renderGame(data);
   });
+});
 
-  const guessForm = document.getElementById("guess-form");
-  if (!guessForm) return;
+document.addEventListener("submit", async (event) => {
+  const form = event.target;
+  if (!(form instanceof HTMLFormElement)) return;
 
-  guessForm.addEventListener("submit", async (event) => {
+  if (form.id === "guess-form") {
     const data = await postRound(event);
-    renderGame(data);
-  })
-
+    if (data) renderGame(data);
+  }
 });

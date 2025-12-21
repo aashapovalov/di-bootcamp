@@ -3,10 +3,9 @@ import {historyData, userData} from "./data.js";
 
 export function designGame() {
   const gameOptions = getRandomOptions()
-  const winnerOptionID = Math.floor(Math.random() * gameOptions.length);
-  return {gameOptions, winnerOptionID};
+  const winnerOptionIndex = Math.floor(Math.random() * gameOptions.length);
+  return {gameOptions, winnerOptionIndex};
 }
-
 
 export function getRandomOptions(){
   let emojisCopy = [...EMOJIS];
