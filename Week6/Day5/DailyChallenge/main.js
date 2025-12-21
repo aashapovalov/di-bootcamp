@@ -20,3 +20,12 @@ async function postUser(event) {
     errorElement.textContent = error.message;
   }
 }
+
+function renderResults() {
+
+}
+
+function renderGame(data) {
+
+}
+

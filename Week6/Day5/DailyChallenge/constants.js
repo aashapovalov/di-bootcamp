@@ -1,4 +1,6 @@
-export const emojis = [
+export const OPTIONS_NUMBER = 4;
+
+export const EMOJIS = [
   {
     emoji: "😀",
     name: "grinning face",
