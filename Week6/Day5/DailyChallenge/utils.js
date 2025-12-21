@@ -1,5 +1,4 @@
 import { EMOJIS, OPTIONS_NUMBER } from "./constants.js";
-import crypto from "uuid";
 import {historyData, userData} from "./data.js";
 
 export function designGame() {

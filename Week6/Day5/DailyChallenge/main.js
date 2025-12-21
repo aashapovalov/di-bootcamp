@@ -1,8 +1,6 @@
-import axios from "axios";
-
-
-const userForm = document.querySelector("#login-form");
 const errorElement = document.getElementById("login-error");
+const userForm = document.querySelector(".login-form");
+const loginContainer = document.querySelector(".container");
 
 async function postUser(event) {
   event.preventDefault();
@@ -12,21 +10,25 @@ async function postUser(event) {
     errorElement.textContent = "Username is required!"
     return;
   }
-  const userJSON = JSON.stringify({username: username});
   try {
-    const resolve = await axios.post("/users", userJSON);
-    return resolve.data;
+    const response = await axios.post("http://127.0.0.1:5050/login", {username});
+    return response.data;
   } catch (error) {
-    errorElement.textContent = error.message;
+    const message =
+        error?.response?.data?.message ||
+        error?.response?.data ||
+        error?.message ||
+        "Request failed";
+
+    if (errorElement) errorElement.textContent = String(message);
+    return null;
   }
 }
 
-function renderResults() {
 
-}
 
-function renderGame(data) {
   function renderGame(data) {
+    loginContainer.style.display = "none";
     const app = document.getElementById("app");
     if (!app) throw new Error('Missing #app container in HTML');
 
@@ -149,8 +151,14 @@ function renderGame(data) {
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
-  }
-
-
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const userForm = document.querySelector(".login-form");
+  if (!userForm) return;
+
+  userForm.addEventListener("submit", async (event) => {
+    const data = await postUser(event);
+    renderGame(data);
+  });
+});
