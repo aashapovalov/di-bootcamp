@@ -1,0 +1,10 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day2/DailyChallenge/challenge.py
+suggestions for improvement:
+- For challenge 2, consider using a more descriptive variable name than `user_string_clean`. Something like `result_string` or `deduplicated_string` would improve readability.
+- In challenge 2, while the `continue` statement works, it might be slightly more readable to structure the `if` condition to avoid it: `if user_string[i] == user_string[i-1]: continue` could become `if user_string[i] != user_string[i-1]: user_string_clean += user_string[i]`
+Brief justification:
+- correctness: The code accurately addresses both challenges. Challenge 1 correctly calculates and outputs a list of multiples based on user input, and Challenge 2 successfully removes consecutive duplicate letters from a user-provided string. Both solutions align perfectly with the instructions provided in the chapter content.
+- readability: The code is generally readable with meaningful variable names and clear logic. The use of comments to separate the challenges enhances readability. Areas for minor improvements exist, such as more descriptive names for variables like `user_string_clean`.
+- performance: The code exhibits good performance characteristics. Both algorithms used are efficient for the given tasks. The first challenge involves a simple loop and arithmetic operations. The second challenge iterates through the string once, making it an O(n) operation, which is optimal for this problem.
+- security: The code is reasonably secure. The `input()` function can be vulnerable to code injection if not handled carefully, but in this context, the inputs are cast to `int` and `str`, which mitigates the risk. No external libraries or potentially unsafe operations are used.
+

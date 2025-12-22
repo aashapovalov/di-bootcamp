@@ -1,0 +1,18 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day3/DailyChallenge/challenge_p1.sql
+suggestions for improvement:
+- In the Customer table creation, specify 'id serial PRIMARY KEY' to automatically create a sequence and make it the primary key.
+- The Customer Profile table is missing a constraint to ensure only one profile per customer. Consider adding a UNIQUE constraint on the customer_id column.
+- Use boolean values (TRUE/FALSE) instead of string literals ('true'/'false') when inserting into the `is_logged_in` column.
+- The number of customers not logged in can be calculated with a left join and counting the null `profile_id` records instead of filtering by customer_id.
+- Part II is missing.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day3/DailyChallenge/challenge_p2.sql
+suggestions for improvement:
+- Part I is completely missing. The submission only addresses Part II.
+- Add PRIMARY KEY constraint to the junction table 'library' using the composite key (book_fk_id, student_id).
+- Implement the constraint on the student's age to be not bigger than 15.
+- Use subqueries to insert records into the library table.
+- The borrowed date in the fourth insert statement in the library table is incorrect, it should be 2021-08-12, not 2021-12-08.
+Correctness: 60%
+-----

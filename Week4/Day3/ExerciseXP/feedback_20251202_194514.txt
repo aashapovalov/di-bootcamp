@@ -1,0 +1,10 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day3/ExerciseXP/exercise.js
+suggestions for improvement:
+- Exercise 1: The function should return a Promise, not a direct value. Use `new Promise((resolve, reject) => { ... })`.
+- Exercise 1: The `try...catch` block is misplaced. The `try` block should be within the Promise constructor, and the `catch` block should be used to handle rejections when the Promise is used (e.g., with `.catch()`).
+- Exercise 2: `setTimeout` doesn't return a Promise. You need to create a Promise and resolve it within the `setTimeout` callback.
+- Exercise 2: The return from `setTimeout` is not being handled or used to resolve the promise.
+- Exercise 3: Exercise 3 should use `Promise.resolve(3)` and `Promise.reject('Boo!')` to create the promises directly, instead of creating a function.
+- Await the resolution of async functions before logging to console
+Correctness: 30%
+-----
