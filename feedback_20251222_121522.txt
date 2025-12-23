@@ -1,0 +1,42 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task1/routes/routes.js
+suggestions for improvement:
+- This code snippet only defines the router and a couple of routes, it does not create the Express application or mount the router in the application which are key components of the exercises.
+- Add error handling to routes.
+- Consider using more descriptive variable names.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task1/app.js
+suggestions for improvement:
+- The provided code does not align with any of the exercises outlined in the chapter content. It uses a generic router setup with '/users' which is irrelevant to the exercises' requirements.  Therefore, it does not correctly address any of the specified problems.
+- The code snippet lacks the necessary route definitions within the router module to fulfill the requirements of exercises.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task2/routes/todo.js
+suggestions for improvement:
+- Consider using more descriptive variable names for better readability.
+- Implement more robust error handling, such as checking for valid input data before processing.
+- The code uses an in-memory database which is not persistent. For a real-world application, consider using a database.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task2/app.js
+suggestions for improvement:
+- The provided code snippet shows the app.js file importing express and the router module, but it doesn't provide the contents of the router module (routes/todo.js or similar) or the complete app.js. Without the router code, it's impossible to determine if the CRUD operations are implemented correctly.
+- The exercise instructions are not fully implemented in the provided code. Specifically, the routes for GET, POST, PUT, and DELETE are missing.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task3/routes/books.js
+suggestions for improvement:
+- In the PUT request, you're using `todoName` to update the title, while in POST, you use `bookTitle`. This inconsistency should be resolved.
+- Consider using more descriptive variable names (e.g., `bookId` instead of `id` in some places) for clarity.
+- Add error handling for potential issues like invalid JSON in request bodies.
+- Use more appropriate HTTP status codes. For example, 201 Created should be used only when a new resource is created and its location is being returned.
+- Ensure proper input validation and sanitization to prevent potential security vulnerabilities.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task3/app.js
+suggestions for improvement:
+- The code only provides the `app.js` file and imports the router, but it doesn't implement the routes themselves. The `books.js` file is also missing.
+- The router is mounted at the root path ('/'), but the instructions specify mounting the `books` router at the `/books` path. The routing should be changed to `/books`.
+- The `routes/books.js` should contain the CRUD logic for books, including handling GET, POST, PUT, and DELETE requests.
+Correctness: 0%
+-----
