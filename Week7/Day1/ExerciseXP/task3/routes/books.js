@@ -2,28 +2,28 @@ import express from 'express';
 import crypto from 'crypto';
 const books = [];
 
-export const router = express.Router();
-router.get('/books', (req, res) => {
+export const booksRouter = express.Router();
+booksRouter.get('/books', (req, res) => {
   res.status(200).send(books);
 })
-router.post('/books', (req, res) => {
-  const bookTitle = req.body.bookTitle;
+booksRouter.post('/books', (req, res) => {
+  const newBookTitle = req.body.bookTitle;
   const bookID = crypto.randomUUID();
-  const bookEntry = {bookTitle, bookID};
+  const bookEntry = {bookTitle: newBookTitle, bookID};
   books.push(bookEntry);
   res.send(bookEntry);
 })
-router.put('/books/:id', (req, res) => {
+booksRouter.put('/books/:id', (req, res) => {
   const bookID = req.params.id;
-  const title = req.body.bookTitle;
+  const newBookTitle = req.body.bookTitle;
   const bookEntry = books.find((entry) => entry.bookID === bookID);
   if (!bookEntry) {
     return res.status(404).send('No books found.');
   }
-  bookEntry.bookTitle = title;
+  bookEntry.bookTitle = newBookTitle;
   res.send(bookEntry);
 })
-router.delete('/books/:id', (req, res) => {
+booksRouter.delete('/books/:id', (req, res) => {
   const bookID = req.params.id;
   const bookIndex = books.findIndex((entry) => entry.bookID === bookID);
   if (bookIndex >= 0) {
@@ -32,3 +32,5 @@ router.delete('/books/:id', (req, res) => {
   }
   res.status(404).send('No books found.');
 })
+
+export default booksRouter;

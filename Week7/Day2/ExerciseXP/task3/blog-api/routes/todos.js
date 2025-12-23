@@ -1,20 +1,19 @@
 import express from "express";
 import {
-  hashPassword,
-  createUser,
-  loginUser,
-  getUsers,
-  getSingleUser,
-  updateUser
+  createTask,
+  getTasks,
+  getSingleTask,
+  updateTask,
+  deleteTask
 } from "../controllers/controllers.js";
 
 export const router = express.Router();
 
-router.post("/register", hashPassword, createUser);
-router.post("/login", loginUser);
-router.get("/users", getUsers);
-router.get("/users/:id", getSingleUser);
-router.put("/users/:id", hashPassword, updateUser);
+router.post("/", createTask);
+router.get("/", getTasks);
+router.get("/:id", getSingleTask);
+router.put("/:id", updateTask);
+router.delete("/:id", deleteTask);
 
 router.use((req, res) => {
   res.status(404).json({
