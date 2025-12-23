@@ -1,0 +1,6 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day1/ExerciseXP/exercise.js
+suggestions for improvement:
+- Consider using `const` for variables that are not reassigned.
+- Use template literals consistently for string concatenation.
+Correctness: 100%
+-----
