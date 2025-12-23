@@ -1,5 +1,5 @@
 import express from "express";
-import { router as postsRouter } from "./posts.js";
+import { router as postsRouter } from "./routes/posts.js";
 
 const app = express();
 
