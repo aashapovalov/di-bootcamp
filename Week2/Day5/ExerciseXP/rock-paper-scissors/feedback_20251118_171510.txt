@@ -1,0 +1,13 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/ExerciseXP/rock-paper-scissors/game.py
+suggestions for improvement:
+- Consider adding docstrings to each method to improve readability and explain their purpose.
+- The `get_computer_item` method could use `random.choice()` for a slightly more concise implementation.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week2/Day5/ExerciseXP/rock-paper-scissors/rock-paper-scissors.py
+suggestions for improvement:
+- Add validation for the user input in `get_user_item` method to handle cases where the user enters an invalid item choice.
+- The exit from the main function can be improved to print the result before exiting.
+- Consider using a more descriptive variable name than `game1` for the Game object.
+Correctness: 80%
+-----
