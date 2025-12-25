@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Chat Screen (Main - always visible) -->
+<div id="chat-screen">
+  <!-- Header -->
+  <div class="chat-header">
+    <h2 id="room-name">Select a room to start</h2>
+    <button id="change-room-btn" class="btn-secondary">Change Room</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="chat-main">
+    <!-- Sidebar: Active Users -->
+    <aside class="users-sidebar">
+      <h3>Active Users</h3>
+      <ul id="users-list">
+        <li class="no-users">No users yet</li>
+      </ul>
+    </aside>
+
+    <!-- Messages Area -->
+    <div class="messages-container">
+      <div id="messages">
+        <div class="message system">
+          <p>👋 Join a room to start chatting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer: Message Input -->
+  <div class="chat-footer">
+    <form id="message-form">
+      <input
+              type="text"
+              id="message-input"
+              placeholder="Join a room first..."
+              autocomplete="off"
+              disabled
+      >
+      <button id="send-message-btn" type="submit" class="btn-primary" disabled>Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Join Modal (Pop-up) -->
+<div id="join-modal" class="modal active">
+  <div class="modal-content">
+    <h1>Join Chat Room</h1>
+    <form id="join-form">
+      <div class="form-group">
+        <label for="username-input">Username</label>
+        <input
+                type="text"
+                id="username-input"
+                placeholder="Enter your username"
+                required
+                autofocus
+                maxlength="20"
+        >
+      </div>
+      <div class="form-group">
+        <label for="room-input">Room Name</label>
+        <input
+                type="text"
+                id="room-input"
+                placeholder="e.g., general, gaming, movies"
+                required
+                maxlength="30"
+        >
+      </div>
+      <div id="join-error-message" class="error-message"></div>
+      <button type="submit" class="btn-primary">Join Room</button>
+    </form>
+  </div>
+</div>
+
+<!-- Our client-side code -->
+<script src="/socket.io/socket.io.js"></script>
+<script type = "module" src="client.js"></script>
+</body>
+</html>
