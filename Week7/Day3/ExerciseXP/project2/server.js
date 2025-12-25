@@ -2,7 +2,7 @@ import express from "express";
 import { createServer } from "http";
 import {Server} from "socket.io";
 import { getAllRoomUsers, addUser, addRoom, removeUser } from "./utils.js";
-import { users, SystemMessage } from "./data.js";
+import { users, SystemMessage, Message } from "./data.js";
 
 const app = express();
 app.use(express.json());
@@ -15,6 +15,9 @@ const io = new Server(server);
 io.on("connection", (socket) => {
   console.log(`Client connected: ${socket.id}`);
 
+  /* --------------------
+  JOIN ROOM EVENT HANDLER*
+  -----------------------*/
   socket.on("joinRoom", (data) => {
     console.log(`${data.username} joined ${ data.room}`)
     //add or update users array when user joins a room
@@ -34,7 +37,23 @@ io.on("connection", (socket) => {
     const userList = getAllRoomUsers(data.room);
     io.to(data.room).emit("user-list", userList);
   })
+  /* --------------------------
+    CHAT MESSAGE EVENT HANDLER*
+    -------------------------*/
+  socket.on("chat-message", (messageText) => {
+    //look for a user
+    const user = users.find(user => user.userID === socket.id);
+    if (!user) return;
 
+    //create a Message object and emit it to everyone in the room
+    const { username, roomName } = user;
+    const newChatMessage = new Message(username, messageText);
+    io.to(roomName).emit("send-message", newChatMessage);
+  })
+
+  /* --------------------
+   DISCONNECT EVENT HANDLER*
+  -----------------------*/
   socket.on("disconnect", () => {
     console.log(`Client disconnected: ${socket.id}`);
 

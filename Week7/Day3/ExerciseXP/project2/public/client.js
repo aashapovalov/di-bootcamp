@@ -9,6 +9,7 @@ const usernameInput = document.getElementById("username-input");
 const roomInput = document.getElementById("room-input");
 const joinErrorMsg = document.getElementById("join-error-message");
 const messageInput = document.getElementById("message-input");
+const messageForm = document.getElementById("message-form");
 const sendMessageBtn = document.getElementById("send-message-btn");
 const messagesDiv = document.getElementById("messages");
 const usersListElement = document.getElementById("users-list");
@@ -112,3 +113,16 @@ socket.on("user-list", (userList) => {
     usersListElement.appendChild(userEntry);
   })
 })
+
+//listener for message input submit
+messageForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const messageText = messageInput.value;
+  if (!messageText) {
+    return;
+  }
+  socket.emit("chat-message", messageText);
+  messageInput.value = "";
+})
+
+//listener for change room button
