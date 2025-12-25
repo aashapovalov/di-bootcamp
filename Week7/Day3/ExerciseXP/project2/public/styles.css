@@ -124,6 +124,7 @@ body {
   color: #95a5a6;
   font-style: italic;
   padding: 0.5rem;
+  list-style: none;
 }
 
 /* Messages Container */
@@ -336,6 +337,15 @@ body {
   border-color: var(--primary-color);
 }
 
+/* Error message */
+#join-error-message {
+  color: var(--danger-color);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  min-height: 1.2rem;
+}
+
 /* ===========================
    Buttons
    =========================== */
@@ -350,24 +360,28 @@ button {
   font-weight: 600;
 }
 
-.btn-primary {
+.btn-primary,
+button[type="submit"] {
   background: var(--primary-color);
   color: var(--text-light);
 }
 
-.btn-primary:hover:not(:disabled) {
+.btn-primary:hover:not(:disabled),
+button[type="submit"]:hover:not(:disabled) {
   background: var(--primary-hover);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
 }
 
-.btn-primary:disabled {
+.btn-primary:disabled,
+button[type="submit"]:disabled {
   background: #95a5a6;
   cursor: not-allowed;
   opacity: 0.6;
 }
 
-.btn-secondary {
+.btn-secondary,
+#change-room-btn {
   background: transparent;
   color: var(--text-light);
   border: 2px solid var(--text-light);
@@ -375,7 +389,8 @@ button {
   font-size: 0.9rem;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+#change-room-btn:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -449,7 +464,7 @@ button {
 
 @media (max-width: 480px) {
   .users-sidebar {
-    display: none; /* Hide sidebar on very small screens */
+    display: none;
   }
 
   .chat-footer {

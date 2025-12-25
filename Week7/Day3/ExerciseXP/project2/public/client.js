@@ -10,8 +10,8 @@ const roomInput = document.getElementById("room-input");
 const joinErrorMsg = document.getElementById("join-error-message");
 const messageInput = document.getElementById("message-input");
 const sendMessageBtn = document.getElementById("send-message-btn");
-const messageContainer = document.getElementById("message-container");
-const usersList = document.getElementById("users-list");
+const messagesDiv = document.getElementById("messages");
+const usersListElement = document.getElementById("users-list");
 const changeRoomBtn = document.getElementById("change-room-btn");
 const roomName = document.getElementById("room-name");
 let currentRoom = null;
@@ -54,4 +54,61 @@ joinForm.addEventListener("submit", (e) => {
   usernameInput.value = '';
 
   messageInput.focus();
+  messagesDiv.innerHTML = "";
 });
+
+//new message listener
+socket.on("send-message", (message) => {
+  const { username , text, timestamp} = message;
+
+  //define the type of the message
+
+  let messageType = '';
+  switch (username) {
+    case "System":
+      messageType = "system";
+      break;
+    case currentUserName:
+      messageType = "own"
+      break;
+    default:
+      messageType = "other"
+      break;
+    }
+  const newMessage = document.createElement("div");
+  newMessage.classList.add("message", messageType)
+
+    //create new message element and add it to DOM
+  newMessage.innerHTML = messageType === "system"
+      ?
+      `<p>${text}</p>`
+      :
+      `<span class="username">${username}</span>
+      <p class="text">${text}</p>
+      <span class="time">${timestamp}</span>`
+      ;
+  messagesDiv.appendChild(newMessage);
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+})
+
+//user-list update listener
+socket.on("user-list", (userList) => {
+  usersListElement.innerHTML = "";
+
+  //if new user list is empty, show default element
+  if (userList.length === 0) {
+    usersListElement.innerHTML = '<li class="no-users">No users yet</li>';
+    return;
+    }
+
+  // if new user list is not empty, delete default element and create list element for each user
+  userList.forEach(user => {
+    const userEntry = document.createElement("li");
+    userEntry.classList.add("user-item");
+    userEntry.innerHTML = `
+    <span class="user-status">●</span>
+    <span class="user-name">${user}</span>
+    `;
+    usersListElement.appendChild(userEntry);
+  })
+})

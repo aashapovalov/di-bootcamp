@@ -50,5 +50,5 @@ export function getAllRoomUsers(roomName) {
   return roomUsersID.map((userID) => {
     const user = users.find(user => user.userID === userID);
     return user ? user.username : null;
-  }).filter(Boolean);
+  }).filter(Boolean).sort((a, b) => a.localeCompare(b));
 }
