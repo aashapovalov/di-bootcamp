@@ -20,24 +20,36 @@ let currentUserName = null;
 
 
 joinForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    joinErrorMsg.textContent = "";
+  e.preventDefault();
+  joinErrorMsg.textContent = "";
+  usernameInput.removeAttribute("readonly");
 
-    //username and room inputs validation
-    const room = roomInput.value.trim();
-    const username = usernameInput.value.trim();
-    if (username === "") {
-      joinErrorMsg.textContent = "Please enter a username";
-      if (room === "") {
-        joinErrorMsg.textContent = "Please enter a username and a room";
-        return;
-      }
-      return;
-    }
+  const room = roomInput.value.trim();
+  const username = usernameInput.value.trim();
+
+  //username and room inputs validation
+  if (username === "") {
+    joinErrorMsg.textContent = "Please enter a username";
     if (room === "") {
-      joinErrorMsg.textContent += "Please enter a room name";
+      joinErrorMsg.textContent = "Please enter a username and a room";
       return;
     }
+    return;
+  }
+  if (room === "") {
+    joinErrorMsg.textContent += "Please enter a room name";
+    return;
+  }
+
+    // If same room, just close modal and return
+  if (room === currentRoom) {
+    joinModal.classList.remove("active");
+    roomInput.value = '';
+    usernameInput.value = '';
+    messageInput.focus();
+    return;
+  }
+
   //close modal, enable message input and send button
   currentRoom = room;
   currentUserName = username;
@@ -126,3 +138,14 @@ messageForm.addEventListener("submit", (event) => {
 })
 
 //listener for change room button
+changeRoomBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  //open modal with disabled username
+  joinModal.classList.add("active");
+  messageInput.disabled = true;
+  sendMessageBtn.disabled = true;
+  usernameInput.value = currentUserName;
+  usernameInput.setAttribute("readonly", true);
+  roomInput.focus();
+})

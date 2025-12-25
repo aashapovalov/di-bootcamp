@@ -52,3 +52,15 @@ export function getAllRoomUsers(roomName) {
     return user ? user.username : null;
   }).filter(Boolean).sort((a, b) => a.localeCompare(b));
 }
+
+export function removeUserFromRoom(userID, roomName) {
+  const roomIndex = rooms.findIndex(room => room.roomName === roomName);
+  if (roomIndex >= 0) {
+    rooms[roomIndex].users.delete(userID);
+
+    // clean up empty rooms
+    if (rooms[roomIndex].users.size === 0) {
+      rooms.splice(roomIndex, 1);
+    }
+  }
+}

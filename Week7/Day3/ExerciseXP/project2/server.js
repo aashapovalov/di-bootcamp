@@ -1,7 +1,7 @@
 import express from "express";
 import { createServer } from "http";
 import {Server} from "socket.io";
-import { getAllRoomUsers, addUser, addRoom, removeUser } from "./utils.js";
+import {getAllRoomUsers, addUser, addRoom, removeUser, removeUserFromRoom} from "./utils.js";
 import { users, SystemMessage, Message } from "./data.js";
 
 const app = express();
@@ -20,10 +20,28 @@ io.on("connection", (socket) => {
   -----------------------*/
   socket.on("joinRoom", (data) => {
     console.log(`${data.username} joined ${ data.room}`)
-    //add or update users array when user joins a room
-    addUser(socket.id, data.username, data.room)
-    addRoom(socket.id, data.room)
-    socket.join(data.room)
+    //check if the user exists
+    const existingUser = users.find(user => user.userID === socket.id);
+
+    if (existingUser && existingUser.roomName !== data.room) {
+      const oldRoom = existingUser.roomName;
+
+      // Leave old room (socket.io)
+      socket.leave(oldRoom);
+      removeUserFromRoom(socket.id, oldRoom);
+
+      // Notify old room
+      const leaveMsg = new SystemMessage(`${existingUser.username} left!`);
+      socket.to(oldRoom).emit("send-message", leaveMsg);
+
+      // Update old room's user list
+      const oldRoomUsers = getAllRoomUsers(oldRoom);
+      io.to(oldRoom).emit("user-list", oldRoomUsers);
+    }
+
+    addUser(socket.id, data.username, data.room);
+    addRoom(socket.id, data.room);
+    socket.join(data.room);
 
     //sending welcome message to the user
     const welcomeMsg = new SystemMessage(`${data.username} welcome to ${data.room} room!`)
@@ -36,7 +54,7 @@ io.on("connection", (socket) => {
     //sending everyone new users list
     const userList = getAllRoomUsers(data.room);
     io.to(data.room).emit("user-list", userList);
-  })
+  });
   /* --------------------------
     CHAT MESSAGE EVENT HANDLER*
     -------------------------*/
