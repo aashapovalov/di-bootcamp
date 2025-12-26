@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategy Game - Lobby</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Login Section (visible by default) -->
+<div id="login-section" class="container">
+  <div class="card">
+    <h1>🎮 Strategy Game</h1>
+    <p class="subtitle">Enter your username to start playing</p>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="username-input">Username</label>
+        <input
+                type="text"
+                id="username-input"
+                placeholder="Enter your username"
+                required
+                autofocus
+                maxlength="20"
+        >
+      </div>
+      <div id="login-error" class="error-message"></div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Lobby Section (hidden until logged in) -->
+<div id="lobby-section" class="container hidden">
+  <div class="lobby-container">
+    <div class="lobby-header">
+      <h1>Game Lobby</h1>
+      <p class="welcome-message">Welcome, <span id="current-username"></span>!</p>
+    </div>
+
+    <div class="lobby-actions">
+      <button id="create-game-btn" class="btn btn-primary">Create New Game</button>
+      <button id="refresh-games-btn" class="btn btn-secondary">Refresh Games</button>
+    </div>
+
+    <div class="games-section">
+      <h2>Available Games</h2>
+      <div id="games-list">
+        <!-- Games will be inserted here by JavaScript -->
+        <p class="no-games">No games available. Create one to start!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="client.js"></script>
+</body>
+</html>

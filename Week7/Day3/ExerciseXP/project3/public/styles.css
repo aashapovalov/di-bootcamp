@@ -1,0 +1,624 @@
+/* ===========================
+   CSS Reset & Base Styles
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4a90e2;
+  --primary-hover: #357abd;
+  --secondary-color: #6c757d;
+  --secondary-hover: #5a6268;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+
+  --bg-main: #f5f7fa;
+  --bg-card: #ffffff;
+  --bg-hover: #f8f9fa;
+
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --text-light: #ffffff;
+
+  --border-color: #dfe6e9;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===========================
+   Utility Classes
+   =========================== */
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   Login Section
+   =========================== */
+#login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#login-section h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.error-message {
+  color: var(--danger-color);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  min-height: 1.2rem;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.4);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  color: var(--text-light);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover);
+}
+
+.btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===========================
+   Lobby Section
+   =========================== */
+.lobby-container {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.lobby-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lobby-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.welcome-message {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.welcome-message span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Lobby Actions */
+.lobby-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.lobby-actions .btn {
+  width: 100%;
+}
+
+/* Games Section */
+.games-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+#games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.no-games {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 2rem;
+  font-style: italic;
+}
+
+/* Game Card */
+.game-card {
+  background: var(--bg-hover);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.game-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-id {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.game-players {
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.game-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.game-status.waiting {
+  background: var(--warning-color);
+  color: #856404;
+}
+
+.game-status.active {
+  background: var(--success-color);
+  color: var(--text-light);
+}
+
+.game-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.game-actions .btn {
+  width: auto;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .lobby-container {
+    padding: 1.5rem;
+  }
+
+  .lobby-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .game-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .game-actions {
+    width: 100%;
+  }
+
+  .game-actions .btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #login-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .lobby-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .games-section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===========================
+   Game Page Styles
+   =========================== */
+
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Game Header */
+.game-header {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-info {
+  flex: 1;
+}
+
+#game-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.players-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.player-1 {
+  color: var(--primary-color);
+}
+
+.player-2 {
+  color: var(--danger-color);
+}
+
+.player-icon {
+  font-size: 1.5rem;
+}
+
+.vs {
+  color: var(--text-secondary);
+  font-weight: bold;
+}
+
+.turn-indicator {
+  padding: 0.5rem 1rem;
+  background: var(--bg-footer);
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.turn-indicator.your-turn {
+  background: var(--success-color);
+  color: var(--text-light);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Game Board */
+.game-board-container {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+  background: var(--border-color);
+  border: 2px solid var(--border-color);
+  max-width: 600px;
+  aspect-ratio: 1;
+}
+
+.cell {
+  background: white;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.cell.empty {
+  background: #ffffff;
+}
+
+.cell.obstacle {
+  background: #95a5a6;
+  color: #7f8c8d;
+}
+
+.cell.player1 {
+  background: #e8f4f8;
+}
+
+.cell.player2 {
+  background: #ffe8e8;
+}
+
+.cell.base1 {
+  background: #d4e6f1;
+}
+
+.cell.base2 {
+  background: #fadbd8;
+}
+
+.cell-content {
+  font-size: 2rem;
+  z-index: 2;
+}
+
+/* Game Controls */
+.game-controls {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.controls-info {
+  text-align: center;
+}
+
+.controls-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#controls-status {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.direction-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.horizontal-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.control-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.control-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: scale(1.05);
+}
+
+.control-btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.control-btn:disabled {
+  background: #dfe6e9;
+  border-color: #dfe6e9;
+  color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Game Over Modal */
+#game-over-modal {
+  display: none;
+}
+
+#game-over-modal.active {
+  display: flex;
+}
+
+#game-over-modal .modal-content {
+  text-align: center;
+}
+
+#winner-text {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--success-color);
+}
+
+#winner-message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .game-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .players-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .game-board {
+    max-width: 100%;
+  }
+
+  .cell {
+    font-size: 1rem;
+  }
+
+  .cell-content {
+    font-size: 1.5rem;
+  }
+
+  .control-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell {
+    font-size: 0.8rem;
+  }
+
+  .cell-content {
+    font-size: 1.2rem;
+  }
+}
