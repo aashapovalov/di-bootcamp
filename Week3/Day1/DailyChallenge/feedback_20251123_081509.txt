@@ -1,0 +1,12 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/DailyChallenge/challenge-star.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/DailyChallenge/challenge.js
+suggestions for improvement:
+- The provided code addresses a completely different problem than the one described in the Chapter Content/Questions.
+- The Chapter Content/Questions asks for a program to recreate a specific pattern using for loops, while the code attempts to find and replace words in a sentence.
+- The code should be rewritten to focus on using one for loop and nested for loops to print the required pattern of asterisks.
+Correctness: 0%
+-----

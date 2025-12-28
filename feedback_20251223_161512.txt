@@ -1,0 +1,17 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/ExerciseXP/project1/routes/tasks.js
+suggestions for improvement:
+- The provided code snippet only defines the routes but does not include the implementation of the controllers or file handling. Need to see those implementations to have a complete solution.
+- Consider adding validation middleware for request bodies to ensure data integrity before passing it to the controller functions.
+- Implement proper error handling within the controller functions, including specific error codes and messages for different scenarios.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/ExerciseXP/project1/controllers/controllers.js
+suggestions for improvement:
+- The code uses an in-memory store (`tasks` array) instead of reading/writing to a JSON file as requested in the instructions. This is a major deviation.
+- The `updateTask` function only checks for `name` and does not perform the update. It needs to update the task with the new values.
+- Consider adding more comprehensive validation to the `createTask` and `updateTask` functions to handle different data types and constraints.
+- Implement proper error handling for file read/write operations when interacting with the JSON file (not present).
+- Sanitize user inputs to prevent potential security vulnerabilities (e.g., XSS).
+- Improve consistency in error messages (e.g., sometimes it says 'Post not found', other times 'Task not found').
+Correctness: 70%
+-----

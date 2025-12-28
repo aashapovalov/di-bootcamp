@@ -1,0 +1,24 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/article.html
+suggestions for improvement:
+- In the makeBold function, it would be more precise to target only the paragraph elements within the article using document.querySelectorAll('article p') and then iterate through them to make each one bold. This avoids inadvertently bolding other elements within the article.
+- For the bonus question involving hovering over the h1 element to change its font size, the event listener should be added in the script rather than directly in the HTML using onmouseenter.  Using addEventListener makes your JavaScript more maintainable and keeps your HTML cleaner.
+Correctness: 80%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/form.html
+suggestions for improvement:
+- Consider adding more descriptive variable names in certain cases for better readability.
+- The use of `FormData` is good, but ensure that its usage aligns with the specific form requirements, as it might add unnecessary overhead if simpler methods suffice.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/sentence.html
+suggestions for improvement:
+- Consider adding comments to explain complex logic or algorithms.
+- Using `const` instead of `let` where the variable is not reassigned improves code clarity.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/volume.html
+suggestions for improvement:
+- Consider adding input validation to ensure the radius is a number.
+- You could improve the user experience by providing visual feedback during the calculation.
+Correctness: 100%
+-----

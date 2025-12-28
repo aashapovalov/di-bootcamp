@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.html
+suggestions for improvement:
+- The provided HTML code sets up the basic structure of the currency converter, including the form elements for selecting currencies and inputting the amount, and also includes a link to an external javascript file named 'currency.js'. However, it doesn't include any actual JavaScript code demonstrating the use of Fetch API, async/await, or API calls to the ExchangeRate API. The javascript file should implement the logic to fetch currencies, handle conversions, and update the UI.
+- You should make API calls to fetch currencies and exchange rates.
+- Implement event listeners for the convert button and the switch button.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.js
+suggestions for improvement:
+- Consider using a more robust error handling mechanism to inform the user if the API request fails.
+- Add input validation to the amount field to prevent non-numeric input.
+Correctness: 80%
+-----

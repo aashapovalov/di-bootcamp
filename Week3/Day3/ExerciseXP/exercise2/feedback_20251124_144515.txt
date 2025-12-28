@@ -1,0 +1,26 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/animation.html
+suggestions for improvement:
+- The provided HTML code snippet does not include any JavaScript to address the exercises regarding timers or the animation. A separate JavaScript file (animation.js) is linked, but its content is missing, thus it's impossible to assess the code's correctness with respect to the chapter's content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/animation.js
+suggestions for improvement:
+- The code provided does not address the first exercise about timers and adding paragraphs using setTimeout and setInterval.
+- The provided code does not use setInterval to move the box, but uses requestAnimationFrame.
+- The `Exercise 1` involves the use of `setTimeout` and `setInterval`, whereas the provided solution does not include any of these.
+- The button to start the animation is embedded in the HTML so the Javascript file is missing event listener for the button, according to what was taught in class.
+- The code should be split into different javascript files in order to match each exercise.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/timer.html
+suggestions for improvement:
+- The HTML file is incomplete without the corresponding JavaScript file (timer.js) to properly evaluate its correctness. The HTML only provides the structure, but the actual logic for the timer and animation is expected to be in the JavaScript file.
+- The `onclick` event handler in the button is calling `clearInt(myInterval)`. The variables `clearInt` and `myInterval` are undefined in the HTML. The correctness cannot be assessed without the JavaScript code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/timer.js
+suggestions for improvement:
+- Consider using a more descriptive name for `controlInt` to clearly indicate its purpose of monitoring the paragraph count.
+- You can merge the logic of `addElement` directly into the `setInterval` callback for Part III to reduce code duplication, if desired.
+Correctness: 100%
+-----
