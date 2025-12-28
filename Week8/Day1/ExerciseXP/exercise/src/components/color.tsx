@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 
-const [favoriteColor, setFavoriteColor ] = useState("red");
 export function Color() {
+    const [favoriteColor, setFavoriteColor ] = useState("red");
     useEffect(() => {
         setFavoriteColor("yellow");
     }, [setFavoriteColor]);
