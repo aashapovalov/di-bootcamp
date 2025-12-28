@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+</head>
+
+<body>
+<h1>Register :</h1>
+
+<form class="register-form" id="register-form" novalidate>
+  <div>
+    <label for="first_name">First name</label>
+    <input
+            id="first_name"
+            name="first_name"
+            type="text"
+            autocomplete="given-name"
+            required
+    />
+  </div>
+
+  <div>
+    <label for="last_name">Last name</label>
+    <input
+            id="last_name"
+            name="last_name"
+            type="text"
+            autocomplete="family-name"
+            required
+    />
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+    />
+  </div>
+
+  <div>
+    <label for="username">username</label>
+    <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="username"
+            required
+    />
+  </div>
+
+  <div>
+    <label for="password">password</label>
+    <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="new-password"
+            required
+    />
+  </div>
+
+  <button id='register-btn' type="submit" disabled>Register</button>
+</form>
+
+<!-- Error container (server messages go here) -->
+<div id="register-error" role="alert" aria-live="polite"></div>
+
+<script type="module" src="./reg.js"></script>
+</body>
+</html>

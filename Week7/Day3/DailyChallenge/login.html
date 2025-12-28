@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+</head>
+
+<body>
+<h1>Login :</h1>
+
+<form class="login-form" id="login-form" novalidate>
+  <div>
+    <label for="username">Username</label>
+    <input
+            id="username"
+            name="username"
+            type="text"
+            autocomplete="username"
+            required
+    />
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            required
+    />
+  </div>
+
+  <button id="login-btn" type="submit">Login</button>
+</form>
+
+<!-- Error container (server messages go here) -->
+<div id="login-error" role="alert" aria-live="polite"></div>
+
+<script type="module" src="./login.js"></script>
+</body>
+</html>
