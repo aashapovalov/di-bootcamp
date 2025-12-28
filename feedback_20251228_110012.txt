@@ -1,0 +1,9 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/server.js
+suggestions for improvement:
+- The user data is stored in memory (the `users` array). The instructions require using a JSON file for storage. You'll need to implement file reading and writing using `fs` module.
+- Error handling for file read/write operations is missing. Add try-catch blocks when interacting with the file system.
+- The `GET /users` and `GET /users/:id` routes are for demonstration purposes and the instructions say no authentication is required, but it might be good practice to include some form of basic security, even for demonstration purposes, in a real-world scenario.
+- In the register route, the check for an existing password isn't comparing the hashed passwords correctly.  You are rehashing the current password and comparing it with the existing one. You should compare the user's current username with the existing username.
+- In the PUT route, the code directly replaces the user, but it may be useful to check the existing fields and update them.
+Correctness: 70%
+-----
