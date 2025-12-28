@@ -1,0 +1,73 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/calendar.html
+suggestions for improvement:
+- The provided HTML file lacks the JavaScript code required to address the exercises. The `ninja-exercise.js` file is referenced but not provided. Therefore, none of the exercises are addressed.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise-gold.js
+suggestions for improvement:
+- The provided code is completely unrelated to the exercises described in the chapter content (Variables, Conditionals, Loops, Functions, DOM selectors). It appears to be string manipulation exercises, which are not part of the provided instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, you have two functions with the same name but different parameters. Consider using default parameters or a single function to handle both cases more elegantly.
+- In Exercise 4, the `toFixed(2)` method should be applied before multiplication to avoid unnecessary calculations on rounded numbers. You do a good job using parseFloat, but the use of `typeof` to check if parseFloat produces a number is unconventional, the function `isNaN` would be more appropriate. 
+- In exercise 4, using `prompt` inside the individual cost functions makes the bonus (prompt inside the totalVacationCost function only) a bit confusing. It works as is, but doesn't allow the caller to pass in hard coded values for testing.
+Correctness: 90%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code is only the HTML structure with a script tag, but it lacks any JavaScript code to address the exercises described in the chapter content. Therefore, it doesn't fulfill any of the requirements.
+- Need to add JavaScript code in exercise.js that will address all of the exercices requirements.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.html
+suggestions for improvement:
+- The HTML file only sets up the basic structure for Exercise 7 but lacks the JavaScript code to fulfill the requirements of the exercise. You need to add a script that implements the instructions.
+- The instructions require the use of DOM manipulation, the creation of book objects, and conditional styling based on the 'alreadyRead' property.  This functionality is missing in the provided HTML.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.js
+suggestions for improvement:
+- Consider using template literals for constructing the description text to improve readability.
+- The code could be slightly more performant by minimizing DOM manipulations; however, for a small number of books, the impact is negligible.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.html
+suggestions for improvement:
+- The HTML file needs to be accompanied by the javascript file that implements the logic described in Exercise 6.
+- Without the javascript code, it's impossible to evaluate the correctness, readability, performance, and security aspects of the solution.
+- The question asks for the use of DOM manipulation, which would be present in the javascript file.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.js
+suggestions for improvement:
+- Consider adding comments to explain complex DOM manipulations.
+- Could improve variable names to be more descriptive.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/ninja-exercise.js
+suggestions for improvement:
+- The code appears to address topics not covered in the provided chapter content (Variables, Conditionals, Loops, Functions, DOM selectors). Therefore it doesn't align with the exercises given.
+- Consider focusing the code examples on the specific exercises and instructions provided in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/table.html
+suggestions for improvement:
+- The provided HTML and JavaScript code creates a table and highlights cells diagonally in red. This task is not related to any of the exercises listed in the chapter content (Variables, Conditionals, Loops, Functions, DOM selectors).
+- The code does not address any of the exercises in the chapter.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.html
+suggestions for improvement:
+- The HTML file provided is only a partial solution to Exercise 5. It sets up the basic HTML structure but doesn't include the JavaScript code to manipulate the DOM as required by the exercise instructions. Therefore, the code doesn't address the instructions related to modifying the DOM elements or adding styles using JavaScript.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.js
+suggestions for improvement:
+- The code attempts to solve Exercise 5, but contains errors and does not completely follow the instructions. For example, it finds "Pete" with `.find` on the first `ul`'s children, but Exercise 5 specifies to change "Pete" to "Richard". It also sets the border of the wrong element.
+- Consider using more descriptive variable names to improve readability.
+- The use of `Array.from` to convert the HTMLCollection to an array is correct, but could be simplified to `ulFirst.children` if directly iterating.
+- Be careful with using `.find`, as it is easy to introduce errors with it.
+Correctness: 30%
+-----

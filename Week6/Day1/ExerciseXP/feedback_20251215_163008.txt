@@ -1,0 +1,10 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day1/ExerciseXP/exercise.sql
+suggestions for improvement:
+- Consider adding primary keys to the tables for better database design.
+- For better readability, format the SQL queries consistently with indentation and capitalization.
+Brief justification:
+- correctness: The code accurately creates the specified tables (items and customers), populates them with the provided data, and performs all the required SELECT queries as outlined in Exercise 1 of the chapter content.
+- readability: The code is generally readable, but could be improved with consistent formatting, such as capitalizing SQL keywords and using indentation to improve the structure of the queries. This makes it easier to understand the different parts of each query.
+- performance: The code performs well, using basic SQL commands that are efficiently executed by the database. No performance issues are apparent.
+- security: The code is secure as it involves basic data definition and manipulation, with no exposure to SQL injection or other vulnerabilities in this context. It doesn't deal with user inputs or external data sources.
+
