@@ -1,0 +1,8 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day1/DailyChallenge/challenge.js
+suggestions for improvement:
+- The regex variable is defined but never used directly. Instead the match function is called with the same regular expression
+- The sentence1 variable is defined but not declared using let, const, or var.
+- Ensure the regular expression is properly escaped or constructed when used directly within the replace function to avoid unexpected behavior.
+- Consider making the code more robust by handling cases where 'not' or 'bad' might not exist in the string more gracefully (e.g., providing a default value or using optional chaining).
+Correctness: 70%
+-----
