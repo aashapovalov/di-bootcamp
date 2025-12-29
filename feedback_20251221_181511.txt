@@ -1,0 +1,23 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex1_daily-challenge/greeting.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex2/colorful-message.js
+suggestions for improvement:
+- The code addresses only the NPM module part of the task and doesn't fulfill the other requirements such as Node.js module system and file manipulation. It is specifically for Task 2 (using an NPM Module) but it only contains the code for the `colorful-message.js` file.
+- The code should be integrated with other tasks, such as greeting.js, app.js, and read-file.js, as required in the challenge.js.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/ex3_files/read-file.js
+suggestions for improvement:
+- The code addresses file reading using the `fs` module, but it's not part of a complete implementation of the specified task. Task 3 requires creating `read-file.js` and `app.js`, and then requiring `read-file.js` in `app.js` to display the content. This code only covers the `read-file.js` part and uses `fs/promises` which is acceptable but was not described in the chapter.
+- The path './ex3_files/file-data.txt' looks incorrect and should probably be `./files/file-data.txt`.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/DailyChallenge/challenge.js
+suggestions for improvement:
+- The code directly requires files from the exercises instead of using the specified app.js files.
+- The code does not match the directory structure exactly as outlined in the instructions. Specifically, the instructions state to create the files greeting.js, app.js, colorful-message.js, and read-file.js in the root directory (daily-challenge). The provided solution assumes different directories.
+Correctness: 0%
+-----

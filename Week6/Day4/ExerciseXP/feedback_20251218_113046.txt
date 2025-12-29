@@ -1,0 +1,118 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex1/products.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex1/shop.js
+suggestions for improvement:
+- The provided code snippet is incomplete. It references a 'products.js' file without providing its content.
+- The code within shop.js appears correct in its logic for searching a product, assuming 'products.js' is correctly implemented.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex2/app.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex2/data.js
+suggestions for improvement:
+- This code snippet only contains the data.js content and does not include the app.js part that is crucial for completing the task in Exercise 2.  Complete the exercise by creating app.js, importing the data, calculating the average age, and printing the result.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/app.js
+suggestions for improvement:
+- Consider using more descriptive variable names for better readability (e.g., `helloWorldFilePath` instead of `helloWorld`).
+- Error handling could be improved by providing more specific error messages for different types of errors (e.g., file not found, permission denied).
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/bye-world.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/fileManager.js
+suggestions for improvement:
+- Consider adding error logging for debugging purposes.
+- For enhanced security, especially when handling user-provided paths, implement path sanitization to prevent path traversal vulnerabilities.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/hello-world.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex4_todoApp/app.js
+suggestions for improvement:
+- The code requires the `TodoList` class from a `todo.js` file, which is part of Exercise 4. The provided `app.js` interacts with this class, adding tasks and marking them as complete.
+- The instructions for Exercise 4 state that `app.js` should import the `TodoList` class and use it to add, mark, and list tasks. The provided code attempts to do this.
+- However, without the code for `todo.js` (the `TodoList` class definition), it's impossible to determine if the interaction in `app.js` is entirely correct. We also don't see where the listing of tasks is being executed (this would depend on the correct implementation of `TodoList` and its methods in `todo.js`). Therefore, I have to assume the correctness level is 0.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex4_todoApp/todo.js
+suggestions for improvement:
+- The markTask method could be improved by returning a boolean value to indicate whether the task was successfully marked as complete.
+- Consider adding input validation to prevent adding empty or invalid tasks.
+- Implement better error handling, for example, if the task to be marked doesn't exist.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex5_math-app/app.js
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each section of the code for better readability.
+- Error handling can be improved by logging the error object itself (error) instead of just the message (error.message) for more detailed debugging information.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex5_math-app/math.js
+suggestions for improvement:
+- This code does not address any of the exercises provided in the chapter content. It defines a simple math module with addition and multiplication functions, which is unrelated to the exercises focusing on file system operations, module usage, and package management.
+- To align with the chapter content, the code should implement file reading/writing, module importing/exporting (CommonJS and ES6), or utilize npm packages as described in the exercises.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex5_math-app/package-lock.json
+suggestions for improvement:
+- The provided code is a package-lock.json file, which is used to record the exact versions of dependencies used in a Node.js project.  It doesn't implement the functionality described in Exercise 5, which involves creating a custom math module and using lodash.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex5_math-app/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which describes a Node.js project. While it's related to setting up a project for Exercise 5, it doesn't actually implement any of the mathematical functions or module usage described in the exercise.
+- The exercise requires creating `math.js` with addition and multiplication functions and `app.js` using those functions along with lodash. This file only sets up the project and installs lodash.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex6_npm-beginner/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex6_npm-beginner/package-lock.json
+suggestions for improvement:
+- The provided code is a package-lock.json file, not the app.js file that implements the logic for Exercise 6. It only describes the dependencies of the project, specifically the 'chalk' package. To properly address the exercise, you must include the `app.js` file content that uses chalk to output colored text to the terminal.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex6_npm-beginner/package.json
+suggestions for improvement:
+- The provided JSON is a `package.json` file, typically used to manage dependencies and metadata for a Node.js project. However, the exercises requested specific JavaScript files (e.g., `app.js`) with code demonstrating module usage, file system operations, and package usage.
+- The `package.json` file itself doesn't fulfill any of the exercise requirements. It's a supporting file, but it's not the primary deliverable.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex7/copy-file.js
+suggestions for improvement:
+- The provided code only copies a file from source.txt to destination.txt, which only partially addresses Exercise 7 and does not address the other exercises. To fully address the exercises, you would need to create modules with specific exports and implement the functionality described in each exercise.
+- Address the instructions of exercises 1-6.
+- For Exercise 7, implement `read-directory.js` which lists files in a directory using the `fs` module.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex7/destination.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex7/read-directory.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex7/source.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
