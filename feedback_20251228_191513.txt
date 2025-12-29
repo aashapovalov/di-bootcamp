@@ -1,0 +1,24 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/car.tsx
+suggestions for improvement:
+- In Part I, the carInfo object should be created in App.js and then passed as props to the Car component.
+- In Part II, the color state should be displayed along with the car model.
+- In Part III, the Garage component is correctly used, but the size prop should be passed down from a parent component or defined dynamically if needed. You should define the Garage functional component in Garage.js. Make sure it renders the required text.
+- Avoid hardcoding values like 'small' directly within the component if they are intended to be dynamic or passed from elsewhere.
+Correctness: 60%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/color.tsx
+suggestions for improvement:
+- The useEffect should use a timeout function to change the color to yellow as requested by the exercise.
+- useEffect dependencies array should be checked for unnecessary inclusions
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/events.tsx
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/phone.tsx
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
