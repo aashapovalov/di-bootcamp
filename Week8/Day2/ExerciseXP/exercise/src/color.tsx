@@ -40,7 +40,7 @@ export class Color extends Component<unknown, State> {
     }
 }
 
-class Child extends Component {
+export class Child extends Component {
     componentWillUnmount() {
         alert("unmounted");
     }
