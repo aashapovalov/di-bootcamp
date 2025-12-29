@@ -1,0 +1,7 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/server.js
+suggestions for improvement:
+- The provided code seems to implement the basic structure of an API for the emoji guessing game, including handling user login and guess submission. However, it's missing key aspects like generating emojis and options, presenting them in a form, keeping track of scores, and implementing a leaderboard as specified in the prompt.
+- Consider implementing error handling for cases where a user isn't found or the history data is corrupted.  This enhances the robustness of the API.
+- Directly use the emoji array provided in the prompt to fulfill the game's core requirement, rather than relying on external or unspecified functions for generating game data.
+Correctness: 70%
+-----

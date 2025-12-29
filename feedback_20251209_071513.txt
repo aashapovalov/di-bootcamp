@@ -1,0 +1,10 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day1/DailyChallenge/challenge.ts
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day1/DailyChallenge
+suggestions for improvement:
+- Failed to download file - Status: 404
+Correctness: N/A%
+-----
