@@ -1,0 +1,31 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise/exercise.js
+suggestions for improvement:
+- In Exercise 1, while the bonus is implemented, the primary requirement of displaying numbers divisible by 23 without a parameter is not fully distinct from the bonus implementation. Consider having a separate initial call to `displayNumbersDivisible()` without any arguments to explicitly demonstrate the default behavior.
+- In Exercise 3, it would be good practice to add input validation to ensure `amountOfChange` is an array of numbers, and that `itemPrice` is also a number.
+- In Exercise 4, while the input validation uses `Number.isNaN`, it's more modern and sometimes preferable to use `isNaN(Number(input))` or `!Number.isFinite(Number(input))` for more reliable NaN checking.  Also using `trim()` on the destination input is great but converting it to lowercase using `.toLowerCase()` would provide even more robust string comparison.
+- Exercises 5, 6, and 7 are missing.
+- Consider handling potential errors or edge cases more explicitly, even though the instructions might not directly require it. This improves the robustness of the code.
+Correctness: 80%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise/navbar.html
+suggestions for improvement:
+- The code provided only includes the HTML structure for Exercise 6. The Javascript functionality, including the use of `setAttribute`, `createElement`, `appendChild`, `firstElementChild`, `lastElementChild`, and `textContent` as requested in the instructions is missing.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise/navbar.js
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each code block, enhancing readability, especially for complex operations or when revisiting the code after some time.
+- The code is well-structured; however, using more descriptive variable names could improve readability. For example, `ulEl` could be `navList`, and `newLi` could be `logoutListItem`.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise/users.html
+suggestions for improvement:
+- The provided code is an HTML file, but the exercises require JavaScript code to manipulate the DOM and perform calculations.  The HTML provides the structure for Exercise 5, but no JavaScript is provided to actually fulfill the instructions for that exercise or any of the other exercises. Therefore, the code does not address any of the problems presented in the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise/users.js
+suggestions for improvement:
+- In the bonus section, the alert condition checks if the background color is 'lightblue'. However, the style could have been set inline or via CSS, which might result in different representations (e.g., 'light blue', 'rgb(...)'), and the check would fail. Consider converting the background color to a standard format (e.g., using `getComputedStyle`) for a more reliable comparison.
+- The code iterates through all `<li>` elements to find and style 'Richard'. It would be more efficient to target the specific `<li>` directly using a more precise selector or by storing a reference to it earlier in the code.
+Correctness: 80%
+-----

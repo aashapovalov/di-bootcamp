@@ -1,0 +1,7 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day2/DailyChallenge/challenge.sql
+Brief justification:
+- correctness: The code accurately predicts the output of the given SQL queries based on the provided table schemas and data. It correctly anticipates the impact of NULL values in the NOT IN clause, a core concept related to SQL basics and table relationships, as covered in the chapter content.
+- readability: The code is well-formatted and easy to follow. It breaks down the logic of each query step-by-step, making it simple to understand the reasoning behind the predicted output.
+- performance: The code's performance is not a concern as it only involves predicting query outputs, not executing the queries themselves. The explanation is efficient and directly addresses the questions.
+- security: There are no security concerns as the code only deals with predicting query results and does not involve any actual database interaction or user input.
+

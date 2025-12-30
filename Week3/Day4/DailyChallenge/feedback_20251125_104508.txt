@@ -1,0 +1,5 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day4/DailyChallenge/challenge.js
+suggestions for improvement:
+- While the code functions correctly, consider passing the `groceries` object as an argument to `displayGroceries` only if you plan to reuse the function with different grocery lists. Currently, it relies on the globally scoped `groceries` variable.
+Correctness: 100%
+-----

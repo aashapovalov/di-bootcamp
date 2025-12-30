@@ -1,0 +1,65 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/blog-api/package-lock.json
+suggestions for improvement:
+- The provided code is a package-lock.json file, which is not executable code and does not implement any of the API functionality described in the exercises.
+- To address the exercises, you need to write server-side code using Node.js and Express.js to define routes and handle HTTP requests for creating, reading, updating, and deleting blog posts or books, as specified in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/blog-api/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which outlines the project's dependencies and metadata, but doesn't implement any of the API logic required by Exercises 1, 2, or 3.  It's a necessary part of setting up the project, but not the complete solution.
+- To complete the exercises, you need to create the `server.js` or `app.js` files and implement the routes and data handling as described in each exercise.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/blog-api/server.js
+suggestions for improvement:
+- Consider using a more robust method for generating unique IDs for new posts, rather than simply incrementing the array length. A library like `uuid` could be used.
+- Implement validation for the request body in the POST and PUT routes to ensure that the title and content are present and of the correct type.  This will improve data integrity and prevent errors.
+- Consider using a more persistent storage mechanism for the blog posts, such as a database (e.g., MongoDB, PostgreSQL), rather than storing them in an array in memory. This will allow the data to persist across server restarts.
+- While the error handling covers basic 404 and 500 errors, consider adding more specific error handling for different types of errors (e.g., validation errors, database errors).
+- The DELETE route returns a string 'Post deleted'. It is preferable to return a more structured JSON response or a 204 No Content status code.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/book-api/app.js
+suggestions for improvement:
+- Use a more robust method for generating unique IDs for new books, such as a UUID library.
+- Consider using a more descriptive variable name than `bookIndex` in the GET /api/books/:id route.
+- Implement the PUT and DELETE routes to complete the CRUD operations.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/book-api/package-lock.json
+suggestions for improvement:
+- The submitted code is a package-lock.json file, not the actual source code implementing the API as requested in the exercises.
+- To fulfill the exercises, you need to create `server.js` or `app.js` (as mentioned in the instructions) and implement the routes using Express, define the data structures, and handle requests as described.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/book-api/package.json
+suggestions for improvement:
+- The provided code only shows the package.json, which defines the project's metadata and dependencies. It does not include any of the implementation details for building the RESTful API as requested in the exercises.
+- The exercises require creating server files (e.g., server.js, app.js), defining routes, implementing CRUD operations, and handling data. None of these are present in the submission.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/app.js
+suggestions for improvement:
+- Consider adding error handling for the `fetchPosts` function to handle potential network errors or API issues more gracefully.
+- Add more specific error messages and logging for debugging purposes.
+- Implement more robust validation and sanitization of request data to prevent security vulnerabilities.
+- While not explicitly asked for, consider adding the other CRUD operations (create, update, delete) to fully implement the API as described in the exercise intro.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/data/dataService.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/package-lock.json
+suggestions for improvement:
+- The provided code represents the `package-lock.json` file, which outlines the versions of the dependencies used in the project. It does not contain any application code implementing the required functionality for Exercise 3.
+- No data module or app.js file were included.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/package.json
+suggestions for improvement:
+- The submitted code is just a package.json file, which only describes the project's dependencies and metadata. It doesn't implement any of the API functionality described in Exercises 1, 2, or 3.
+- To address the exercises, you need to provide the actual code for the Express server, including the routes, data handling, and any data modules.
+Correctness: 0%
+-----
