@@ -1,0 +1,30 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/blog-api/server.js
+suggestions for improvement:
+- Consider using a more robust method for generating unique IDs, especially in a production environment (e.g., UUIDs) instead of `posts.length + 1`
+- The error handling could be improved by providing more specific error messages based on the type of error encountered.
+- While functional, using a real database would be ideal in a production setting to persist data.
+- Consider adding validation middleware to check the request body before creating or updating a post.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/book-api/app.js
+suggestions for improvement:
+- Consider using a more robust method for generating unique IDs for new books, especially if you plan to scale your application. A simple incrementing counter might lead to conflicts in concurrent scenarios. UUIDs are generally preferred.
+- Implement the PUT and DELETE methods to complete the CRUD operations as described in the exercises. The provided code only implements GET (all and by ID) and POST.
+- Add more comprehensive error handling and validation for the POST request to ensure data integrity (e.g., checking if required fields are present).
+- Consider using more descriptive variable names (e.g., `bookId` instead of `bookID`, `book` instead of `newBook`).
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/app.js
+suggestions for improvement:
+- The code successfully implements fetching data from JSONPlaceholder and creating a GET endpoint. However, it only addresses part of Exercise 3 (specifically retrieving and displaying posts).
+- The instructions mention building a CRUD API, but this code only implements the 'Read' part.  The 'Create,' 'Update,' and 'Delete' functionalities are missing.
+- Error handling could be improved. The current error handling only covers the case where fetching posts fails but doesn't cover other potential errors (e.g., network errors, invalid data).
+- The console log 'Posts loaded' is helpful for debugging but should be removed or changed to a more appropriate logging level (e.g., using a logging library) for production code.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/ExerciseXP/crud-api/data/dataService.js
+suggestions for improvement:
+- Consider adding error handling to the function, such as throwing an error or returning a default value when the API request fails.
+- Add comments to improve readability.
+Correctness: 100%
+-----
