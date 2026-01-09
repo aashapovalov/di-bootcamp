@@ -1,35 +1,49 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import  type { KeyboardEvent } from "react";
 import './App.css'
+import {useTodos} from "./todo-provider.tsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App() {
+    const { todos, dispatch } = useTodos();
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    function handleAddToDo(text:string) {
+        dispatch({type: "ADD_TODO", payload:text})
+    }
+
+    function handleRemoveToDo(id: number) {
+        dispatch({type: "REMOVE_TODO", payload:id})
+    }
+
+    function handleToggleTodo(id:number) {
+        dispatch({type: "TOGGLE_TODO", payload:id})
+    }
+
+    return (
+        <div>
+            <ul>
+                {todos.map((todo) => (
+                    <li key={todo.id.toString()}>
+                        <input
+                            type="checkbox"
+                            checked={todo.done}
+                            onChange={() => handleToggleTodo(todo.id)}
+                        />
+                        {todo.text}
+                        <button onClick={() => handleRemoveToDo(todo.id)}>Delete</button>
+                    </li>
+                ))}
+            </ul>
+            <input
+                type="text"
+                placeholder="Add a new todo"
+                onKeyDown={(event: KeyboardEvent<HTMLInputElement>) => {
+                    if (event.key === "Enter") {
+                        handleAddToDo(event.currentTarget.value);
+                        event.currentTarget.value = "";
+                    }
+                }}
+            />
+        </div>
+    )
+
 }
 
-export default App

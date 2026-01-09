@@ -11,7 +11,7 @@ export function todoReducer(state: ToDoStateType, action: ActionType) {
         case "REMOVE_TODO":
             return state.filter(todo => todo.id !== action.payload);
         case "TOGGLE_TODO":
-            return state.map(todo => todo.id === action.payload ? {todo, done: !todo.done} : todo);
+            return state.map(todo => todo.id === action.payload ? {...todo, done: !todo.done} : todo);
         default:
             return state;
     }
