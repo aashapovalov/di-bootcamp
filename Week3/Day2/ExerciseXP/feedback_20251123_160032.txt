@@ -1,0 +1,50 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/exercise.js
+suggestions for improvement:
+- In Exercise 1, the function `displayNumbersDivisible` should handle the case where no divisor is provided. Currently it throws an error. Also, the bonus exercise with parameter isn't fully implemented, the initial function should have default value and the function call without parameters should have a default behaviour.
+- In Exercise 2, `stock[element]` is sufficient to verify if the item is in the stock and it is not zero. Explicitly checking if is `true` or `false` makes the code less readable.
+- In Exercise 4, the `hotelCost` function's `while` loop condition is incorrect (while i !== 1), preventing the loop from executing properly. Additionally, the input validation using `typeof parseFloat(nigthsNumber) === "number"` is flawed; `parseFloat` returns a number or `NaN`, and `typeof NaN` is also "number", so this doesn't correctly validate numeric input. Use `!isNaN(parseFloat(nigthsNumber)) && isFinite(nigthsNumber)` instead. The discount calculation in `rentalCarCost()` should use `parseFloat(daysNumber)` to ensure consistent behavior.Also, the function calls the prompt inside the function, that is not as it was asked in the bonus exercise.
+- Exercise 5, 6 and 7 are missing.
+Correctness: 75%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/index.html
+suggestions for improvement:
+- The provided code is just an HTML structure to include a Javascript file. It does not implement any of the exercises mentioned in the chapter content.
+- The exercise require a Javascript file containing the solutions, which is not provided. A single HTML including that JS file is not enough.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.html
+suggestions for improvement:
+- The HTML file only provides the basic structure and a link to a JavaScript file. It doesn't contain any of the logic required by Exercise 7, specifically rendering the list of books and applying the specified styles.
+- The provided HTML code is incomplete. It needs to be accompanied by a JavaScript file to fulfill the exercise requirements.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/my-books-list.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.html
+suggestions for improvement:
+- The provided HTML file only includes the basic structure for Exercise 6, but it lacks the JavaScript code (navbar.js) needed to fulfill the exercise's instructions.  The exercise requires manipulating the DOM, adding elements, and changing attributes, which are not present in this HTML alone.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/navbar.js
+suggestions for improvement:
+- This code attempts to solve Exercise 6, but it's incomplete and contains errors. It attempts to select elements and add a new list item, but there are significant issues with element selection (using `document.querySelector` without specifying which `div` or `ul` to target when there are multiple such elements is problematic). Also, it fails to complete all the instructions of the exercise, making the final result incorrect.
+- The provided code only partially completes exercise 6, missing major requirements. To improve, fully address all parts of exercise 6.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.html
+suggestions for improvement:
+- The provided HTML file lacks the Javascript code necessary to fulfill the instructions of Exercise 5.  A separate JavaScript file (users.js) is linked but not provided. Therefore, the exercise remains incomplete.
+- The provided HTML only sets up the structure from Exercise 5, but doesn't include any JavaScript code to manipulate the DOM as instructed by the exercise. The separate JavaScript file is missing.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/ExerciseXP/users.js
+suggestions for improvement:
+- The condition `if (divEl.style.backgroundColor = "lightblue")` should use `===' instead of `=` for comparison.  The current code assigns the value and the condition will always evaluate to true.
+- The alert message "Hello x and y" should include the actual user names. The current implementation always alerts "Hello x and y" without retrieving the names from the DOM.
+- Selecting elements by tag name is less specific and can be fragile if the HTML structure changes. Consider using more specific selectors like IDs or classes for better maintainability.
+- The `ulFirst.lastElementChild.textContent = "Richard"` modifies the last list item of the first ul, instead of the requested element
+Correctness: 50%
+-----
