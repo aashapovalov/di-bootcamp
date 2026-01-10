@@ -2,7 +2,10 @@ import {createContext, useContext, useReducer} from "react";
 import type { ReactNode, Dispatch } from "react";
 
 import {todoReducer} from "./todo-reducer.ts";
-import type {ActionType, ToDoStateType} from "./types.ts";
+import type {
+    ActionType,
+    ToDoStateType
+} from "./types.ts";
 
 type TodoContextValue = {
     todos: ToDoStateType;
@@ -13,7 +16,10 @@ const ToDoContext = createContext<TodoContextValue | undefined>(undefined);
 
 export function ToDoProvider({children} : {children: ReactNode}) {
 
-    const [todos, dispatch] = useReducer(todoReducer, [] as ToDoStateType);
+    const [todos, dispatch] = useReducer(todoReducer, {
+        todos: [],
+        filter: "all"
+    });
     return (
         <ToDoContext.Provider value={{todos, dispatch}}>
             {children}
