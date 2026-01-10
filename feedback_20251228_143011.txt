@@ -1,0 +1,18 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day5/ExerciseXP/my-app/src/App.tsx
+suggestions for improvement:
+- Create the UserFavoriteAnimals component and pass the `favAnimals` prop to it as specified in Exercise 2.
+- Render the 'Hello World!' message in a paragraph as requested in Exercise 1.
+- Create a separate file named `UserFavoriteAnimals.js` for the UserFavoriteAnimals component as asked in instructions.
+Correctness: 60%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day5/ExerciseXP/my-app/src/UserFavoriteAnimals.tsx
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day5/ExerciseXP/my-app/src/exercise3.tsx
+suggestions for improvement:
+- Consider extracting the form and list into their own components for better organization and reusability, especially if they become more complex.
+- The image URL is quite long; consider using a local image or a shorter URL for better performance.
+Correctness: 100%
+-----

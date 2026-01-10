@@ -1,0 +1,19 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.css
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.html
+suggestions for improvement:
+- The HTML structure is correct as per the instructions, but the JavaScript functionality is missing from this file.  The provided HTML needs the associated JavaScript (`challenge.js`) to be evaluated for complete correctness.
+- Consider adding basic styling in a CSS file to more closely resemble the image provided.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider using a more robust method for generating unique IDs, especially in larger applications.  The current method has a small chance of collision.
+- The task object 'taskObj' is used to store the task's text with task id as the key, which is ok, but consider aligning this more closely with BONUS I which requires an array of objects, each with _task_id_, _text_ and _done_ properties.
+- Consider using event delegation to attach the 'click' event listener to the parent element 'allTasksElement' instead of attaching it to each 'X' button individually. This can improve performance when there are many tasks.
+- Implement BONUS I and BONUS II to increase the score.
+Correctness: 80%
+-----
