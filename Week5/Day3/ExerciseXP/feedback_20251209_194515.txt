@@ -1,0 +1,5 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day3/ExerciseXP/exercise.ts
+suggestions for improvement:
+- In Exercise 4, the function signature should accept an array of `(number | string)[]` instead of separate `string[] | number[]` to align with the task's requirements of handling arrays with mixed types. the function `logLength<T extends {length: number}>(arg: T[]): number` doesn't return a value.
+Correctness: 93%
+-----

@@ -1,0 +1,62 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/constants.js
+suggestions for improvement:
+- This code snippet only defines some constants and an array of emojis. It does not implement any of the Express API or game logic described in the instructions.
+- To address the requirements, you'll need to create an Express server, define routes to handle game logic (generating emojis, receiving guesses, updating scores), and implement the UI for the game.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/data.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/index.html
+suggestions for improvement:
+- The provided code only sets up the basic HTML structure with a login form. It does not implement any of the core functionalities described in the instructions, such as creating an Express API, handling emoji data, generating random emojis, creating multiple-choice options, handling player guesses, updating scores, or implementing a leaderboard. It also lacks the server-side logic and API endpoints necessary for the game to function.
+- The code includes a login form that is not part of the core Emoji game logic requested in the problem description, so it can be omitted.
+- Because the core logic of the emoji game is missing, it's essential to create the Express API endpoints to handle fetching the emoji, submitting guesses, and retrieving scores.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/main.js
+suggestions for improvement:
+- The code appears to be a client-side implementation for interacting with an Emoji guessing game API, not the API itself as requested by the prompt. The prompt asks to build an API using Express.js. Therefore, the provided code does not address the primary requirement of the problem.
+- The code uses axios for making HTTP requests, which is fine, but it's important to ensure that the server-side API (which is missing here) handles these requests appropriately and securely.
+- Consider implementing input validation and sanitization on the client-side (which the escapeHtml function attempts) and, critically, on the missing server-side API to prevent XSS and other vulnerabilities.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/package-lock.json
+suggestions for improvement:
+- This is a package-lock.json file, not the code implementing the emoji guessing game. It doesn't contain the logic for the Express server, emoji handling, score tracking, or leaderboard.  Therefore, it doesn't address any of the specific requirements of the problem.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/package.json
+suggestions for improvement:
+- The submission is a package.json file, and while it indicates the project might use Express, it doesn't contain any code that implements the emoji guessing game as described in the prompt.
+- The prompt requires creating an Express API, handling emoji selection, processing user guesses, and managing scores. This file alone doesn't achieve any of that.
+- The prompt specified that the code should use forms, Fetch API, and POST requests. These elements are also not present in the provided package.json.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/server.js
+suggestions for improvement:
+- The code implements an API for a game, handling login and guesses, which aligns with the general theme of building an API using Express as described in the chapter content. However, it doesn't directly use emojis or follow the emoji-guessing game instructions explicitly.
+- The code lacks input validation and sanitization, making it vulnerable to injection attacks. Implement proper validation and sanitization to enhance security.
+- Error handling could be improved. Add try-catch blocks to handle potential errors and provide more informative error messages to the client.
+- Consider using environment variables for sensitive information like port numbers.
+- The code uses `find` on arrays which can be inefficient for larger datasets. Consider using a more efficient data structure like a hash map (object) if performance becomes an issue.
+- The code doesn't implement a leaderboard, time limits, difficulty levels, hints or user authentication as described in the optional advanced features.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/style.css
+suggestions for improvement:
+- The provided code is only CSS. It needs to include the server-side (Express) logic, game logic, and client-side JavaScript (Fetch API) to fulfill the requirements.
+- Add the necessary Node.js modules and implement the API endpoints.
+- Implement the game logic for generating random emojis and checking answers.
+- Add front-end JavaScript to handle form submission and display game information.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day5/DailyChallenge/utils.js
+suggestions for improvement:
+- This code does not implement an Express API or any of the game logic described in the problem statement. It only provides utility functions for generating random options and user data, which are not the primary requirements.
+- The functions for generating a game and getting user data should be part of a larger Express application that handles API requests and manages the game state.
+- Consider adding error handling for cases where user data or history data is not found.
+Correctness: 0%
+-----

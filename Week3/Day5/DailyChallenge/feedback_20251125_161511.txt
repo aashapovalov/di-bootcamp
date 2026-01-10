@@ -1,0 +1,17 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.css
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code is just the HTML structure. It needs the corresponding JavaScript file to implement the required functionalities.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day5/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider using more descriptive variable names for better readability.
+- The use of `closest()` in `doneTask` is good for robustness, but ensure browser compatibility if older browsers are a concern.
+- Consider implementing local storage to persist tasks across sessions.
+Correctness: 100%
+-----
