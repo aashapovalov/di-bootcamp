@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day2/ExerciseXP/Script-1.sql.sql
+suggestions for improvement:
+- In query 8, the task asks to check if 'your favorite movie exists'. The query currently searches for a movie titled 'Terminator'. This should be changed to a more generic or parameterized query or ideally, the user's favorite movie.
+- In query 9,  the task asks to get the film ID, title, description, length and the rental rate of all the movies starting with the two first letters of your favorite movie, but the query uses '%ay%' which will select movie titles containing 'ay'. This should be modified to select movies where title like 'MO%' if the movie is called MOANA for instance. 
+Correctness: 92.0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day2/ExerciseXP/items_customers.sql
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
