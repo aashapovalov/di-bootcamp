@@ -1,0 +1,30 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- Consider extracting the todo item rendering into a separate component for better organization and reusability.
+- Add PropTypes to ensure type safety of props being passed to components.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/main.tsx
+suggestions for improvement:
+- Consider adding more descriptive comments to explain the purpose of each section, especially the Redux store connection.
+- Ensure consistent naming conventions throughout the project for better readability.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/store.ts
+suggestions for improvement:
+- The provided code only configures the Redux store. It needs to include action definitions, reducers for adding, toggling, and removing todos, and React components connected to Redux to fully implement the todo list application.
+- The code lacks the actual implementation of the todo reducer. The provided reducer is imported from `'./todo-reducer.ts'` but its content is not shown.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/todo-reducer.ts
+suggestions for improvement:
+- Consider using Redux Toolkit's `createReducer` for potentially better type safety and a more modern approach, although `createSlice` is also perfectly acceptable.
+- While `state.concat` works for immutability, consider using the spread operator `...state` along with the new todo object for a more common and perhaps clearer approach: `[...state, { id: Date.now(), name: action.payload, done: false }]`.
+- For enhanced type safety, define a type for the action payload in each reducer. This is already done for the string payload in `addToDo`, but you can apply the same principle consistently across all reducers.
+Correctness: 90%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/hook.ts
+suggestions for improvement:
+- The provided code defines custom hooks for interacting with the Redux store (useAppDispatch and useAppSelector). While these hooks are helpful in a React-Redux application, the task explicitly requires creating a todo list application with specific functionalities: setting up the Redux store, defining actions and reducers, creating React components, and connecting them to the Redux store.  The given code snippet only addresses a small part of connecting components and doesn't implement the core functionality described in the instructions.
+Correctness: 0%
+-----
