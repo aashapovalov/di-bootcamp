@@ -1,4 +1,4 @@
-import { qoutes } from './'
+import { quotes } from "./quotes-database.ts"
 
 export function getRandomColorRGB() {
     const getRandomNum = () =>  Math.floor(Math.random() * 255);
@@ -9,5 +9,10 @@ export function getRandomColorRGB() {
 }
 
 export function getRandomQuote(prevNum: number) {
-    const num = Math.floor(Math.random() * qoutes.length)
+    const num: number = Math.floor(Math.random() * quotes.length);
+    if (num === prevNum && prevNum === 0) {
+        return num + 1
+    } else if (num === prevNum && prevNum !== 0) {
+        return prevNum - 1;
+    } return num;
 }

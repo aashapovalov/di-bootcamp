@@ -1,33 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {quotes} from "./quotes-database.ts";
+import {getRandomColorRGB, getRandomQuote} from "./utils.ts";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [backgroundColor, setBackgroundColor] = useState("gray");
+  const [buttonColor, setButtonColor] = useState("white");
+  const [quoteIndex, setQuoteIndex] = useState(0);
+
+  function handleChangeQuote() {
+      setQuoteIndex(getRandomQuote(quoteIndex));
+      setButtonColor(getRandomColorRGB());
+      setBackgroundColor(getRandomColorRGB());
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div style={{ backgroundColor: backgroundColor}}>
+          <p >{quotes[quoteIndex].quote}</p>
+          <p>{quotes[quoteIndex].author}</p>
+          <button style={{ backgroundColor: buttonColor}} onClick={handleChangeQuote}>Change</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
