@@ -1,0 +1,22 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task2/routes/todo.js
+suggestions for improvement:
+- Consider using more descriptive variable names, especially for parameters like 'id' and 'name' in the PUT route.
+- Implement better error handling, such as checking if the request body contains the necessary data before processing.
+- Consider using a more robust storage solution than an in-memory array for production environments.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task3/routes/books.js
+suggestions for improvement:
+- Consider adding error handling for invalid JSON in request bodies.
+- For larger datasets, using an in-memory array for `books` might impact performance. Explore using a database.
+- While `crypto.randomUUID()` is suitable for generating IDs, ensure that your application is configured to handle UUIDs correctly (e.g., in database queries).
+- Using more descriptive variable names can improve readability.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task3/app.js
+suggestions for improvement:
+- In Exercise 3, Step 4, the instruction mentions creating 'routes/books.js', but the import statement in this app.js uses './routes/books.js'. Ensure consistency in file names or import statements.
+- In Exercise 3, Step 5, the instruction asks to 'Mount the Router in Your Application' and provides 'app.js' code, which is not present in the submission. It's better to define the `/books` route in the provided code, as specified in Step 7.
+- The code is missing the actual implementation of CRUD operations (GET, POST, PUT, DELETE) for the '/books' route. The provided code only includes the basic setup for Express and mounting the router. The main functionality as specified in Exercise 3 is not present.
+Correctness: 60%
+-----

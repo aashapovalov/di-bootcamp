@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day2/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- The incrementCount function increments a non-existent 'count' property instead of 'counter', causing a malfunction.
+- The ErrorBoundary component is missing, making the simulation incomplete.
+Correctness: 50%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day2/ExerciseXP/exercise/src/color.tsx
+suggestions for improvement:
+- The error boundary simulation (Exercise 1) is missing.
+- The unmounting example (Exercise 3) is incomplete. The show property and button click to unmount the component are not implemented.
+- Consider adding types to props where applicable for better readability and maintainability.
+Correctness: 70%
+-----

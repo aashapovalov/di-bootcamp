@@ -1,0 +1,18 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/DailyChallenge/challenge/src/todo-reducer.ts
+suggestions for improvement:
+- Implement the `editTask` reducer action to align with the requirements of Step 2. Currently, there is no functionality to edit the tasks.
+- The `removeToDo` reducer should properly update the state by assigning the filtered todos back to `state.todosByDay[day]`. Currently, it filters but doesn't update the state.
+- The `toggleToDo` reducer should update the state by assigning the mapped todos back to `state.todosByDay[day]`. Currently, it maps but doesn't update the state.
+- Consider adding a selector to extract todos for a specific day for better performance and encapsulation.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/DailyChallenge/challenge/src/App.tsx
+suggestions for improvement:
+- Implement a proper date picker/calendar component as described in Step 3, instead of a simple text input for the day.
+- Implement separate components for TaskList, AddTask, EditTask, and DeleteTask as outlined in Step 4.  The current code mixes all of this functionality into one component.
+- Implement edit task functionality. The current code only covers adding, deleting, and toggling tasks.
+- The selector should be more specific to avoid unnecessary re-renders. Selecting the entire state when only `state.todos` is needed can hurt performance as the application grows.
+- Consider using more descriptive names for actions (e.g., `addTaskForDay` instead of just `addToDo`) to improve clarity.
+- Add better error handling. For example, validate the date format.
+Correctness: 30%
+-----
