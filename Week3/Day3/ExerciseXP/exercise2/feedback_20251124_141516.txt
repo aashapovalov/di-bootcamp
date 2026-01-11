@@ -1,0 +1,22 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/animation.html
+suggestions for improvement:
+- No specific feedback.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/animation.js
+suggestions for improvement:
+- Consider using `requestAnimationFrame` for smoother animations instead of `setInterval`.  This is generally preferred for visual updates.
+- Calculate the distance to move the box within the container instead of relying on a fixed duration (2000ms). This makes the animation adaptable to different container sizes.
+Correctness: 70%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/timer.html
+suggestions for improvement:
+- The provided HTML code is incomplete without the javascript file 'timer.js'. The correctness can't be evaluated without the javascript code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day3/ExerciseXP/exercise2/timer.js
+suggestions for improvement:
+- Consider using a single setInterval for Part III instead of two.  The controlInt setInterval is checking the paragraph count, and that logic can be combined into the addElement function.
+- For Part III, the clearInt function is not being used and can be removed to reduce clutter.
+Correctness: 100%
+-----

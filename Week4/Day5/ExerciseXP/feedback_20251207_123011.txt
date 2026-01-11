@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/ExerciseXP/star-wars.html
+suggestions for improvement:
+- The HTML provides the basic structure, but it is missing the crucial JavaScript part for fetching and displaying data from the Star Wars API. The HTML only sets up the structure and styling, but it doesn't contain any AJAX logic or loading/error handling.  This is a major deviation from the project instructions.
+- Consider adding a loading message within the char-container, which can be toggled via javascript while the data is fetched. This will improve the user experience.  Also add error handling with a dedicated space to display the error message.
+Correctness: 10.0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/ExerciseXP/star-wars.js
+suggestions for improvement:
+- Consider adding error handling to the event listener to gracefully handle potential errors during data fetching or display.
+- Using more descriptive variable names could improve readability (e.g., `characterNameElement` instead of `charName`).
+Correctness: 100%
+-----
