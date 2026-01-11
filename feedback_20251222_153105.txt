@@ -1,0 +1,22 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task1/routes/routes.js
+suggestions for improvement:
+- The code does not implement the trivia quiz game as described in the instructions. It only sets up basic routes ('/' and '/about') without any quiz logic, question handling, or score tracking.
+- It does not include the necessary routes for starting the quiz, submitting answers, or displaying the score (GET '/quiz', POST '/quiz', GET '/quiz/score').
+- It does not use or define the 'triviaQuestions' array provided in the instructions.
+- The code lacks the core functionality of a trivia quiz game.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task2/routes/todo.js
+suggestions for improvement:
+- The code implements a basic To-Do API, which is completely unrelated to the trivia quiz game described in the chapter content. The focus of the exercise was to create a trivia quiz using Express.js and express.Router, including routes for starting the quiz, submitting answers, and displaying the score.
+- The provided code does not address the core requirements of the chapter, such as handling quiz questions, tracking user scores, or providing feedback on answers.
+- The code should be rewritten to implement the trivia quiz game logic, following the instructions outlined in the chapter content.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/ExerciseXP/task3/routes/books.js
+suggestions for improvement:
+- The code implements CRUD operations for books, which is unrelated to the trivia quiz game described in the instructions.
+- Consider using more descriptive variable names.
+- Implement error handling for potential issues, such as invalid book IDs.
+Correctness: 0%
+-----

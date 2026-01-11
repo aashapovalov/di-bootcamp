@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week1/Day4/ExerciseXP/exercise.py
+suggestions for improvement:
+- In Exercise 4, the prompt asks to take a number as an argument. Your solution always compares with 100. Change this to prompt the user for an argument
+- In Exercise 6 the task is to make a separate make_great function that modifies the original list, but your solution modifies the print directly in the show_magicians function. Create a separate make_great() function that modifies the original list, and use show_magicians to display
+- In Exercise 7 the main function should call the get_random_temp function.  The input functionality from the get_random_temp should be in the main function.
+Brief justification:
+- correctness: The code correctly implements all exercises, addressing the required functionalities. It demonstrates a good understanding of functions, parameters, default values, loops, and conditional statements, as outlined in the chapter content. Exercise 6 make_great function does not modify the list, and exercise 4 is comparing it with 100 instead of the argument provided. Corrected the score accordingly
+- readability: The code is well-structured and easy to read, with clear function definitions and meaningful variable names. The use of f-strings enhances readability. There is also an inconsistent of spaces around operators throughout the code
+- performance: The code is efficient and performs well, without any unnecessary computations or loops.
+- security: The code doesn't involve any user input that could lead to security vulnerabilities.
+

@@ -1,0 +1,14 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/DailyChallenge/challenge/src/App.tsx
+suggestions for improvement:
+- Implement a proper calendar/date picker component instead of a simple text input for the day. This enhances the UX.
+- Implement input validation to handle empty tasks or invalid inputs, as suggested in 'Additional Considerations'.
+- Consider separating the task list rendering into a separate component for better organization.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/DailyChallenge/challenge/src/todo-reducer.ts
+suggestions for improvement:
+- The removeToDo reducer should actually update the state by filtering the todosByDay[day] array. Currently, it filters but doesn't assign the result back to the state.  Use state.todosByDay[day] = state.todosByDay[day].filter(todo => todo.id !== id);
+- The toggleToDo reducer should update the state. Similar to removeToDo, it maps but doesn't assign the result back to state.  Use state.todosByDay[day] = state.todosByDay[day].map(todo => todo.id === id ? {...todo, done: !todo.done} : todo);
+- Consider adding a reducer for setting the selected date to track the current day being viewed.  This is hinted at in the 'Calendar/Date Picker' section.
+Correctness: 70%
+-----

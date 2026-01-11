@@ -1,0 +1,22 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/ExerciseXP/exercise/src/user-data.tsx
+suggestions for improvement:
+- The exercise mentions fetching user data from an API, but the code uses `state.users` assuming the data is already present or has been fetched previously. Clarify how `state.users` is populated or demonstrate the actual fetching and storing of user data from the API.
+- It's not clear how `user.id`, `user.firstName`, and `user.lastName` are present, assuming those are the property names and the API returns data in the expected format. Showing the response or how the data is handled in the reducer would increase clarity.
+- The component displays a button that triggers the `fetchUser` thunk. Consider adding loading and error states to provide feedback to the user during the API request and potential failures, as described in the exercise.
+- The code does not explicitly show how Redux store and slice have been set up, or the implementation of `fetchUser`, which is a key part of the exercise.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/ExerciseXP/exercise/src/user-slice.ts
+suggestions for improvement:
+- The code does not implement fetching data from an API using Redux Thunk. It only defines a slice for adding a user to the state, which is not related to the exercise's goal.
+- The reducer logic for adding a user can be simplified by directly pushing the new user into the state array, as Redux Toolkit uses Immer under the hood.
+- Consider using more descriptive variable names to improve readability.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/ExerciseXP/exercise/src/user-thunks.ts
+suggestions for improvement:
+- The provided code snippet is an action creator using Redux Thunk, but it's missing the Redux store setup, the user slice definition, the React component, and the connection of the component to the Redux store. It only includes the Thunk action.
+- The try/catch block only logs the error, but the instructions mention dispatching error actions.
+- The API endpoint `/api/users` is hardcoded. While acceptable for a basic exercise, consider making it configurable or more dynamic in a real application.
+Correctness: 50%
+-----

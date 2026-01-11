@@ -1,0 +1,80 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/config/db.js
+suggestions for improvement:
+- This code snippet only sets up a Knex instance for connecting to a PostgreSQL database. It does not address the core requirements of Exercise 1 or Exercise 2, which involve building RESTful APIs with Express and implementing CRUD operations. The code doesn't create any routes, controllers, models, or error handling, as outlined in the exercises.
+- To address Exercise 1, you need to create a server.js file, set up an Express app, define routes for GET/POST/PUT/DELETE /posts, connect to the database using Knex, implement controllers to handle the logic for each route, and include error handling.
+- To address Exercise 2, you need to create an app.js file, set up an Express app, define routes for GET/POST/PUT/DELETE /api/books, connect to the database (or use an in-memory array initially), implement controllers to handle the logic for each route, and include error handling.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/controllers/controllers.js
+suggestions for improvement:
+- Add validation and sanitization of input data in `createBlogPost` and `updateBlogPost` to prevent SQL injection and ensure data integrity.
+- Implement more robust error handling, including specific error messages for different database errors.
+- Consider using a connection pool for the database connection to improve performance.
+Correctness: 90%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/package-lock.json
+suggestions for improvement:
+- The provided code snippet is a package-lock.json file, which primarily describes the dependency tree of a Node.js project. This file alone does not implement the instructions for building a RESTful API or a CRUD API with database connections, as outlined in Exercises 1 and 2.
+- There is no actual code provided in server.js or app.js, as requested in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/package.json
+suggestions for improvement:
+- The submission is package.json file, which describes the project but it doesn't build the RESTful API as requested in the Chapter Content/Questions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/routes/posts.js
+suggestions for improvement:
+- The provided code snippet only shows the routes. The exercise asks to create the directory structure, initialize a new Node.js project, set up an Express app, create tables in Postgres, and implement error handling. The code provided does not cover all of these points.
+- Consider adding input validation and sanitization to the `createBlogPost` and `updateBlogPost` controllers to prevent common security vulnerabilities like cross-site scripting (XSS) or SQL injection.
+- Implement more specific error handling within each route handler (e.g., try-catch blocks in controllers to handle database errors gracefully instead of generic error handling middleware).
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/server.js
+suggestions for improvement:
+- The submission lacks the implementation of the database connection using Knex as requested in the chapter content.
+- The submission lacks the implementation of CRUD operations for both exercises.
+- The code lacks error handling for invalid routes and server errors.
+- The provided code snippet is incomplete and doesn't represent a fully functional solution for either exercise.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/config/db.js
+suggestions for improvement:
+- The provided code snippet only establishes a database connection using Knex. It does not implement any of the API endpoints (GET, POST, PUT, DELETE) for the blog posts or books as requested in Exercises 1 and 2. Therefore, it doesn't fulfill the primary goal of building a RESTful API with database interaction.
+- The provided code also does not create the folder structure mentioned in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/controllers/controllers.js
+suggestions for improvement:
+- In `createBook`, `updateBook`, and `deleteBook` methods, you are using the `posts` table instead of the `books` table, align this with the problem description and the other methods.
+- Implement more robust error handling in each function, especially handling database errors and invalid input.
+- Consider using a more descriptive variable name than `err` in the catch blocks.
+- Implement validation for the input data in the `createBook` and `updateBook` methods to ensure data integrity.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/package-lock.json
+suggestions for improvement:
+- This submission only contains the package-lock.json file, which lists the dependencies of a Node.js project, but it does not contain the actual code implementing the API or database interactions as requested by the exercises.
+- The instructions required the creation of server.js, app.js, directory structures and implementation of REST endpoints which are absent in this submission.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/package.json
+suggestions for improvement:
+- The provided code is only the `package.json` file, which describes the project dependencies and scripts, but it does not implement any of the API logic or database interactions as described in the exercises.
+- The instructions require the creation of routes, database connection, and CRUD operations, none of which are present in the `package.json`.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/routes/books.js
+suggestions for improvement:
+- The code is missing the database connection setup and model definition, which are crucial parts of the exercises. You should integrate Knex for database interaction.
+- The controller functions (createBook, deleteBook, etc.) are not provided. Provide the implementation of these functions, including database queries using Knex.
+- Error handling within controller functions (e.g., handling database errors) could be improved.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/server.js
+suggestions for improvement:
+- The code lacks the database connection and Knex setup that is a core requirement of the exercises. It also doesn't implement the CRUD operations as requested.
+- The directory structure is not created as requested in the exercises.
+- The data models and controllers as requested in the exercises are not implemented.
+Correctness: 0%
+-----
