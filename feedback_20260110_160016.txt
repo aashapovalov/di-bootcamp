@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day5/ExerciseXP/mini-project/src/utils.ts
+suggestions for improvement:
+- Consider adding JSDoc comments to improve code documentation.
+- While the code is functional, exploring alternative methods for preventing quote repetition (e.g., using a set or filtering the array) might be beneficial for larger datasets.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day5/ExerciseXP/mini-project/src/App.tsx
+suggestions for improvement:
+- Consider extracting the styling into CSS classes for better organization and separation of concerns.
+- Use more descriptive variable names where appropriate to enhance code clarity.
+Correctness: 100%
+-----

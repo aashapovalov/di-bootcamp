@@ -1,0 +1,48 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/login.html
+suggestions for improvement:
+- This code only provides the HTML structure for the login form. It does not include any of the server-side Express.js logic, bcrypt password hashing, file storage, or API routes specified in the Chapter Content/Questions.
+- The login.js script is not provided, so it's impossible to assess the client-side form validation and interaction with the (missing) API.
+- To fulfill the requirements, you need to implement the Express.js application, define the API routes (POST /register, POST /login, GET /users, GET /users/:id, PUT /users/:id), handle JSON file storage, implement bcrypt password hashing, and implement error handling.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/login.js
+suggestions for improvement:
+- The provided code snippet only contains the client-side JavaScript for handling the login form submission. It does not include any of the server-side Express.js code required to create the User Management API with registration and login functionalities as described in the chapter content.
+- The code also lacks the registration form implementation, user data storage using a JSON file, and password hashing using bcrypt, which are all crucial components mentioned in the instructions.
+- Consider implementing the HTML forms and the Express.js routes as defined in the chapter's requirements.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/package-lock.json
+suggestions for improvement:
+- This submission consists only of the contents of a `package-lock.json` file which specifies dependency versions for a Node.js project.  It does not implement any of the functionality described in the prompt.
+- The `package-lock.json` file cannot be evaluated for correctness, readability, performance, or security because it is not executable code and does not directly address the problem described in the prompt.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/package.json
+suggestions for improvement:
+- The package.json file provides project metadata and dependencies but does not implement any of the API endpoints or logic described in the prompt. Therefore, it does not fulfill the requirements of creating a user management API with registration, login, and other user-related routes.
+- The provided file only defines the project's dependencies and scripts and lacks any of the functional code required by the problem description.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/reg.html
+suggestions for improvement:
+- This code only implements the HTML form for registration. The prompt asked for a full Express.js API with routing, bcrypt password hashing, and JSON file storage, which are completely absent in this code.
+- reg.js file content not provided to analyze the javascript logic, consider providing it.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/reg.js
+suggestions for improvement:
+- The provided code snippet is a client-side script (JavaScript) for handling form submission and making an API call to the `/register` endpoint. However, the problem description explicitly asks for the implementation of the Express.js API routes on the server side, including user registration, login, and user data retrieval using a JSON file, bcrypt for password hashing, and appropriate error handling. This code does not address these server-side requirements.
+- The code handles the client-side part, by sending the details to the backend. However, the backend functionalities are not implemented in this code. The question description is about implementing the backend with Node and Express.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day3/DailyChallenge/server.js
+suggestions for improvement:
+- The code uses an in-memory array (`users`) instead of a JSON file for storing user data, which deviates from the requirement to use a JSON file (point 4).
+- The code performs password comparison to check if a new password already exists, which is not intended according to the assignment.
+- The code doesn't implement `express.Router` as specified in instruction 3.
+- The PUT `/users/:id` route updates the user, but the new username is not verified against existing usernames, potentially leading to duplicate usernames.
+- Consider adding validation and sanitization to the `id` parameter in the GET and PUT routes to prevent potential injection attacks.
+- The code directly interacts with the `users` array without any abstraction or data access layer which could increase complexity as the application grows.
+Correctness: 60%
+-----

@@ -1,0 +1,116 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/app.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/appFile.js
+suggestions for improvement:
+- The 'app.js' file's code does not align with the instructions provided in 'Exercise 3'. The exercise specifies to import functions from 'fileManager.js', read the content of 'Hello World.txt', and then write to 'Bye World.txt' with the content "Writing to the file". The current code imports the functions, reads both files, and writes to 'Bye World.txt' but does not use the content from 'Hello World.txt' when writing to 'Bye World.txt'.
+- The implementation appears incomplete. It's missing error handling for file operations (try...catch blocks) and doesn't display the content read from the file as requested in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/bye-world.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/copy-file.js
+suggestions for improvement:
+- The provided code does not appear to address any of the provided exercises.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/data.js
+suggestions for improvement:
+- This is the file data.js, it is missing the second file app.js which calculate the average age and the execution of the file to see the result.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/destination.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/fileManager.js
+suggestions for improvement:
+- Consider adding error handling for cases where the file does not exist when reading.
+- The `console.log` statements within the functions could be extracted to the calling function for better separation of concerns, allowing the module to be used in different contexts without always logging to the console.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/hello-world.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/math-app/app.js
+suggestions for improvement:
+- The response doesn't include the `math.js` file, making it impossible to assess its correctness completely.
+- Consider adding input validation and error handling within the `math.js` functions to improve robustness.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/math-app/math.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/math-app/package-lock.json
+suggestions for improvement:
+- The provided code is just the package-lock.json file and doesn't address the instructions for Exercise 5, which requires creating `math.js` and `app.js` files with specific functionalities.
+- No actual code implementing the custom module or utilizing lodash is present.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/math-app/package.json
+suggestions for improvement:
+- This is a `package.json` file, not the code requested by Exercise 5. Provide the `math.js` and `app.js` files that implement the math module and use lodash.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/npm-beginner/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/npm-beginner/package-lock.json
+suggestions for improvement:
+- This is a package-lock.json file, not the app.js file that the exercise asked for.  It describes the dependencies of a node project, but does not contain any code implementing the functionality described in the instructions.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/npm-beginner/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which describes a Node.js project and its dependencies. While `npm init` is mentioned in Exercise 5 and Exercise 6, the `package.json` file alone doesn't fulfill the exercise requirements, particularly the need to create and use modules, work with the `fs` module, or implement specific functionalities like a todo list or file management. It's merely a setup file.
+- To complete the exercises, create `app.js` and other files as described in the instructions. Implement the required logic using Node.js modules, the `fs` module, and other specified libraries.
+- Focus on writing the actual code for the exercises, rather than just setting up the project structure.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/products.js
+suggestions for improvement:
+- This code snippet only represents the `products.js` file for Exercise 1. To assess the solution comprehensively, the `shop.js` file and its implementation details are necessary.
+- The provided code uses ES6 module syntax (export const), while Exercise 1 specifically requests CommonJS syntax.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/read-directory.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/shop.js
+suggestions for improvement:
+- The exercise asks to use CommonJS syntax, but the code uses ES6 module syntax.
+- Consider returning the product object from the `searchProduct` function instead of just logging it, to make it more reusable.
+- Add error handling for cases where the product is not found.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/source.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/todoApp/app.js
+suggestions for improvement:
+- The code is incomplete as it only shows the `app.js` part of Exercise 4 and not the `todo.js` file, making it impossible to evaluate its correctness without the `TodoList` class implementation.
+- The code should include the implementation of the `TodoList` class to assess its functionality.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/todoApp/todo.js
+suggestions for improvement:
+- The task is not an object, but rather a string.
+- There is no incremental assignment of numbers to tasks, and it is necessary to add more validations.
+Correctness: 75%
+-----
