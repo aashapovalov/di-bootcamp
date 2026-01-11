@@ -1,0 +1,9 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/routes/routes.js
+suggestions for improvement:
+- Consider using more descriptive variable names (e.g., instead of `state`, use something more specific like `quizState`).
+- The `updateRound` middleware could be made more readable by extracting the conditional logic into a separate function.
+- Improve error handling, especially when accessing `QUESTIONS` array to prevent out-of-bounds access.
+- Ensure that the `QUESTIONS` array and the `state` object are properly initialized and managed to prevent unexpected behavior, especially in a multi-user environment.  Using a global state object may introduce concurrency issues.
+- The commented-out code should be removed to improve readability and maintainability.
+Correctness: 85%
+-----

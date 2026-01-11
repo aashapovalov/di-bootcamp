@@ -1,0 +1,26 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task1/blog-api/routes/posts.js
+suggestions for improvement:
+- The provided code only sets up the routes using express. It does not contain implementation for connecting to Postgres database and querying data using Knex.
+- The controllers for handling the requests are imported but not provided, so functionality can not be assessed completely.
+- Consider implementing proper validation and sanitization of the input data to prevent security vulnerabilities.
+- Implement the error handling middleware for centralizing error handling logic.
+- Consider adding logging for debugging purposes.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/controllers/controllers.js
+suggestions for improvement:
+- Ensure database table names are consistent.  You're using `books` in some functions (getBooks, getSingleBook) and `posts` in others (createBook, updateBook, deleteBook).
+- Add error handling to all routes, especially including a `res.status` and message for different failure scenarios.
+- Use more descriptive variable names (e.g., `book` instead of `books` when retrieving a single book).
+- Implement input validation to prevent malicious data from being inserted into the database.  This will improve security and data integrity.
+- Consider using environment variables to store database credentials instead of hardcoding them directly in the config file.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day2/ExerciseXP/task2/book-api/routes/books.js
+suggestions for improvement:
+- The code is a good start for creating the routes, but it lacks the database connection and Knex integration as required by the chapter content. You should use Knex to query the data from database.
+- Implement the controllers (`getBooks`, `getSingleBook`, etc.) to interact with the database.  The current code only defines the routes but doesn't include the implementation logic.
+- Ensure proper error handling within the controller functions (e.g., handling database connection errors, invalid data).
+- Consider adding input validation and sanitization to prevent common security vulnerabilities like SQL injection, especially in the `createBook` and `updateBook` routes.  This also applies to the blog API example.
+Correctness: 60%
+-----

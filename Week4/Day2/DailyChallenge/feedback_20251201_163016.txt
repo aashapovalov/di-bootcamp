@@ -1,0 +1,13 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day2/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided HTML code only sets up the form structure and includes a script reference. The core logic for handling the form submission, retrieving data, and appending it as JSON to the DOM is missing.  This logic would normally be implemented in the `challenge.js` file, which isn't provided.
+- The code lacks the JavaScript part which implements the main part of the instructions, specifically retrieving the form data and displaying it as a JSON string.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day2/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider using more descriptive variable names for better readability, especially for `dataObject`.
+- The code is well-structured and easy to understand, but adding comments could improve maintainability.
+- You could add error handling for unexpected scenarios.
+Correctness: 100%
+-----
