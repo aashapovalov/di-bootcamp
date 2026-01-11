@@ -1,0 +1,45 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex1/products.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex1/shop.js
+suggestions for improvement:
+- The products.js file is missing; hence, this code cannot be executed.
+- The code does not include the exports.module from the products.js
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex2/app.js
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/app.js
+suggestions for improvement:
+- The solution imports readFile and writeFile from ./fileManager, but those functions are never properly used, defeating the whole purpose of the exercise.
+- The solution includes fs/promises, but doesn't need to because it is already importing the functionality from fileManager.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex3/fileManager.js
+suggestions for improvement:
+- Consider adding error logging for debugging purposes.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex5_math-app/app.js
+suggestions for improvement:
+- Consider adding more comments to improve readability for others.
+- Error handling is good but could be expanded to handle specific error types for more targeted responses.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex6_npm-beginner/app.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day4/ExerciseXP/ex7/copy-file.js
+suggestions for improvement:
+- The code is not split into two files as requested in instructions 4 and 5 in exercise 7.
+- The code should have been put inside read-directory.js and copy-file.js
+- The code is missing the functionality to read the list of files in a specified directory and display their names in the terminal. This functionality should have been in read-directory.js.
+Correctness: 0%
+-----

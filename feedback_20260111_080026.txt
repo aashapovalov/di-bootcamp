@@ -1,0 +1,33 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/todo-reducer.ts
+suggestions for improvement:
+- The `addToDo` reducer should update the state immutably, using the Redux Toolkit's `immer` library. Instead of `state.concat`, use `state.push` or return a new array with the new todo added.
+- Consider using a more robust method for generating unique IDs than `Date.now()`, especially in a production environment. A UUID library could be used.
+- The initial state `todos` is defined outside the slice. It is better to define it inside `initialState` property of the slice.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- Consider extracting the todo item rendering logic into a separate `TodoItem` component for better organization and reusability.
+- While the code is functional, adding TypeScript types could improve code maintainability and reduce potential errors.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/hook.ts
+suggestions for improvement:
+- The provided code snippet only defines custom hooks for Redux. It does not implement any of the core functionalities mentioned in Exercise 1 (creating a Redux Toolkit slice, initializing the store, creating React components for the todo list, or testing functionality).
+- To make this code relevant to the exercise, you need to provide the code that implements the Todo slice, configures the Redux store, and creates the React components.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/store.ts
+suggestions for improvement:
+- The code only implements Step 2 (Initialize Redux Store).
+- Need to provide the todoSlice using createSlice from Redux Toolkit, including reducers for adding, toggling, and removing todos, initial state, and creating the actions.
+- The code is missing the actual slice definition (createSlice) and its implementation. So, it's incomplete with respect to Step 1.
+- The code is missing React components, useSelector/useDispatch implementation and test functionality (Steps 3, 4 and 5).
+Correctness: 50%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/main.tsx
+suggestions for improvement:
+- The code only sets up the Redux Provider. It needs to implement the todo slice, store, and components as described in Exercise 1.
+- The `App` component is not defined or provided. It should contain the TodoList and AddTodo components to complete the exercise.
+Correctness: 0%
+-----
