@@ -1,0 +1,20 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-tracker.tsx
+suggestions for improvement:
+- The code is missing the initial setup of Redux Toolkit, including store creation and wrapping the app with the Provider.
+- The code is missing the creation of the age slice and reducer as instructed in step 3.
+- The code does not include the AgeDisplay and AgeControls components as separate entities but rather combines their functionality in a single component.
+- The Thunk middleware part should be already configured automatically with configureStore from Redux Toolkit.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-slice.ts
+suggestions for improvement:
+- Fix the typo in `state.loadind` to `state.loading` in both `ageUpAsync.pending` and `ageDownAsync.pending` cases.
+- Consider adding a default case to the `extraReducers` builder for completeness, although it's not strictly required here.
+Correctness: 85%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-thunks.ts
+suggestions for improvement:
+- While the async thunks are correctly set up, the reducer logic and component implementations for dispatching these actions and displaying the loading state are missing. Ensure the reducer handles the pending, fulfilled, and rejected states of the async thunks.
+- Consider adding error handling to the async thunks, dispatching a rejected action in case of failure.
+Correctness: 70%
+-----
