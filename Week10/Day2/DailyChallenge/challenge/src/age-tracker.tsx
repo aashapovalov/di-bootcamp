@@ -1,14 +1,30 @@
-import {useAppDispatch, useAppSelector} from "./hook.ts";
-import {ageChange} from "./age-thunks.ts";
+import { useAppDispatch, useAppSelector } from "./hook";
+import { ageUpAsync, ageDownAsync } from "./age-thunks";
 
 export function AgeTracker() {
-    const age = useAppSelector(state);
+    const { age, loading, error } = useAppSelector((state) => state.age);
     const dispatch = useAppDispatch();
+
     return (
-        <>
-            <p>{age}</p>
-            <button onClick={()=>dispatch(ageChange("increment", 1))}>Increment</button>
-            <button onClick={()=>dispatch(ageChange("decrement", 1))}>Decrement</button>
-        </>
-    )
+        <div>
+            <h2>Age: {age}</h2>
+
+            {loading && <p>Updating age...</p>}
+            {error && <p style={{ color: "red" }}>{error}</p>}
+
+            <button
+                onClick={() => dispatch(ageUpAsync(1))}
+                disabled={loading}
+            >
+                Increment
+            </button>
+
+            <button
+                onClick={() => dispatch(ageDownAsync(1))}
+                disabled={loading}
+            >
+                Decrement
+            </button>
+        </div>
+    );
 }

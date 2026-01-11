@@ -1,16 +1,20 @@
-import { ageIncrement, ageDecrement } from "./age-slice";
-import type {AppDispatch} from "./store.ts";
-type DirectionType = "increment" | "decrement";
+import { createAsyncThunk} from "@reduxjs/toolkit";
 
-export const ageChange =
-    (direction: DirectionType, amount: number, delayMs = 1000) => {
-        return async (dispatch: AppDispatch) => {
-            await new Promise((resolve) => setTimeout(resolve, delayMs));
+const delay = (ms: number) =>
+    new Promise<void>((resolve) => setTimeout(resolve, ms));
 
-            if (direction === "increment") {
-                dispatch(ageIncrement(amount));
-            } else {
-                dispatch(ageDecrement(amount));
-            }
-        };
-    };
+export const ageUpAsync = createAsyncThunk<number, number>(
+    "age/ageUpAsync",
+    async (amount: number) => {
+        await delay(1000);
+        return amount;
+    }
+);
+
+export const ageDownAsync = createAsyncThunk<number, number>(
+    "age/ageDownAsync",
+    async (amount: number) => {
+        await delay(1000);
+        return amount;
+    }
+);
