@@ -1,0 +1,6 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day5/DailyChallenge/challenge/src/App.tsx
+suggestions for improvement:
+- Consider adding more descriptive comments to improve readability, especially for complex logic.
+- Error handling could be implemented to catch non-numeric inputs.
+Correctness: 100%
+-----

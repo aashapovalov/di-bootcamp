@@ -1,0 +1,13 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code is only the HTML structure and does not include the required JavaScript to create the solar system, thus it fails to address any of the instructions.
+- Create the `challenge.js` file and implement the logic there.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.js
+suggestions for improvement:
+- Consider using `const` instead of `let` for variables that are not reassigned, such as `section` and `planet` inside the loop.
+- For improved readability, use template literals when setting the background color: planet.style.backgroundColor = `${planetData[i].color}`. Although not strictly necessary, it's considered good practice.
+- While the code works, consider adding a position offset for each moon to visually distribute them around the planet. Currently, all moons are positioned at the same spot, resulting in an overlap.
+Correctness: 100%
+-----
