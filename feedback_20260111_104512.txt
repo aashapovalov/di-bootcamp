@@ -1,0 +1,15 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/ExerciseXP/exercise/src/user-data.tsx
+suggestions for improvement:
+- Ensure that `user-thunks.ts` and the Redux slice implementation (`hook.ts` is assumed to handle store configuration and type definitions) correctly implement error handling as specified in the exercise. The provided code snippet focuses on the component and dispatching the action, but the success/failure logic within the thunk needs verification.
+- The component displays a list of users, which implies the Redux store might be holding an array of users. The exercise mentions holding 'user information or an empty object.' Clarify if the store manages a single user or multiple users.
+- Consider adding a loading state to the UI to indicate when the user data is being fetched.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/ExerciseXP/exercise/src/user-thunks.ts
+suggestions for improvement:
+- The provided code snippet only includes the Thunk action creator. To fully address the exercise, you should include the Redux store setup with Thunk middleware, the user data slice with reducers, the React component for displaying user data, and the connection of the component to the Redux store using `useSelector` and `useDispatch`.
+- Error handling can be improved by dispatching an error action to update the Redux store with the error state. This allows the React component to display an error message to the user.
+- Consider using a more descriptive name for the action creator (e.g., `fetchUserData`) to clearly indicate its purpose.
+- Add type definitions for the API response data to improve type safety.
+Correctness: 50%
+-----
