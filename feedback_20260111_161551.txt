@@ -1,0 +1,31 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/ExerciseXP/exercise/src/counter.tsx
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/ExerciseXP/exercise/src/greeting.tsx
+suggestions for improvement:
+- Consider using destructuring in the function parameter for improved readability: `export function Greeting({ name, messageCount }: GreetingInterface)`
+- The component could benefit from more descriptive element tags or styling for better presentation.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- The App component is only implementing Exercise 2 and Exercise 4 partially.
+- The Counter.tsx and UserList.tsx components as mentioned in the other exercises are not present.
+- The optional props in UserCard are not utilized to their full potential as stated in the exercise, there should be a version with omitted props.
+Correctness: 10.0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/ExerciseXP/exercise/user-card.tsx
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/ExerciseXP/exercise/user-list.tsx
+suggestions for improvement:
+- The fetchData function is declared but never invoked. Add fetchData() inside the useEffect hook to execute it.
+- The UserType type definition is incomplete, it should mirror the structure of the data fetched from the API, specifically the properties used in the UserList component, so the component should be refactored to use the data from UserApi
+- Consider adding a dependency array to useEffect. Although it's currently empty, documenting the intention (no dependencies, runs only on mount) makes the code more readable.
+- The error handling could be improved by logging the error to the console, which is essential for debugging.
+Correctness: 80%
+-----
