@@ -1,0 +1,8 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day4/ExerciseXP/exercise.js
+suggestions for improvement:
+- Exercise 1: The provided URL doesn't include the 'hilarious' and 'rating=g' parameters as specified in the instructions.
+- Exercise 2: The URL uses 'cat' instead of 'sun' as the search term, as instructed.
+- Exercise 3: The solution for Exercise 3 doesn't extract and display objectStarWars.result as expected in the example output; it displays the entire data object.
+- For better error handling, consider logging the error object itself instead of just a generic message.
+Correctness: 75%
+-----

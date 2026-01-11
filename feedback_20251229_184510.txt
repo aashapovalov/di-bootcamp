@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day3/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- Consider moving the `fetchWebhook` function outside of the `App` component for better organization and to prevent unnecessary re-renders.
+- Instead of hardcoding the `isError` variable in the `ShopScreen`, consider using a more dynamic approach, potentially based on user input or external data.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day3/ExerciseXP/exercise/src/post-data.tsx
+suggestions for improvement:
+- This code only addresses Exercise 2. The other exercises are not implemented. Create components and functionality for React Router, Error Boundaries, and POST requests as described in the other exercises.
+- For Exercise 2, ensure that the component is named `PostList.js` as specified in the instructions.
+- Separate the component definition into its own file as specified in the instructions.
+Correctness: 0%
+-----

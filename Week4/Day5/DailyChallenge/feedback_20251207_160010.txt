@@ -1,0 +1,11 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.html
+suggestions for improvement:
+- The HTML structure is provided but the crucial part - the JavaScript logic using Fetch API and async/await, which is supposed to be in `currency.js`, is missing.  Without this, the provided code does not address the core task outlined in the problem description.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week4/Day5/DailyChallenge/currency.js
+suggestions for improvement:
+- Consider adding more robust error handling, specifically for edge cases such as invalid input types or unexpected API responses, to improve the user experience.
+- For better performance, you could implement input validation and sanitization earlier in the process to prevent unnecessary API calls with invalid data.
+Correctness: 90%
+-----
