@@ -1,0 +1,23 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-slice.ts
+suggestions for improvement:
+- The code does not implement asynchronous actions using Thunk, as required by the instructions.  `ageUpAsync` and `ageDownAsync` are missing.
+- The reducer should handle a `loading` state to indicate when the age is being updated.
+- The initial state should be an object with `age` and `loading` properties, not just a number.
+- The code should include extra reducers to handle the pending, fulfilled, and rejected states of the asynchronous actions.
+- The actions should be asynchronous (using `createAsyncThunk` and `setTimeout`), not synchronous.
+- The code doesn't integrate the loading state into the AgeDisplay component to show a loading indicator.
+Correctness: 20%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-thunks.ts
+suggestions for improvement:
+- Use `createAsyncThunk` for `ageChange` as mentioned in the instructions for better Redux Toolkit integration.
+- Handle loading state within the `ageChange` function to reflect the asynchronous operation, using `createSlice` and extra reducers.
+- Ensure proper type safety with TypeScript by explicitly defining types for actions and state.
+Correctness: 50%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day2/DailyChallenge/challenge/src/age-tracker.tsx
+suggestions for improvement:
+- The provided code lacks the implementation of Redux Toolkit setup, async actions with Thunk, reducer creation with loading state handling, and the AgeDisplay and AgeControls components as described in the instructions.
+- The given `AgeTracker` component is incomplete and relies on external, undefined elements (`useAppSelector`, `useAppDispatch`, `ageChange`) that are not part of the provided instructions or standard React/Redux Toolkit usage.
+Correctness: 0%
+-----

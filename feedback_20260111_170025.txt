@@ -1,0 +1,7 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day4/DailyChallenge/challenge/src/App.tsx
+suggestions for improvement:
+- The `List` component is named `RenderList`, which doesn't follow the instructions precisely.
+- The input fields lack more descriptive labels and could benefit from being wrapped in a form.
+- The `addBook` function parameters should be derived from the input states and not passed into the component directly from the button.
+Correctness: 80%
+-----
