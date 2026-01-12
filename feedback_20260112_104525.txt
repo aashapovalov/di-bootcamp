@@ -1,0 +1,15 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/data-slice.ts
+suggestions for improvement:
+- Rename `todoSlice` to `dataSlice` to align with the problem description.
+- The initial state should likely be an object with a `data` field (possibly initialized to an empty array or null) and possibly `loading` and `error` fields to manage the data fetching state effectively.
+- Instead of directly concatenating the payload to the state, consider replacing the entire state's data array with the new data.  This assumes you want to replace the fetched data, not append to existing data, as suggested by the prompt.
+- Add reducers to handle the loading and error states to manage data fetching status.
+- Consider using `createAsyncThunk` from Redux Toolkit to handle the asynchronous data fetching logic, which can automatically manage loading and error states.
+Correctness: 50%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/api.ts
+suggestions for improvement:
+- Consider adding more robust error handling, such as retries or fallback mechanisms, in case of network issues.
+- Explore caching strategies to reduce the number of API calls, especially for frequently accessed data.
+Correctness: 100%
+-----
