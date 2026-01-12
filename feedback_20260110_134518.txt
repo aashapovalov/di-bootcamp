@@ -1,0 +1,28 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise-ninja/src/App.tsx
+suggestions for improvement:
+- Consider using more descriptive names for the filter values ('SHOW_ALL', 'SHOW_COMPLETED', 'SHOW_ACTIVE') in the reducer to improve code clarity.
+- Add input validation to the edit task input to prevent XSS attacks
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise-ninja/src/main.tsx
+suggestions for improvement:
+- The provided code only sets up the React application and ToDoProvider. It does not include the requested features of editing tasks, filtering tasks, using `useRef` for task editing, or implementing corresponding actions in the reducer. The core logic for the task manager enhancements is missing.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise-ninja/src/todo-provider.tsx
+suggestions for improvement:
+- This code sets up the context and reducer, but it doesn't implement the specific features requested in the instructions: editing tasks and filtering tasks by completion status. It only provides the context provider and a custom hook to access the context.
+- The code needs to include the actual implementation of the task manager, including the UI, the logic for adding, editing, and filtering tasks, and the use of `useRef` for task editing.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise-ninja/src/todo-reducer.ts
+suggestions for improvement:
+- Consider adding type checking or validation for the `action.payload` in the `EDIT_TODO` case to ensure data integrity.
+- While the reducer logic is clear, adding comments to explain each case could further enhance readability, especially for complex applications.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise-ninja/src/types.ts
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
