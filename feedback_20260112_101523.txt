@@ -1,0 +1,26 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/api.ts
+suggestions for improvement:
+- Consider adding more robust error handling, such as retries or circuit breakers, to handle transient API failures.
+- Use a configuration file or environment variables to store sensitive information like API keys instead of hardcoding them in the `HEADERS` object.
+- Implement caching mechanisms to improve performance and reduce the load on the API, especially if the data does not change frequently.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/data-fetcher.tsx
+suggestions for improvement:
+- The provided code snippet lacks the necessary context and supporting files (api.ts, types.ts, data-slice.ts, App.tsx) to fully evaluate its correctness within the specified project structure.
+- The code is missing key aspects of the challenge, such as handling loading and error states, proper TypeScript generic implementation, and the complete Redux setup.  Without these components, it's impossible to confirm that the code correctly implements the data fetching and display functionality described in the challenge.
+- The component uses the Redux useSelector hook to retrieve data and useDispatch to dispatch an action. This aligns with the requirement to integrate Redux for state management. However, the implementation is incomplete without the corresponding Redux setup in other files (dataSlice.ts, store configuration in App.tsx).
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/data-slice.ts
+suggestions for improvement:
+- The slice name should be more descriptive, reflecting the data it manages (e.g., 'recipes').
+- The initial state should ideally be handled with createAsyncThunk to manage the loading state from the API call.
+- The reducer `addRecipe` is concatenating the array in wrong way. State will be an array and Payload is also an Array so you should concat directly the payload with the state to make it work properly.
+Correctness: 40%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day5/DailyChallenge/challenge/src/types.ts
+suggestions for improvement:
+- This code only defines types, headers and URL. The chapter content asks for API calls using these constants.
+Correctness: 0%
+-----

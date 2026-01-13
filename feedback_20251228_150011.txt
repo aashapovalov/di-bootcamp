@@ -1,0 +1,8 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day5/DailyChallenge/carousel/src/App.tsx
+suggestions for improvement:
+- The image for 'Las Vegas' should use the URL provided in the instructions, instead of using the 'newYork' image.
+- Consider handling potential errors during image loading for a better user experience.
+- Ensure that the image import paths are correct relative to the component file. Verify that the assets are correctly placed in the directory structure.
+- For better maintainability, move the image URLs to a separate configuration file or a constant array.
+Correctness: 75%
+-----

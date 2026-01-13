@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day3/DailyChallenge/challenge/server.js
+suggestions for improvement:
+- The server is missing the GET request to '/api/hello' as described in Part I. Implement this route to send the message 'Hello From Express'.
+- Consider adding error handling to the POST route to gracefully handle cases where the request body is missing or invalid.
+Correctness: 50%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day3/DailyChallenge/challenge/src/App.tsx
+suggestions for improvement:
+- The React app does not fetch the initial `/api/hello` message from the Express server and display it as a header as specified in Part I.  This is a major omission.
+- The `console.log(inputMessage)` inside `handleChange` will log the *previous* value of `inputMessage` because state updates are not synchronous. This doesn't directly break functionality, but it's misleading.
+- Consider using a more descriptive name than `url` for the endpoint in the `handleSubmit` function.
+Correctness: 50%
+-----

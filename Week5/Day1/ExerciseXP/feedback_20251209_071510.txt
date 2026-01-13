@@ -1,0 +1,10 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day1/ExerciseXP/exercise.html
+suggestions for improvement:
+- The HTML file needs to be accompanied by a TypeScript file (exercise.ts) to address the TypeScript exercises.  Without the TypeScript code, the provided HTML cannot demonstrate the concepts covered in the chapter content.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week5/Day1/ExerciseXP/exercise.ts
+suggestions for improvement:
+- Consider adding a comment to explain what each exercise is doing, to increase readability.
+Correctness: 100%
+-----

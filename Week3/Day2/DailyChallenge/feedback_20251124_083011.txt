@@ -1,0 +1,14 @@
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.html
+suggestions for improvement:
+- The provided code is only the HTML structure and doesn't contain the JavaScript logic to create the solar system. The javascript is referenced but not included
+- You need to implement the javascript to create planets and moons
+Correctness: 0%
+-----
+URL: URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week3/Day2/DailyChallenge/challenge.js
+suggestions for improvement:
+- The code doesn't address the bonus task of creating moons for each planet based on the number of moons each planet has.
+- The last for loop attempts to iterate over `.planets`, but this class is never assigned. It should be `.planet` to select the created planets.
+- Consider using a data structure like an array of objects to store planet names, colors, and the number of moons for each planet. This would make the code more organized and scalable.
+- Handle the case where `planetColors` array might have fewer colors than planets. This could lead to an error if there are more planets than colors.
+Correctness: 70%
+-----

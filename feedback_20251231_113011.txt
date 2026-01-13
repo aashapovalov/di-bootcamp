@@ -1,0 +1,12 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise/src/context.tsx
+suggestions for improvement:
+- Consider adding JSDoc comments to the functions and components to further improve readability.
+- The type definitions could be placed in a separate file for better organization, especially in larger projects.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day4/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- The exercise asks to use useRef to track the length of the text in the input and update the counter display accordingly, your code does update the counter display, but it is using useState and useRef, you could implement it using only useRef.
+- Consider adding a more descriptive name to the useRef variable, for example, characterCountRef instead of just count.
+Correctness: 50%
+-----

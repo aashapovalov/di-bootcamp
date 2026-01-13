@@ -1,0 +1,13 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/todo-reducer.ts
+suggestions for improvement:
+- The `addToDo` reducer should update the state immutably using the spread operator instead of `concat`.  Concat does return a new array, but it is generally better to use the spread operator for consistency.
+- The initial state can be defined directly within the `createSlice` function without pre-defining an empty array.
+- Consider using more descriptive variable names (e.g., `todoId` instead of just `id` in action payloads) for improved readability.
+Correctness: 75%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week9/Day3/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- Consider extracting the todo item rendering logic into a separate `TodoItem` component for better organization and reusability, as suggested in the instructions.
+- Add more descriptive names for functions and variables to enhance readability.
+Correctness: 100%
+-----

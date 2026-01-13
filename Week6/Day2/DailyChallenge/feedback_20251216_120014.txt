@@ -1,0 +1,10 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week6/Day2/DailyChallenge/challenge.sql
+suggestions for improvement:
+- Provide the actual output of the SQL queries instead of a potentially incorrect number.
+- Show your reasoning for each answer.
+Brief justification:
+- correctness: The response provides numerical answers without showing the query results or any intermediate steps, which is not sufficient to determine if the provided output is correct. The task requires predicting the output of the queries, so the correct answers are the actual resulting values or tables, not just raw numbers. The given numerical answers seem incorrect after executing the queries.
+- readability: N/A
+- performance: N/A
+- security: N/A
+

@@ -1,0 +1,20 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day3/ExerciseXP/exercise/src/book-selectors.ts
+suggestions for improvement:
+- Consider adding memoization to the `makeSelectBooksByGenre` factory function if performance becomes a concern with a very large number of books.
+- Adding type definitions for the state and the return types of selectors enhances readability and maintainability.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day3/ExerciseXP/exercise/src/book-list.tsx
+suggestions for improvement:
+- Consider using a more descriptive name for the `selectGenre` action, such as `setSelectedGenre` to improve clarity.
+- The `default` case in the switch statement could explicitly return `selectBooks(state)` to enhance readability and avoid relying on the implicit `default` behavior.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week10/Day3/ExerciseXP/exercise/src/book-slice.ts
+suggestions for improvement:
+- Implement `createSelector` to create selectors for filtering books based on genres (`selectBooks`, `selectHorrorBooks`, `selectFantasyBooks`, and `selectScienceFictionBooks`).
+- The current slice only includes a reducer for `selectGenre` but lacks the selectors specified in the instructions.
+- Consider using TypeScript's `Readonly` utility type for the `BookType` and `BookStateType` to ensure that the state is immutable.
+- Add a dedicated folder for types to enhance project structure.
+Correctness: 50%
+-----

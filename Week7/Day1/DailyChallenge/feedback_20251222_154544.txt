@@ -1,0 +1,70 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/api.js
+suggestions for improvement:
+- The code appears to be client-side JavaScript code designed to interact with a quiz API. However, the chapter specifically asks for a server-side implementation using Express.js. Therefore, this code doesn't address the core requirement of the exercise.
+- The functions use `fetch` to make API calls to a `BASE_URL`. While this is fine for interacting with a server, it doesn't create the server-side logic itself.
+- The `postRound` function includes DOM manipulation (`document.querySelector`). Server-side code should not directly interact with the DOM.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/app.js
+suggestions for improvement:
+- The provided code sets up an Express.js server and uses a router, but it doesn't implement any of the trivia quiz logic required by the chapter content (handling questions, answers, scores, etc.). The routes themselves, including GET /quiz, POST /quiz, and GET /quiz/score are completely missing from this main application file and assumed to be within the routes directory.
+- Need to create the routes, model, and logic for the trivia quiz within the defined routes.js file to align with the exercise.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/components.js
+suggestions for improvement:
+- The provided code appears to be client-side code for rendering the UI of a trivia game, using Javascript and DOM manipulation. However, the chapter asks for the creation of a trivia quiz game with Express.js and `express.Router`. Therefore, this code is not relevant to the problem presented in the chapter.
+- The code is rendering functions, it receives game information and dynamically generates HTML to display the questions, score, and feedback. While well-structured, it doesn't address the core server-side requirements of the prompt.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/data.js
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/globals.js
+suggestions for improvement:
+- This code only defines the trivia questions and a base URL. It doesn't create an Express.js application, implement the routes, or handle game logic as required by the instructions.
+- The code is missing the server-side logic to handle the quiz, user score, and feedback.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/index.html
+suggestions for improvement:
+- The provided code is an HTML file, while the instructions require an Express.js application. The HTML sets up the basic structure for a front-end, but it does not address the server-side logic, routing, or quiz game implementation using Express.js and `express.Router` as requested by the chapter content.
+- The instructions specifically require using Express.js to create a trivia quiz game with routes for starting the quiz, submitting answers, and displaying the score. This HTML file does not implement any of these features.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/main.js
+suggestions for improvement:
+- The provided code appears to be client-side JavaScript interacting with an API. However, the task explicitly requires implementing a trivia quiz game using Express.js and `express.Router` on the server-side. The code does not fulfill the server-side requirements of the task.
+- The provided client-side code uses functions like `getQuizInfo`, `postRound` and `getScore` which are assumed to interact with a backend. However, the backend needs to be built using Express and express.Router as per the instructions. This is completely missing
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/package-lock.json
+suggestions for improvement:
+- The submitted file is a `package-lock.json` file. This file describes the dependencies of a Node.js project, but it does not contain any application code. It does not address any of the specific requirements outlined in the instructions for creating a trivia quiz game using Express.js and express.Router.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/package.json
+suggestions for improvement:
+- The provided code is a `package.json` file, which describes the dependencies and scripts for a Node.js project. It does not implement any of the quiz logic or routes specified in the problem description.
+- To address the instructions, you need to create an Express.js application with routes for starting the quiz, submitting answers, and displaying the score.  The `express.Router` should be used to define the quiz-related routes.
+- The trivia questions and answers should be hard-coded into a data structure within the application (e.g., an array of objects).
+- You'll need to manage the user's progress (current question, score) using session management or a similar technique.
+- Implement the feedback mechanism to inform the user about the correctness of their answers.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/routes/routes.js
+suggestions for improvement:
+- Consider using a more robust state management solution, especially if the application scales.
+- Implement error handling for unexpected scenarios (e.g., missing question data).
+- Sanitize user input to prevent potential security vulnerabilities.
+- The code could be more modular by extracting functions for repetitive tasks like creating gameInfo objects.
+Correctness: 80%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week7/Day1/DailyChallenge/styles.css
+suggestions for improvement:
+- The provided code is CSS styling. It doesn't implement any of the required Express.js routes or game logic as outlined in the chapter content.
+- The code should include the server-side logic using Express.js to handle quiz questions, answers, and score tracking.
+Correctness: 0%
+-----

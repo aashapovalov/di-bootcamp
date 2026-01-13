@@ -1,0 +1,37 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/App.tsx
+suggestions for improvement:
+- This code provides a high-level overview of how to use components in a React application, but it doesn't provide enough information to fully understand how to implement the components.
+- The code lacks details on event handling and state management, so it's difficult to assess how well it addresses the chapter's requirements.
+- The code does not give a detailed information on the React Lifecycle, so it's hard to rate how well it approaches that aspect of the chapter.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/car.tsx
+suggestions for improvement:
+- The `color` state variable is initialized but never updated or used in a way that triggers a re-render, so it's effectively a constant. Consider adding a way to change it if the exercise intends for the state to be dynamic.
+- The type definition for `carData` is good, but it's not actually used as a type for the `data` prop of the Car component. Apply the type correctly to enforce type safety.
+- The size prop should be passed from App.js as described, not be hardcoded within the Car component.
+Correctness: 60%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/color.tsx
+suggestions for improvement:
+- Wrap the useEffect hook with a setTimeout to change the state of the favoriteColor property to yellow after 5 seconds.
+- Move the state initialization to the functional component Color.
+Correctness: 80%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/events.tsx
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each function and state variable.
+- While the code is functional, adding type annotations for the `value` variable in `handleKeyDown` could enhance readability.
+Correctness: 100%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/garage.tsx
+suggestions for improvement:
+- This code snippet only provides the Garage component which is only one part of the exercise 1. The Car component with its properties and state management is missing, along with the Events and Phone components which are part of exercises 2 and 3, and the Color component from exercise 4. Therefore the code does not address all the instructions in the chapter content.
+Correctness: 0%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week8/Day1/ExerciseXP/exercise/src/components/phone.tsx
+suggestions for improvement:
+- The given component has errors since it is trying to destructure useState outside of the functional component
+- The component is trying to use a function that's outside of it
+Correctness: 0%
+-----
