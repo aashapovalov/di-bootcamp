@@ -1,0 +1,27 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/router.js
+suggestions for improvement:
+- Use a database like PostgreSQL instead of in-memory storage for users. This is crucial for persistence.
+- Implement proper error handling with try-catch blocks and appropriate status codes and messages. Avoid generic error messages and provide specific feedback.
+- Store refresh token in an HTTP-only cookie.
+- Use environment variables for JWT secrets instead of hardcoding them.
+- Utilize the `Authorization` header for passing the access token instead of a cookie.
+- Consider using a more robust UUID generation library for user IDs.
+Correctness: 70%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/auth-middleware.js
+suggestions for improvement:
+- The code mixes access token verification and refresh token logic within the same function, which can make it harder to maintain and understand. Consider separating these concerns into distinct middleware functions.
+- The `secretKey` should be accessed from environment variables rather than being hardcoded or imported from another module. This improves security and configuration flexibility.
+- Error handling could be improved by providing more specific error messages or logging errors for debugging purposes.
+- The code currently uses cookies to store the access token, whereas the instructions explicitly state that the access token should be stored in memory within the Redux store.
+- The code does not implement any authorization logic. The authorization checks should be implemented based on user roles and permissions as detailed in the instructions.
+Correctness: 60%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/app.js
+suggestions for improvement:
+- Implement registration and login endpoints as specified in the CRUD and REST section.
+- Implement token refreshing logic as described in the Authentication section.
+- Add error handling for all routes.
+- Implement authorization middleware based on the provided example.
+Correctness: 30%
+-----
