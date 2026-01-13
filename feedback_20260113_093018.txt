@@ -1,0 +1,24 @@
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/app.js
+suggestions for improvement:
+- The provided code only implements a small part of the overall JWT authentication process described in the chapter. It sets up an Express application, includes middleware, and creates a protected route using a JWT authentication middleware. However, it is missing crucial components such as user registration, login, JWT generation, token refresh, and logout functionality as detailed in sections 4, 5, 8, and 9.
+- The code imports `authenticateJWT` from `./auth-middleware.js`, but the content of this file (which is critical for verifying JWTs) is not included. Therefore, it's impossible to assess the correctness and security of the JWT verification process.
+- The code uses `cookieParser()`, which is correct for handling cookies as mentioned in section 8, but doesn't explicitly set JWTs as HTTP cookies with the `httpOnly` option for enhanced security.
+- The code does not implement any of the exercises for reinforcing knowledge, such as user registration validation, profile updates, token revocation, database integration, email confirmation, or rate limiting.
+Correctness: 20%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/auth-middleware.js
+suggestions for improvement:
+- The code attempts to handle token refresh within the authentication middleware, which can be confusing and doesn't strictly follow the separation of concerns suggested by the chapter content. The refresh logic should ideally be handled in a dedicated `/refresh` endpoint as described in section 9.
+- Error handling could be improved. For example, providing more specific error messages can aid in debugging.
+- The code uses the same `secretKey` for both access and refresh tokens. While functional, it's generally more secure to use different keys.
+- The code nests jwt.verify calls, which can become difficult to manage. Consider refactoring using promises or async/await for better readability.
+Correctness: 60%
+-----
+URL: https://github.com/aashapovalov/di-bootcamp/blob/main/Week11/Day1/ExerciseXP/router.js
+suggestions for improvement:
+- You should handle errors in the register route JWT generation.
+- Consider using environment variables to store your secret key.
+- Missing bcrypt import
+- Missing user import on register
+Correctness: 80%
+-----
